@@ -4,6 +4,7 @@
 git clone https://github.com/danmar/cppcheck.git
 
 # Create a 'build' directory and navigate to it
+cd cppcheck
 mkdir build
 cd build
 
