@@ -1,13 +1,14 @@
 # NLP_Group37
 
-## `cppcheck` installation
+## Install `cppcheck`
 Assuming that you have enabled SSH key based login to GitHub
-* $ `git clone <this-branch>`
+* $ `git clone https://github.com/ksanu1998/NLP_Group37.git`
+* $ `git checkout anuroop`
 * $ `cd cppcheck_utils`
 * $ `chmod +X install_cppcheck.sh`
 * $ `./install_cppcheck.sh`
 
-## Running `cppcheck` and getting a HTML report
+## Run `cppcheck` and generate an HTML report
 Assuming there is a directory named `source_directory` containing `.cpp` files to be checked and another one named `report_directory` to store the generated reports
 * $ `chmod +X run_cppcheck.sh`
 * $ `./run_cppcheck.sh <source_directory> <report_directory>`
