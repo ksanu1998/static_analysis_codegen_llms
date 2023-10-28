@@ -8,7 +8,7 @@
 * $ `./install_cppcheck.sh`
 
 ## Running `cppcheck` and getting a HTML report
-* Assuming there is a directory named `source` containing `.cpp` files to be checked
-* `cppcheck/build/bin/cppcheck --enable=all --check-level=exhaustive --xml </path/to/source> 2> error_file.xml`
-* `cppcheck/htmlreport/cppcheck-htmlreport --file=error_file.xml --report-dir=report`
-* Go to `report` and open `index.html`
+* Assuming there is a directory named `source_directory` containing `.cpp` files to be checked and another one named `report_directory` to store the generated reports
+* `chmod +X run_cppcheck.sh`
+* `./run_cppcheck.sh <source_directory> <report_directory>`
+* Go to `<report_directory>` and open `index.html`
