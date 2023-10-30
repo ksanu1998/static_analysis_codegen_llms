@@ -1,0 +1,64 @@
+// Find closest integer with the same weight. 
+ #include <bits/stdc++.h> 
+ using namespace std ;
+ const int NumUnsignBits = 64 ;
+ unsigned long findNum ( unsigned long x ) {
+ 
+    unsigned long y = x ;
+    unsigned long z = x ;
+    unsigned long w = x ;
+    unsigned long a = x ;
+    unsigned long b = x ;
+    unsigned long c = x ;
+    unsigned long d = x ;
+    unsigned long e = x ;
+    unsigned long f = x ;
+    unsigned long g = x ;
+    unsigned long h = x ;
+    unsigned long i = x ;
+    unsigned long j = x ;
+    unsigned long k = x ;
+    unsigned long l = x ;
+    unsigned long m = x ;
+    unsigned long n = x ;
+    unsigned long o = x ;
+    unsigned long p = x ;
+    unsigned long q = x ;
+    unsigned long r = x ;
+    unsigned long s = x ;
+    unsigned long t = x ;
+    unsigned long u = x ;
+    unsigned long v = x ;
+    unsigned long w = x ;
+    unsigned long x = x ;
+    unsigned long y = x ;
+    unsigned long z = x ;
+    unsigned long a = x ;
+    unsigned long b = x ;
+    unsigned long c = x ;
+    unsigned long d = x ;
+    unsigned long e = x ;
+    unsigned long f = x ;
+    unsigned long g = x ;
+    unsigned long h = x ;
+    unsigned long i = x ;
+    unsigned long j = x ;
+    unsigned long k = x ;
+    unsigned long l = x ;
+    unsigned long m = x ;
+    unsigned long n = x ;
+    unsigned long o = x ;
+    unsigned long p = x ;
+    unsigned long q = x ;
+    unsigned long r = x ;
+    unsigned long s = x ;
+    unsigned long t = x ;
+    unsigned long u = x ;
+    unsigned long v = x ;
+    unsigned long w = x ;
+    unsigned long x = x ;
+    unsigned long y = x ;
+    unsigned long z = x ;
+    unsigned long a = x ;
+    unsigned long b = x ;
+   
