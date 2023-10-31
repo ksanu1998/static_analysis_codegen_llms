@@ -1,0 +1,103 @@
+python/question-0-pass-0.py
+python/question-1-pass-0.py
+python/question-10-pass-0.py
+python/question-11-pass-0.py
+python/question-12-pass-0.py
+python/question-13-pass-0.py
+python/question-14-pass-0.py
+python/question-15-pass-0.py
+python/question-16-pass-0.py
+python/question-17-pass-0.py
+python/question-18-pass-0.py
+python/question-19-pass-0.py
+python/question-2-pass-0.py
+python/question-20-pass-0.py
+python/question-21-pass-0.py
+python/question-22-pass-0.py
+python/question-23-pass-0.py
+python/question-24-pass-0.py
+python/question-25-pass-0.py
+python/question-26-pass-0.py
+python/question-27-pass-0.py
+python/question-28-pass-0.py
+python/question-29-pass-0.py
+python/question-3-pass-0.py
+python/question-30-pass-0.py
+python/question-31-pass-0.py
+python/question-32-pass-0.py
+python/question-34-pass-0.py
+python/question-35-pass-0.py
+python/question-36-pass-0.py
+python/question-37-pass-0.py
+python/question-38-pass-0.py
+python/question-39-pass-0.py
+python/question-4-pass-0.py
+python/question-40-pass-0.py
+python/question-41-pass-0.py
+python/question-42-pass-0.py
+python/question-43-pass-0.py
+python/question-44-pass-0.py
+python/question-45-pass-0.py
+python/question-46-pass-0.py
+python/question-47-pass-0.py
+python/question-48-pass-0.py
+python/question-49-pass-0.py
+python/question-5-pass-0.py
+python/question-50-pass-0.py
+python/question-51-pass-0.py
+python/question-52-pass-0.py
+python/question-53-pass-0.py
+python/question-54-pass-0.py
+python/question-55-pass-0.py
+python/question-56-pass-0.py
+python/question-57-pass-0.py
+python/question-58-pass-0.py
+python/question-59-pass-0.py
+python/question-6-pass-0.py
+python/question-60-pass-0.py
+python/question-61-pass-0.py
+python/question-62-pass-0.py
+python/question-63-pass-0.py
+python/question-64-pass-0.py
+python/question-65-pass-0.py
+python/question-66-pass-0.py
+python/question-67-pass-0.py
+python/question-68-pass-0.py
+python/question-69-pass-0.py
+python/question-7-pass-0.py
+python/question-70-pass-0.py
+python/question-71-pass-0.py
+python/question-72-pass-0.py
+python/question-73-pass-0.py
+python/question-74-pass-0.py
+python/question-75-pass-0.py
+python/question-76-pass-0.py
+python/question-77-pass-0.py
+python/question-78-pass-0.py
+python/question-79-pass-0.py
+python/question-8-pass-0.py
+python/question-80-pass-0.py
+python/question-81-pass-0.py
+python/question-82-pass-0.py
+python/question-83-pass-0.py
+python/question-84-pass-0.py
+python/question-9-pass-0.py
+11    E225 missing whitespace around operator
+4     E251 unexpected spaces around keyword / parameter equals
+5     E275 missing whitespace after keyword
+23    E302 expected 2 blank lines, found 1
+46    E305 expected 2 blank lines after class or function definition, found 1
+31    E501 line too long (81 > 79 characters)
+4     E712 comparison to False should be 'if cond is False:' or 'if not cond:'
+2     E741 ambiguous variable name 'l'
+8     E999 SyntaxError: '[' was never closed
+11    F401 'math.sqrt' imported but unused
+1     F403 'from math import *' used; unable to detect undefined names
+2     F405 'floor' may be undefined, or defined from star imports: math
+15    F821 undefined name 'prime_factors_sum_of_exponents_divisible_by'
+3     F841 local variable 'result' is assigned to but never used
+17    W191 indentation contains tabs
+1072  W291 trailing whitespace
+47    W292 no newline at end of file
+164   W293 blank line contains whitespace
+21    W391 blank line at end of file

@@ -21,4 +21,4 @@ if [ ! -d "$report_directory" ]; then
     mkdir -p "$report_directory"
 fi
 
-flake8 --statistics --q --output-file="$report_directory/flake8_report.txt" "$source_directory"
+flake8 --statistics "$source_directory" --q --output-file="$report_directory/flake8_report.txt"
