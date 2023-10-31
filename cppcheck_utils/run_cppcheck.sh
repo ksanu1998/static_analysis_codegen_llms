@@ -22,7 +22,7 @@ if [ ! -d "$report_directory" ]; then
 fi
 
 # Run cppcheck with specified options
-cppcheck/build/bin/cppcheck --enable=all --check-level=exhaustive --xml "$source_directory" 2> "$report_directory/error_file.xml"
+cppcheck/build/bin/cppcheck --enable=all --suppress=missingIncludeSystem --check-level=exhaustive --xml "$source_directory" 2> "$report_directory/error_file.xml"
 
 # Generate an HTML report
 cppcheck/htmlreport/cppcheck-htmlreport --file="$report_directory/error_file.xml" --report-dir="$report_directory"

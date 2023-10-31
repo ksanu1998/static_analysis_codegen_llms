@@ -2,360 +2,132 @@
 <results version="2">
     <cppcheck version="2.13 dev"/>
     <errors>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-0-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-0-pass-0.cpp">
             <location file="DataCleaning/question-0-pass-0.cpp" line="26" column="14"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-1-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-10-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-10-pass-0.cpp">
             <location file="DataCleaning/question-10-pass-0.cpp" line="40" column="36"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-100-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-102-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-103-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-104-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-104-pass-0.cpp">
             <location file="DataCleaning/question-104-pass-0.cpp" line="49" column="16"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-106-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-106-pass-0.cpp">
             <location file="DataCleaning/question-106-pass-0.cpp" line="22" column="19"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-107-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-107-pass-0.cpp">
             <location file="DataCleaning/question-107-pass-0.cpp" line="15" column="15"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-109-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-11-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-110-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-111-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-111-pass-0.cpp">
             <location file="DataCleaning/question-111-pass-0.cpp" line="24" column="14"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-112-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-113-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="passedByValue" severity="performance" msg="Function parameter &apos;s&apos; should be passed by const reference." verbose="Parameter &apos;s&apos; is passed by value. It could be passed as a const reference which is usually faster and recommended in C++." cwe="398" file0="DataCleaning/question-113-pass-0.cpp">
             <location file="DataCleaning/question-113-pass-0.cpp" line="4" column="25"/>
             <symbol>s</symbol>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-115-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-115-pass-0.cpp">
             <location file="DataCleaning/question-115-pass-0.cpp" line="16" column="15"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-118-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-119-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-119-pass-0.cpp">
             <location file="DataCleaning/question-119-pass-0.cpp" line="14" column="15"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-12-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-120-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="missingInclude" severity="information" msg="Include file: &quot; bits / stdc + + . h &quot; not found." verbose="Include file: &quot; bits / stdc + + . h &quot; not found.">
             <location file="DataCleaning/question-122-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-126-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-129-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-129-pass-0.cpp">
             <location file="DataCleaning/question-129-pass-0.cpp" line="4" column="67"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-13-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-13-pass-0.cpp">
             <location file="DataCleaning/question-13-pass-0.cpp" line="28" column="14"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-130-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-131-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-132-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-132-pass-0.cpp">
             <location file="DataCleaning/question-132-pass-0.cpp" line="4" column="40"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-133-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-133-pass-0.cpp">
             <location file="DataCleaning/question-133-pass-0.cpp" line="4" column="31"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-134-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-134-pass-0.cpp">
             <location file="DataCleaning/question-134-pass-0.cpp" line="15" column="14"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-136-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-138-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-14-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-140-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-140-pass-0.cpp">
             <location file="DataCleaning/question-140-pass-0.cpp" line="5" column="44"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-141-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-142-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-144-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-144-pass-0.cpp">
             <location file="DataCleaning/question-144-pass-0.cpp" line="24" column="15"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-145-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-146-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-147-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-148-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-148-pass-0.cpp">
             <location file="DataCleaning/question-148-pass-0.cpp" line="27" column="15"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-149-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-149-pass-0.cpp">
             <location file="DataCleaning/question-149-pass-0.cpp" line="44" column="35"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-150-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-151-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-152-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-152-pass-0.cpp">
             <location file="DataCleaning/question-152-pass-0.cpp" line="4" column="37"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-156-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-156-pass-0.cpp">
             <location file="DataCleaning/question-156-pass-0.cpp" line="26" column="15"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-157-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-158-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-158-pass-0.cpp">
             <location file="DataCleaning/question-158-pass-0.cpp" line="19" column="15"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-16-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-164-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="negativeIndex" severity="error" msg="Array &apos;dp[2147483648][2147483648]&apos; accessed at index dp[-1][*], which is out of bounds." verbose="Array &apos;dp[2147483648][2147483648]&apos; accessed at index dp[-1][*], which is out of bounds." cwe="786" file0="DataCleaning/question-164-pass-0.cpp">
             <location file="DataCleaning/question-164-pass-0.cpp" line="13" column="19" info="Negative array index"/>
             <location file="DataCleaning/question-164-pass-0.cpp" line="12" column="25" info="Assuming that condition &apos;i==j&apos; is not redundant"/>
             <location file="DataCleaning/question-164-pass-0.cpp" line="8" column="23" info="Assignment &apos;j=0&apos;, assigned value is 0"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-165-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-166-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-166-pass-0.cpp">
             <location file="DataCleaning/question-166-pass-0.cpp" line="14" column="15"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-169-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-169-pass-0.cpp">
             <location file="DataCleaning/question-169-pass-0.cpp" line="26" column="15"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-171-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-172-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-173-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-173-pass-0.cpp">
             <location file="DataCleaning/question-173-pass-0.cpp" line="70" column="29"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-174-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-174-pass-0.cpp">
             <location file="DataCleaning/question-174-pass-0.cpp" line="59" column="19"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-175-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-175-pass-0.cpp">
             <location file="DataCleaning/question-175-pass-0.cpp" line="18" column="14"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-176-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-176-pass-0.cpp">
             <location file="DataCleaning/question-176-pass-0.cpp" line="9" column="18"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-18-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-18-pass-0.cpp">
             <location file="DataCleaning/question-18-pass-0.cpp" line="5" column="37"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-182-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-182-pass-0.cpp">
             <location file="DataCleaning/question-182-pass-0.cpp" line="15" column="15"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-183-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-183-pass-0.cpp">
             <location file="DataCleaning/question-183-pass-0.cpp" line="23" column="15"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-185-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-185-pass-0.cpp">
             <location file="DataCleaning/question-185-pass-0.cpp" line="4" column="35"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;algorithm&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;algorithm&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-186-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-186-pass-0.cpp" line="3" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-186-pass-0.cpp">
             <location file="DataCleaning/question-186-pass-0.cpp" line="5" column="50"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-187-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-187-pass-0.cpp">
             <location file="DataCleaning/question-187-pass-0.cpp" line="4" column="45"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-188-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-19-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-19-pass-0.cpp">
             <location file="DataCleaning/question-19-pass-0.cpp" line="27" column="17"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-190-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-190-pass-0.cpp">
             <location file="DataCleaning/question-190-pass-0.cpp" line="20" column="15"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-192-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-192-pass-0.cpp">
             <location file="DataCleaning/question-192-pass-0.cpp" line="16" column="15"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-194-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-195-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-195-pass-0.cpp">
             <location file="DataCleaning/question-195-pass-0.cpp" line="23" column="15"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-196-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="constParameter" severity="style" msg="Parameter &apos;arr&apos; can be declared as const array" verbose="Parameter &apos;arr&apos; can be declared as const array" cwe="398" file0="DataCleaning/question-196-pass-0.cpp">
             <location file="DataCleaning/question-196-pass-0.cpp" line="4" column="22" info="Parameter &apos;arr&apos; can be declared as const array"/>
             <symbol>arr</symbol>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-197-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-197-pass-0.cpp">
             <location file="DataCleaning/question-197-pass-0.cpp" line="16" column="20"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-22-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-24-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-25-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-27-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="variableScope" severity="style" msg="The scope of the variable &apos;x&apos; can be reduced." verbose="The scope of the variable &apos;x&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398" file0="DataCleaning/question-27-pass-0.cpp">
             <location file="DataCleaning/question-27-pass-0.cpp" line="7" column="16"/>
@@ -373,51 +145,18 @@
             <location file="DataCleaning/question-27-pass-0.cpp" line="10" column="21"/>
             <symbol>temp</symbol>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-28-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-3-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-30-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-31-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-32-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-32-pass-0.cpp">
             <location file="DataCleaning/question-32-pass-0.cpp" line="16" column="14"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-33-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-33-pass-0.cpp">
             <location file="DataCleaning/question-33-pass-0.cpp" line="16" column="15"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-36-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="arrayIndexOutOfBoundsCond" severity="warning" msg="Either the condition &apos;N&lt;=2&apos; is redundant or the array &apos;table[2147483648]&apos; is accessed at index 2147483648, which is out of bounds." verbose="Either the condition &apos;N&lt;=2&apos; is redundant or the array &apos;table[2147483648]&apos; is accessed at index 2147483648, which is out of bounds." cwe="788" file0="DataCleaning/question-36-pass-0.cpp">
             <location file="DataCleaning/question-36-pass-0.cpp" line="20" column="17" info="Array index out of bounds"/>
             <location file="DataCleaning/question-36-pass-0.cpp" line="7" column="11" info="Assuming that condition &apos;N&lt;=2&apos; is not redundant"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-4-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-40-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-40-pass-0.cpp">
             <location file="DataCleaning/question-40-pass-0.cpp" line="67" column="47"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-41-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-41-pass-0.cpp" line="3" column="0"/>
         </error>
         <error id="shadowFunction" severity="style" msg="Local variable &apos;sumOfSumSeries&apos; shadows outer function" verbose="Local variable &apos;sumOfSumSeries&apos; shadows outer function" cwe="398" file0="DataCleaning/question-41-pass-0.cpp">
             <location file="DataCleaning/question-41-pass-0.cpp" line="25" column="10" info="Shadow variable"/>
@@ -429,128 +168,47 @@
             <location file="DataCleaning/question-41-pass-0.cpp" line="14" column="7" info="Shadowed declaration"/>
             <symbol>sumOfSquareSeries</symbol>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-44-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-44-pass-0.cpp">
             <location file="DataCleaning/question-44-pass-0.cpp" line="16" column="15"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-45-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-46-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-46-pass-0.cpp">
             <location file="DataCleaning/question-46-pass-0.cpp" line="18" column="15"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-47-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;math.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-47-pass-0.cpp" line="3" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-47-pass-0.cpp">
             <location file="DataCleaning/question-47-pass-0.cpp" line="5" column="31"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-48-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-48-pass-0.cpp">
             <location file="DataCleaning/question-48-pass-0.cpp" line="19" column="15"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-49-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-49-pass-0.cpp">
             <location file="DataCleaning/question-49-pass-0.cpp" line="16" column="14"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-5-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-5-pass-0.cpp">
             <location file="DataCleaning/question-5-pass-0.cpp" line="23" column="15"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-51-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-51-pass-0.cpp">
             <location file="DataCleaning/question-51-pass-0.cpp" line="16" column="15"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-53-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-55-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-56-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-59-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-59-pass-0.cpp">
             <location file="DataCleaning/question-59-pass-0.cpp" line="19" column="15"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-60-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-7-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-7-pass-0.cpp">
             <location file="DataCleaning/question-7-pass-0.cpp" line="42" column="57"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-73-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-74-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-74-pass-0.cpp">
             <location file="DataCleaning/question-74-pass-0.cpp" line="17" column="12"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-75-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-75-pass-0.cpp">
             <location file="DataCleaning/question-75-pass-0.cpp" line="22" column="15"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-79-pass-0.cpp" line="2" column="0"/>
         </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-79-pass-0.cpp">
             <location file="DataCleaning/question-79-pass-0.cpp" line="13" column="12"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-8-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-8-pass-0.cpp">
             <location file="DataCleaning/question-8-pass-0.cpp" line="32" column="17"/>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-81-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-82-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-94-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-95-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-96-pass-0.cpp" line="2" column="0"/>
-        </error>
         <error id="syntaxError" severity="error" msg="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." verbose="Unmatched &apos;{&apos;. Configuration: &apos;&apos;." file0="DataCleaning/question-96-pass-0.cpp">
             <location file="DataCleaning/question-96-pass-0.cpp" line="24" column="19"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-97-pass-0.cpp" line="2" column="0"/>
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;bits/stdc++.h&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="DataCleaning/question-99-pass-0.cpp" line="2" column="0"/>
         </error>
     </errors>
 </results>
