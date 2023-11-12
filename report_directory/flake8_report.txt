@@ -1,0 +1,121 @@
+../source_directory/question-0-pass-0.py
+../source_directory/question-1-pass-0.py
+../source_directory/question-10-pass-0.py
+../source_directory/question-100-pass-0.py
+../source_directory/question-11-pass-0.py
+../source_directory/question-12-pass-0.py
+../source_directory/question-13-pass-0.py
+../source_directory/question-14-pass-0.py
+../source_directory/question-15-pass-0.py
+../source_directory/question-16-pass-0.py
+../source_directory/question-17-pass-0.py
+../source_directory/question-18-pass-0.py
+../source_directory/question-19-pass-0.py
+../source_directory/question-2-pass-0.py
+../source_directory/question-20-pass-0.py
+../source_directory/question-21-pass-0.py
+../source_directory/question-22-pass-0.py
+../source_directory/question-23-pass-0.py
+../source_directory/question-24-pass-0.py
+../source_directory/question-25-pass-0.py
+../source_directory/question-26-pass-0.py
+../source_directory/question-27-pass-0.py
+../source_directory/question-28-pass-0.py
+../source_directory/question-29-pass-0.py
+../source_directory/question-3-pass-0.py
+../source_directory/question-30-pass-0.py
+../source_directory/question-31-pass-0.py
+../source_directory/question-32-pass-0.py
+../source_directory/question-34-pass-0.py
+../source_directory/question-35-pass-0.py
+../source_directory/question-36-pass-0.py
+../source_directory/question-37-pass-0.py
+../source_directory/question-38-pass-0.py
+../source_directory/question-39-pass-0.py
+../source_directory/question-4-pass-0.py
+../source_directory/question-40-pass-0.py
+../source_directory/question-41-pass-0.py
+../source_directory/question-42-pass-0.py
+../source_directory/question-43-pass-0.py
+../source_directory/question-44-pass-0.py
+../source_directory/question-45-pass-0.py
+../source_directory/question-46-pass-0.py
+../source_directory/question-47-pass-0.py
+../source_directory/question-48-pass-0.py
+../source_directory/question-49-pass-0.py
+../source_directory/question-5-pass-0.py
+../source_directory/question-50-pass-0.py
+../source_directory/question-51-pass-0.py
+../source_directory/question-52-pass-0.py
+../source_directory/question-53-pass-0.py
+../source_directory/question-54-pass-0.py
+../source_directory/question-55-pass-0.py
+../source_directory/question-56-pass-0.py
+../source_directory/question-57-pass-0.py
+../source_directory/question-58-pass-0.py
+../source_directory/question-59-pass-0.py
+../source_directory/question-6-pass-0.py
+../source_directory/question-60-pass-0.py
+../source_directory/question-61-pass-0.py
+../source_directory/question-62-pass-0.py
+../source_directory/question-63-pass-0.py
+../source_directory/question-64-pass-0.py
+../source_directory/question-65-pass-0.py
+../source_directory/question-66-pass-0.py
+../source_directory/question-67-pass-0.py
+../source_directory/question-68-pass-0.py
+../source_directory/question-69-pass-0.py
+../source_directory/question-7-pass-0.py
+../source_directory/question-70-pass-0.py
+../source_directory/question-71-pass-0.py
+../source_directory/question-72-pass-0.py
+../source_directory/question-73-pass-0.py
+../source_directory/question-74-pass-0.py
+../source_directory/question-75-pass-0.py
+../source_directory/question-76-pass-0.py
+../source_directory/question-77-pass-0.py
+../source_directory/question-78-pass-0.py
+../source_directory/question-79-pass-0.py
+../source_directory/question-8-pass-0.py
+../source_directory/question-80-pass-0.py
+../source_directory/question-81-pass-0.py
+../source_directory/question-82-pass-0.py
+../source_directory/question-83-pass-0.py
+../source_directory/question-84-pass-0.py
+../source_directory/question-85-pass-0.py
+../source_directory/question-86-pass-0.py
+../source_directory/question-87-pass-0.py
+../source_directory/question-88-pass-0.py
+../source_directory/question-89-pass-0.py
+../source_directory/question-9-pass-0.py
+../source_directory/question-90-pass-0.py
+../source_directory/question-91-pass-0.py
+../source_directory/question-92-pass-0.py
+../source_directory/question-93-pass-0.py
+../source_directory/question-94-pass-0.py
+../source_directory/question-95-pass-0.py
+../source_directory/question-96-pass-0.py
+../source_directory/question-97-pass-0.py
+../source_directory/question-98-pass-0.py
+../source_directory/question-99-pass-0.py
+15    E225 missing whitespace around operator
+1     E228 missing whitespace around modulo operator
+4     E251 unexpected spaces around keyword / parameter equals
+7     E275 missing whitespace after keyword
+32    E302 expected 2 blank lines, found 1
+56    E305 expected 2 blank lines after class or function definition, found 1
+40    E501 line too long (87 > 79 characters)
+6     E712 comparison to False should be 'if cond is False:' or 'if not cond:'
+2     E741 ambiguous variable name 'l'
+11    E999 SyntaxError: '[' was never closed
+12    F401 'math.sqrt' imported but unused
+1     F403 'from math import *' used; unable to detect undefined names
+2     F405 'floor' may be undefined, or defined from star imports: math
+17    F821 undefined name 'prime_factors_sum_of_exponents_divisible_by'
+1     F823 local variable 'prime_adam_integers' defined in enclosing scope on line 20 referenced before assignment
+3     F841 local variable 'result' is assigned to but never used
+61    W191 indentation contains tabs
+1301  W291 trailing whitespace
+53    W292 no newline at end of file
+189   W293 blank line contains whitespace
+26    W391 blank line at end of file
