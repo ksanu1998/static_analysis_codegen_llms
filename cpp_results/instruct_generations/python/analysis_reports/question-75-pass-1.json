@@ -1,0 +1,12 @@
+{
+  "./files/question-75-pass-1.py": [
+    {
+      "code": "W292",
+      "filename": "./files/question-75-pass-1.py",
+      "line_number": 6,
+      "column_number": 28,
+      "text": "no newline at end of file",
+      "physical_line": "    return n*(n+1) == 2*N+1"
+    }
+  ]
+}

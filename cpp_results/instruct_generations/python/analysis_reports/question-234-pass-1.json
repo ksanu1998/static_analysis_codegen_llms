@@ -1,0 +1,12 @@
+{
+  "./files/question-234-pass-1.py": [
+    {
+      "code": "W292",
+      "filename": "./files/question-234-pass-1.py",
+      "line_number": 5,
+      "column_number": 53,
+      "text": "no newline at end of file",
+      "physical_line": "    return (mth + nth) * (mt.floor((n - m + 1) / 2))"
+    }
+  ]
+}
