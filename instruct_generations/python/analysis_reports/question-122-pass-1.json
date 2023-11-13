@@ -1,0 +1,12 @@
+{
+  "./files/question-122-pass-1.py": [
+    {
+      "code": "W292",
+      "filename": "./files/question-122-pass-1.py",
+      "line_number": 11,
+      "column_number": 21,
+      "text": "no newline at end of file",
+      "physical_line": "    return factorial"
+    }
+  ]
+}

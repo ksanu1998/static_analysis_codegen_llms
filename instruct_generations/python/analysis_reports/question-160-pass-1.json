@@ -1,0 +1,28 @@
+{
+  "./files/question-160-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-160-pass-1.py",
+      "line_number": 2,
+      "column_number": 80,
+      "text": "line too long (81 > 79 characters)",
+      "physical_line": "    # Calculate the number of palindromic numbers with the given number of digits\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-160-pass-1.py",
+      "line_number": 7,
+      "column_number": 80,
+      "text": "line too long (84 > 79 characters)",
+      "physical_line": "    # Calculate the total number of possible numbers with the given number of digits\n"
+    },
+    {
+      "code": "W292",
+      "filename": "./files/question-160-pass-1.py",
+      "line_number": 11,
+      "column_number": 40,
+      "text": "no newline at end of file",
+      "physical_line": "    return num_palindromes / total_nums"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "./files/question-142-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./files/question-142-pass-1.py",
+      "line_number": 4,
+      "column_number": 16,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def min_modulo(l, r):\n"
+    },
+    {
+      "code": "W292",
+      "filename": "./files/question-142-pass-1.py",
+      "line_number": 5,
+      "column_number": 41,
+      "text": "no newline at end of file",
+      "physical_line": "    return l if l % MOD < r % MOD else r"
+    }
+  ]
+}
