@@ -1,0 +1,28 @@
+{
+  "./files/question-117-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-117-pass-1.py",
+      "line_number": 7,
+      "column_number": 80,
+      "text": "line too long (80 > 79 characters)",
+      "physical_line": "        # Check if the current element in A is equal to the current element in B\n"
+    },
+    {
+      "code": "E225",
+      "filename": "./files/question-117-pass-1.py",
+      "line_number": 8,
+      "column_number": 16,
+      "text": "missing whitespace around operator",
+      "physical_line": "        if a[i]!= b[i]:\n"
+    },
+    {
+      "code": "W292",
+      "filename": "./files/question-117-pass-1.py",
+      "line_number": 13,
+      "column_number": 18,
+      "text": "no newline at end of file",
+      "physical_line": "    return result"
+    }
+  ]
+}

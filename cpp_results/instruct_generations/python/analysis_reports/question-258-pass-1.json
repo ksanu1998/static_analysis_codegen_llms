@@ -1,0 +1,20 @@
+{
+  "./files/question-258-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./files/question-258-pass-1.py",
+      "line_number": 1,
+      "column_number": 23,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def findTwoThreePrime(l, r):\n"
+    },
+    {
+      "code": "W292",
+      "filename": "./files/question-258-pass-1.py",
+      "line_number": 6,
+      "column_number": 17,
+      "text": "no newline at end of file",
+      "physical_line": "    return count"
+    }
+  ]
+}
