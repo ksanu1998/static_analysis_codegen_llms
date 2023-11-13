@@ -1,0 +1,121 @@
+py_source/question-0-pass-0.py
+py_source/question-1-pass-0.py
+py_source/question-10-pass-0.py
+py_source/question-100-pass-0.py
+py_source/question-11-pass-0.py
+py_source/question-12-pass-0.py
+py_source/question-13-pass-0.py
+py_source/question-14-pass-0.py
+py_source/question-15-pass-0.py
+py_source/question-16-pass-0.py
+py_source/question-17-pass-0.py
+py_source/question-18-pass-0.py
+py_source/question-19-pass-0.py
+py_source/question-2-pass-0.py
+py_source/question-20-pass-0.py
+py_source/question-21-pass-0.py
+py_source/question-22-pass-0.py
+py_source/question-23-pass-0.py
+py_source/question-24-pass-0.py
+py_source/question-25-pass-0.py
+py_source/question-26-pass-0.py
+py_source/question-27-pass-0.py
+py_source/question-28-pass-0.py
+py_source/question-29-pass-0.py
+py_source/question-3-pass-0.py
+py_source/question-30-pass-0.py
+py_source/question-31-pass-0.py
+py_source/question-32-pass-0.py
+py_source/question-34-pass-0.py
+py_source/question-35-pass-0.py
+py_source/question-36-pass-0.py
+py_source/question-37-pass-0.py
+py_source/question-38-pass-0.py
+py_source/question-39-pass-0.py
+py_source/question-4-pass-0.py
+py_source/question-40-pass-0.py
+py_source/question-41-pass-0.py
+py_source/question-42-pass-0.py
+py_source/question-43-pass-0.py
+py_source/question-44-pass-0.py
+py_source/question-45-pass-0.py
+py_source/question-46-pass-0.py
+py_source/question-47-pass-0.py
+py_source/question-48-pass-0.py
+py_source/question-49-pass-0.py
+py_source/question-5-pass-0.py
+py_source/question-50-pass-0.py
+py_source/question-51-pass-0.py
+py_source/question-52-pass-0.py
+py_source/question-53-pass-0.py
+py_source/question-54-pass-0.py
+py_source/question-55-pass-0.py
+py_source/question-56-pass-0.py
+py_source/question-57-pass-0.py
+py_source/question-58-pass-0.py
+py_source/question-59-pass-0.py
+py_source/question-6-pass-0.py
+py_source/question-60-pass-0.py
+py_source/question-61-pass-0.py
+py_source/question-62-pass-0.py
+py_source/question-63-pass-0.py
+py_source/question-64-pass-0.py
+py_source/question-65-pass-0.py
+py_source/question-66-pass-0.py
+py_source/question-67-pass-0.py
+py_source/question-68-pass-0.py
+py_source/question-69-pass-0.py
+py_source/question-7-pass-0.py
+py_source/question-70-pass-0.py
+py_source/question-71-pass-0.py
+py_source/question-72-pass-0.py
+py_source/question-73-pass-0.py
+py_source/question-74-pass-0.py
+py_source/question-75-pass-0.py
+py_source/question-76-pass-0.py
+py_source/question-77-pass-0.py
+py_source/question-78-pass-0.py
+py_source/question-79-pass-0.py
+py_source/question-8-pass-0.py
+py_source/question-80-pass-0.py
+py_source/question-81-pass-0.py
+py_source/question-82-pass-0.py
+py_source/question-83-pass-0.py
+py_source/question-84-pass-0.py
+py_source/question-85-pass-0.py
+py_source/question-86-pass-0.py
+py_source/question-87-pass-0.py
+py_source/question-88-pass-0.py
+py_source/question-89-pass-0.py
+py_source/question-9-pass-0.py
+py_source/question-90-pass-0.py
+py_source/question-91-pass-0.py
+py_source/question-92-pass-0.py
+py_source/question-93-pass-0.py
+py_source/question-94-pass-0.py
+py_source/question-95-pass-0.py
+py_source/question-96-pass-0.py
+py_source/question-97-pass-0.py
+py_source/question-98-pass-0.py
+py_source/question-99-pass-0.py
+15    E225 missing whitespace around operator
+1     E228 missing whitespace around modulo operator
+4     E251 unexpected spaces around keyword / parameter equals
+7     E275 missing whitespace after keyword
+32    E302 expected 2 blank lines, found 1
+56    E305 expected 2 blank lines after class or function definition, found 1
+40    E501 line too long (87 > 79 characters)
+6     E712 comparison to False should be 'if cond is False:' or 'if not cond:'
+2     E741 ambiguous variable name 'l'
+11    E999 SyntaxError: '[' was never closed
+12    F401 'math.sqrt' imported but unused
+1     F403 'from math import *' used; unable to detect undefined names
+2     F405 'floor' may be undefined, or defined from star imports: math
+17    F821 undefined name 'prime_factors_sum_of_exponents_divisible_by'
+1     F823 local variable 'prime_adam_integers' defined in enclosing scope on line 20 referenced before assignment
+3     F841 local variable 'result' is assigned to but never used
+61    W191 indentation contains tabs
+1301  W291 trailing whitespace
+53    W292 no newline at end of file
+189   W293 blank line contains whitespace
+26    W391 blank line at end of file
