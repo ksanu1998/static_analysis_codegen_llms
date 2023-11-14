@@ -1,5 +1,8 @@
 from collections import defaultdict
 
+
+def countQuadraples(N):from collections import defaultdict
+
 def countQuadruplets(N):
     count = 0
     for a in range(1, int(N**0.5) + 1):

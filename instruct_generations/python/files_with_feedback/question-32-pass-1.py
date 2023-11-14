@@ -1,5 +1,8 @@
 from bisect import bisect_left
 
+
+def numberOfPairs(a, b, n):from bisect import bisect_left
+
 def numberOfPairs(a, b, n):
     count = 0
     for i in range(n):

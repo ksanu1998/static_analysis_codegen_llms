@@ -3,8 +3,7 @@ N = 1000005
 lpf = [0 for i in range(N)]
 
 
-def least_prime_factor():
-mod = 10 ** 9 + 7
+def least_prime_factor():mod = 10 ** 9 + 7
 N = 1000005
 lpf = [0 for i in range(N)]
 

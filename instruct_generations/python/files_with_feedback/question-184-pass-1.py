@@ -2,7 +2,6 @@ import math
 import sys
 
 
-
 def changeTheArray(arr, n):
     # Initialize a variable to store the minimum number of operations
     min_operations = float("inf")

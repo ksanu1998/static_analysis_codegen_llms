@@ -1,7 +1,6 @@
 spf = [0 for i in range(10001)]
 
 
-
 def spf_array(spf):
     for i in range(2, len(spf)):
         if spf[i] == 0:

@@ -1,7 +1,6 @@
 MOD = 1000000007
 
 
-
 def power(x, y, p=MOD):
     if y == 0:
         return 1

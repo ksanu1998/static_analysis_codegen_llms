@@ -1,5 +1,8 @@
 import sys
 
+
+def CalculateDifference(arr, n):import sys
+
 def calculate_difference(arr, n):
     # Calculate the sum of the array
     sum_of_arr = sum(arr)

@@ -1,7 +1,6 @@
 from math import sqrt
 
 
-
 def isPentadecagon(N):
     # A pentadecagonal number is a number that can be expressed as the sum of three squares
     # For example, 10 is a pentadecagonal number because it can be expressed as 3^2 + 2^2 + 1^2

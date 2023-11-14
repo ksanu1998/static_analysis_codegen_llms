@@ -1,4 +1,7 @@
-import math
+from math import sqrt, ceil, floor
+
+
+def constructArrayWithGivenLCM(N):import math
 
 def constructArrayWithGivenLCM(N):
     # Find the greatest common divisor of 1 to N

@@ -1,7 +1,6 @@
 from math import ceil, floor
 
 
-
 def sum(N, X, Y):
     count = 0
     for i in range(1, N+1):

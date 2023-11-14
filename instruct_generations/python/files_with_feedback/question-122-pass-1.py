@@ -4,7 +4,6 @@ factorial = [0] * N
 modinverse = [0] * N
 
 
-
 def factorialfun():
     global factorial, mod
     factorial[0] = 1

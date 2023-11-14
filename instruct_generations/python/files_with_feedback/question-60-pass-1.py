@@ -1,7 +1,6 @@
 import math
 
 
-
 def divisorsSame(n):
     even_divisors = 0
     odd_divisors = 0

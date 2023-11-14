@@ -1,4 +1,10 @@
 MAX = 100000
+graph = [[]for i in range(MAX + 1)]
+Prime = [True for i in range(MAX + 1)]
+height = [0 for i in range(MAX + 1)]
+
+
+def SieveOfEratosthenes():MAX = 100000
 graph = [[] for i in range(MAX + 1)]
 Prime = [True for i in range(MAX + 1)]
 height = [0 for i in range(MAX + 1)]

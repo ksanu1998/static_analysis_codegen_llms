@@ -1,7 +1,6 @@
 from math import sqrt, pow
 
 
-
 def isPerfectPower(n):
     if n == 1:
         return True

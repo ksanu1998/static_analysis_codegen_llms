@@ -1,4 +1,11 @@
 import math
+N = 100001
+adj = [[]for i in range(N)]
+a = [0 for i in range(N)]
+ans = [0 for i in range(N)]
+
+
+def hasOddNumberOfDivisors(n):import math
 
 N = 100001
 adj = [[] for i in range(N)]

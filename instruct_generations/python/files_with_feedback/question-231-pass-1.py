@@ -1,6 +1,9 @@
 import math as mt
 
 
+def checkSub(sub, s):import math as mt
+
+
 def check_sub(sub, s):
     if len(sub) == 0:
         return s == 0

@@ -1,5 +1,8 @@
 import math
 
+
+def ways(n):import math
+
 def ways(n):
     if n == 0:
         return 1

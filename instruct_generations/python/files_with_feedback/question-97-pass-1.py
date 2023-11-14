@@ -1,8 +1,7 @@
 from math import sqrt
 
 
-def dydx(x, y):
-"""
+def dydx(x, y):"""
     Compute the derivative of the function y(x) using the 4th order Gill method.
 
     Args:

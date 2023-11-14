@@ -1,7 +1,6 @@
 import math
 
 
-
 def minAbsDiff(n):
     # Find the closest power of 2 to n
     power = int(math.log(n, 2))

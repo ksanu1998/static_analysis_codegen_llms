@@ -1,5 +1,8 @@
 from math import ceil, sqrt
 
+
+def FermatFactors(n):from math import ceil, sqrt
+
 def FermatFactors(n):
     a = int(n ** 0.5) + 1
     for i in range(2, a):

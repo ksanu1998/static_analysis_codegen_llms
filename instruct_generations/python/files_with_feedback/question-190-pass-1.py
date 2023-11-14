@@ -1,5 +1,8 @@
 import math
 
+
+def primeFactors(n, freq):import math
+
 def primeFactors(n, freq):
     i = 2
     while i * i <= n:

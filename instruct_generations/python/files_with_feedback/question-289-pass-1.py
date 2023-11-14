@@ -1,4 +1,4 @@
-import math
+def sum(x, n):import math
 
 def sum(x, n):
     result = 0

@@ -1,7 +1,6 @@
 import sys
 
 
-
 def maxSubArraySum(a, n, k, i):
     if i == n:
         return 0

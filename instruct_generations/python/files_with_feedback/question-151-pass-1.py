@@ -1,4 +1,4 @@
-import math
+def nCr(n, r):import math
 
 def nCr(n, r):
     if r > n - r:

@@ -1,7 +1,6 @@
 from math import gcd, sqrt
 
 
-
 def sumcommDiv(a, b):
     # Find the greatest common divisor of a and b
     g = gcd(a, b)

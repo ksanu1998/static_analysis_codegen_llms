@@ -1,5 +1,8 @@
 import sys
 
+
+def kthNonDivisible(N, K):import sys
+
 def kthNonDivisible(N, K):
     count = 0
     for i in range(1, N*K + 1):

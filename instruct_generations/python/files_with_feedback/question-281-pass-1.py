@@ -1,4 +1,9 @@
 import math as mt
+MAX = 10000
+prime = [True for i in range(MAX + 1)]
+
+
+def SieveOfErastosthenes():import math as mt
 
 MAX = 10000
 prime = [True for i in range(MAX + 1)]

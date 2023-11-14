@@ -1,5 +1,8 @@
 from math import pow, ceil
 
+
+def solve(n):from math import pow, ceil
+
 def solve(n):
     for i in range(1, int(ceil(n ** 0.25))):
         j = n - i ** 4

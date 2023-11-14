@@ -1,5 +1,8 @@
 import math
 
+
+def isConcentrichexagonal(N):import math
+
 def isConcentrichexagonal(N):
     # Find the number of digits in N
     num_digits = len(str(N))

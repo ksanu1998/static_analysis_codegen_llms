@@ -1,7 +1,6 @@
 mod = 1000000007
 
 
-
 def countSubsets(a, n):
     # Initialize the dp array
     dp = [1] * (n + 1)

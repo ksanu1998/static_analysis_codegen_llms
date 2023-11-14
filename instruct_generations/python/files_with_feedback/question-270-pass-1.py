@@ -1,5 +1,8 @@
 from math import sqrt
 
+
+def findAandB(N):from math import sqrt
+
 def findAandB(N):
     for i in range(1, int(sqrt(N)) + 1):
         b = N - i

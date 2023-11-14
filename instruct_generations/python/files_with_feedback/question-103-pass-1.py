@@ -1,7 +1,6 @@
 from math import sqrt
 
 
-
 def check(X, K):
     for i in range(2, int(sqrt(X)) + 1):
         if X % i == 0:

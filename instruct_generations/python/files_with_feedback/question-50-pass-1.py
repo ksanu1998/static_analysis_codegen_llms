@@ -1,7 +1,6 @@
 import math
 
 
-
 def isComposite(n):
     if n <= 1:
         return False

@@ -1,7 +1,6 @@
 import math
 
 
-
 def check(A, B):
     if A == B:
         return True

@@ -1,5 +1,8 @@
 import math
 
+
+def insertPF(primeFact, fact):import math
+
 def insertPF(primeFact, fact):
     if fact in primeFact:
         return primeFact

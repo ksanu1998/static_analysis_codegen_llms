@@ -1,6 +1,10 @@
 import sys
 from math import sqrt
 
+
+def min_moves(n):import sys
+from math import sqrt
+
 def min_moves(n):
     # Initialize variables
     min_moves = 0

@@ -1,7 +1,6 @@
 from math import sqrt
 
 
-
 def isoctagonal(N):
     # Check if N is a perfect square
     if int(sqrt(N)) ** 2 == N:
