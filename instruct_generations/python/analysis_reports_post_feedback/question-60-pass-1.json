@@ -1,0 +1,12 @@
+{
+  "./files_with_feedback/question-60-pass-1.py": [
+    {
+      "code": "E303",
+      "filename": "./files_with_feedback/question-60-pass-1.py",
+      "line_number": 5,
+      "column_number": 1,
+      "text": "too many blank lines (3)",
+      "physical_line": "def divisorsSame(n):\n"
+    }
+  ]
+}
