@@ -105,12 +105,12 @@
 ./instruct_generations/python/files_with_feedback/question-95-pass-1.py
 ./instruct_generations/python/files_with_feedback/question-97-pass-1.py
 22    E225 missing whitespace around operator
-40    E302 expected 2 blank lines, found 1
+41    E302 expected 2 blank lines, found 1
 33    E303 too many blank lines (3)
 16    E501 line too long (88 > 79 characters)
 4     E741 ambiguous variable name 'l'
-6     E999 IndentationError: expected an indented block after function definition on line 8
-40    F401 'math' imported but unused
+5     E999 IndentationError: expected an indented block after function definition on line 8
+41    F401 'math' imported but unused
 2     F403 'from math import *' used; unable to detect undefined names
 1     F523 '...'.format(...) has unused arguments at position(s): 1
 4     F821 undefined name 'random'
