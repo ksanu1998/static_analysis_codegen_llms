@@ -2,10 +2,15 @@ import json
 import argparse
 from collections import Counter
 
+
 def get_error_ids(json_data, file_key):
     error_ids = set()
 
-    if file_key in json_data and "errors" in json_data[file_key] and "error" in json_data[file_key]["errors"]:
+    if (
+        file_key in json_data
+        and "errors" in json_data[file_key]
+        and "error" in json_data[file_key]["errors"]
+    ):
         errors = json_data[file_key]["errors"]["error"]
 
         # Handle the case where "error" is a list of errors
@@ -19,6 +24,7 @@ def get_error_ids(json_data, file_key):
             error_ids.add(error_id)
 
     return error_ids
+
 
 def compare_error_ids(file1_data, file2_data):
     common_errors = {}
@@ -34,13 +40,18 @@ def compare_error_ids(file1_data, file2_data):
 
     return common_errors
 
+
 def count_error_frequencies(json_data, common_errors):
     error_frequencies = Counter()
 
     for file_key, error_ids in common_errors.items():
         for error_id in error_ids:
             for file_data_key, file_data in json_data.items():
-                if file_data_key == file_key and "errors" in file_data and "error" in file_data["errors"]:
+                if (
+                    file_data_key == file_key
+                    and "errors" in file_data
+                    and "error" in file_data["errors"]
+                ):
                     errors = file_data["errors"]["error"]
 
                     # Handle the case where "error" is a list of errors
@@ -56,10 +67,13 @@ def count_error_frequencies(json_data, common_errors):
 
     return error_frequencies
 
+
 def main():
-    parser = argparse.ArgumentParser(description='Compare JSON files and find common errors on a per-key basis.')
-    parser.add_argument('file1', help='Path to the first JSON file')
-    parser.add_argument('file2', help='Path to the second JSON file')
+    parser = argparse.ArgumentParser(
+        description="Compare JSON files and find common errors on a per-key basis."
+    )
+    parser.add_argument("file1", help="Path to the first JSON file")
+    parser.add_argument("file2", help="Path to the second JSON file")
 
     args = parser.parse_args()
 
@@ -89,6 +103,7 @@ def main():
             print(f"{error_id}\t{frequency}")
     else:
         print("No common error IDs found.")
+
 
 if __name__ == "__main__":
     main()
