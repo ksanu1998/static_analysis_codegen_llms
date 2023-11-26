@@ -1,12 +1,13 @@
-"""
-Finds repitions in error codes in JSON files contained in source and target directories
-on a per file basis and counted across files
-"""
-
 import json
 import os
 import argparse
 from collections import Counter
+
+
+"""
+Finds repitions in error codes in JSON files contained in source and target directories
+on a per file basis and counted across files
+"""
 
 
 def load_json(file_path):

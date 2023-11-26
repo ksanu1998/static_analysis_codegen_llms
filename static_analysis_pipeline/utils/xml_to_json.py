@@ -1,13 +1,16 @@
+import glob
+import json
 import os
 import sys
 import xml.etree.ElementTree as ET
-import json
+from multiprocessing import Pool
+
 
 def xml_to_dict(element):
     result = {}
-    result['tag'] = element.tag
-    result['attributes'] = element.attrib
-    result['text'] = element.text
+    result["tag"] = element.tag
+    result["attributes"] = element.attrib
+    result["text"] = element.text
 
     for child in element:
         if child.tag in result:
@@ -20,31 +23,34 @@ def xml_to_dict(element):
 
     return result
 
+
+@staticmethod
+def process_xml_file(file_path):
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+    json_data = xml_to_dict(root)
+    base_filename = (
+        os.path.splitext(os.path.basename(file_path))[0]
+        .replace("_error_file", "")
+        .replace(".xml", ".cpp")
+    )
+    return base_filename, json_data
+
+
 def convert_all_xml_to_json(xml_directory, output_json_path):
     json_data_dict = {}
+    xml_files = glob.glob(os.path.join(xml_directory, "*_error_file.xml"))
 
-    # Iterate over each file in the specified directory
-    for filename in os.listdir(xml_directory):
-        if filename.endswith("_error_file.xml"):
-            # Extract the base filename without the extension
-            base_filename = os.path.splitext(filename)[0]
-            source_filename = base_filename.replace("_error_file", "") + ".cpp"
+    with Pool(processes=os.cpu_count()) as pool:
+        results = pool.map(process_xml_file, xml_files)
 
-            file_path = os.path.join(xml_directory, filename)
-
-            # Read XML from file
-            tree = ET.parse(file_path)
-            root = tree.getroot()
-
-            # Convert XML to JSON
-            json_data = xml_to_dict(root)
-
-            # Add to the dictionary with the source filename as the key
-            json_data_dict[source_filename] = json_data
+    for base_filename, json_data in results:
+        json_data_dict[base_filename] = json_data
 
     # Write the dictionary to a JSON file
-    with open(output_json_path, 'w') as json_file:
+    with open(output_json_path, "w") as json_file:
         json.dump(json_data_dict, json_file, indent=2)
+
 
 if __name__ == "__main__":
     # Check if the correct number of command-line arguments is provided
