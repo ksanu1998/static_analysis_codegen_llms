@@ -1,0 +1,12 @@
+{
+  "./files/question-886-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-886-pass-1.py",
+      "line_number": 6,
+      "column_number": 20,
+      "text": "missing whitespace around operator",
+      "physical_line": "    return root % 1!= 0\n"
+    }
+  ]
+}

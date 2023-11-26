@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-620-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-620-pass-1.py",
+      "line_number": 19,
+      "column_number": 6,
+      "text": "SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?",
+      "physical_line": "    print \"Sentence is palindrome.\"\n"
+    }
+  ]
+}

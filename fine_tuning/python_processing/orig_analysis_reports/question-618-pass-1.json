@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-618-pass-1.py": [
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-618-pass-1.py",
+      "line_number": 12,
+      "column_number": 34,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "            if (isVowel(str1[j]) == False):\n"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "./files/question-438-pass-1.py": [
+    {
+      "code": "E306",
+      "filename": "./files/question-438-pass-1.py",
+      "line_number": 7,
+      "column_number": 5,
+      "text": "expected 1 blank line before a nested definition, found 0",
+      "physical_line": "    def rec(i, val, coeff, d):\n"
+    },
+    {
+      "code": "F823",
+      "filename": "./files/question-438-pass-1.py",
+      "line_number": 10,
+      "column_number": 17,
+      "text": "local variable 'sol' defined in enclosing scope on line 6 referenced before assignment",
+      "physical_line": "                sol += 1\n"
+    },
+    {
+      "code": "F841",
+      "filename": "./files/question-438-pass-1.py",
+      "line_number": 10,
+      "column_number": 17,
+      "text": "local variable 'sol' is assigned to but never used",
+      "physical_line": "                sol += 1\n"
+    }
+  ]
+}

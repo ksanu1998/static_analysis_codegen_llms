@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-319-pass-1.py": [
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-319-pass-1.py",
+      "line_number": 9,
+      "column_number": 9,
+      "text": "local variable 'c' is assigned to but never used",
+      "physical_line": "        c = (ord(s[i]) - ord('a'))\n"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "./files/question-489-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-489-pass-1.py",
+      "line_number": 11,
+      "column_number": 80,
+      "text": "line too long (80 > 79 characters)",
+      "physical_line": "            # If the character is a palindrome, update the start and end indices\n"
+    }
+  ]
+}

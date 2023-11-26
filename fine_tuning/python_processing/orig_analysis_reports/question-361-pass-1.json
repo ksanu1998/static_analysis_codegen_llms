@@ -1,0 +1,36 @@
+{
+  "./orig_files/question-361-pass-1.py": [
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-361-pass-1.py",
+      "line_number": 13,
+      "column_number": 27,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "        if (vis[n - 1][m] == False):\n"
+    },
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-361-pass-1.py",
+      "line_number": 16,
+      "column_number": 27,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "        if (vis[n][m + 1] == False):\n"
+    },
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-361-pass-1.py",
+      "line_number": 19,
+      "column_number": 27,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "        if (vis[n][m - 1] == False):\n"
+    },
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-361-pass-1.py",
+      "line_number": 22,
+      "column_number": 27,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "        if (vis[n + 1][m] == False):\n"
+    }
+  ]
+}

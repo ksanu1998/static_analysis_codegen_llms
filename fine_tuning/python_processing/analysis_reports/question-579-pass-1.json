@@ -1,0 +1,44 @@
+{
+  "./files/question-579-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-579-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'sys' imported but unused",
+      "physical_line": "import sys\n"
+    },
+    {
+      "code": "F401",
+      "filename": "./files/question-579-pass-1.py",
+      "line_number": 2,
+      "column_number": 1,
+      "text": "'math' imported but unused",
+      "physical_line": "import math\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-579-pass-1.py",
+      "line_number": 6,
+      "column_number": 80,
+      "text": "line too long (82 > 79 characters)",
+      "physical_line": "    # Initialize a list to store the maximum length of the signal at each position\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-579-pass-1.py",
+      "line_number": 13,
+      "column_number": 80,
+      "text": "line too long (87 > 79 characters)",
+      "physical_line": "            # If it is, set the maximum length at that position to the current position\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-579-pass-1.py",
+      "line_number": 18,
+      "column_number": 80,
+      "text": "line too long (148 > 79 characters)",
+      "physical_line": "                # If there is a previous 1, set the maximum length at the current position to the maximum of the current position and the previous 1\n"
+    }
+  ]
+}

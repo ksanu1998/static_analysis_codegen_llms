@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-747-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-747-pass-1.py",
+      "line_number": 1,
+      "column_number": 29,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def build_tree(b, seg_tree, l, r, vertex):\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-747-pass-1.py",
+      "line_number": 18,
+      "column_number": 36,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def range_gcd(seg_tree, v, tl, tr, l, r):\n"
+    }
+  ]
+}

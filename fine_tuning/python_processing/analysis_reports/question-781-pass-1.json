@@ -1,0 +1,12 @@
+{
+  "./files/question-781-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-781-pass-1.py",
+      "line_number": 16,
+      "column_number": 80,
+      "text": "line too long (97 > 79 characters)",
+      "physical_line": "            # If so, update the current product to be the remainder of dividing it by the modulus\n"
+    }
+  ]
+}

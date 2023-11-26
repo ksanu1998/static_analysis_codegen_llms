@@ -1,0 +1,20 @@
+{
+  "./files/question-695-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-695-pass-1.py",
+      "line_number": 2,
+      "column_number": 80,
+      "text": "line too long (88 > 79 characters)",
+      "physical_line": "    return (sign(a, b, c) == sign(x1, y1, a, b) and sign(a, b, c) == sign(x2, y2, a, b))\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files/question-695-pass-1.py",
+      "line_number": 4,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 1",
+      "physical_line": "def sign(a, b, c):\n"
+    }
+  ]
+}

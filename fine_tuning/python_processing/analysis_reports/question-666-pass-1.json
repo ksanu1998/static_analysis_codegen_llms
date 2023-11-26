@@ -1,0 +1,12 @@
+{
+  "./files/question-666-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./files/question-666-pass-1.py",
+      "line_number": 4,
+      "column_number": 27,
+      "text": "SyntaxError: invalid syntax",
+      "physical_line": null
+    }
+  ]
+}

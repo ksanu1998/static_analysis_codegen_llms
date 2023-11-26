@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-872-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-872-pass-1.py",
+      "line_number": 3,
+      "column_number": 5,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "    l = 2 * i + 1\n"
+    }
+  ]
+}

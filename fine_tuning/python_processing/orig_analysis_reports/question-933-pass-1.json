@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-933-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-933-pass-1.py",
+      "line_number": 8,
+      "column_number": 2,
+      "text": "SyntaxError: unterminated string literal (detected at line 8)",
+      "physical_line": null
+    }
+  ]
+}

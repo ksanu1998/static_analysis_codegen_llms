@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-513-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-513-pass-1.py",
+      "line_number": 5,
+      "column_number": 26,
+      "text": "SyntaxError: invalid syntax",
+      "physical_line": "    print(re .compile(r '<[^>]+>').sub('', strr))\n"
+    }
+  ]
+}

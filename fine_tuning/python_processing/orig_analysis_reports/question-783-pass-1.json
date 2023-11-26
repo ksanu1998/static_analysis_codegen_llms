@@ -1,0 +1,28 @@
+{
+  "./orig_files/question-783-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-783-pass-1.py",
+      "line_number": 10,
+      "column_number": 80,
+      "text": "line too long (83 > 79 characters)",
+      "physical_line": "        dp[i] = max(dp[i - 1] + abs(grid[0][i - 1] - grid[1][i - 1]), dp[i - 2] + \\\n                    abs(grid[0][i - 2] - grid[0][i - 1]) + abs(grid[1][i - 2] - grid[1][i - 1]))\n"
+    },
+    {
+      "code": "E502",
+      "filename": "./orig_files/question-783-pass-1.py",
+      "line_number": 10,
+      "column_number": 83,
+      "text": "the backslash is redundant between brackets",
+      "physical_line": "        dp[i] = max(dp[i - 1] + abs(grid[0][i - 1] - grid[1][i - 1]), dp[i - 2] + \\\n                    abs(grid[0][i - 2] - grid[0][i - 1]) + abs(grid[1][i - 2] - grid[1][i - 1]))\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-783-pass-1.py",
+      "line_number": 11,
+      "column_number": 80,
+      "text": "line too long (96 > 79 characters)",
+      "physical_line": "        dp[i] = max(dp[i - 1] + abs(grid[0][i - 1] - grid[1][i - 1]), dp[i - 2] + \\\n                    abs(grid[0][i - 2] - grid[0][i - 1]) + abs(grid[1][i - 2] - grid[1][i - 1]))\n"
+    }
+  ]
+}

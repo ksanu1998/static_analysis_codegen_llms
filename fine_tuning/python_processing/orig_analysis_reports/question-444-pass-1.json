@@ -1,0 +1,36 @@
+{
+  "./orig_files/question-444-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-444-pass-1.py",
+      "line_number": 4,
+      "column_number": 5,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "    l = 0\n"
+    },
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-444-pass-1.py",
+      "line_number": 12,
+      "column_number": 13,
+      "text": "local variable 'l' is assigned to but never used",
+      "physical_line": "            l = ir = i + Z[i] - 1\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-444-pass-1.py",
+      "line_number": 12,
+      "column_number": 13,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "            l = ir = i + Z[i] - 1\n"
+    },
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-444-pass-1.py",
+      "line_number": 12,
+      "column_number": 17,
+      "text": "local variable 'ir' is assigned to but never used",
+      "physical_line": "            l = ir = i + Z[i] - 1\n"
+    }
+  ]
+}

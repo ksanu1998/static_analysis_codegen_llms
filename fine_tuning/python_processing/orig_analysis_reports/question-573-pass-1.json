@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-573-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-573-pass-1.py",
+      "line_number": 5,
+      "column_number": 9,
+      "text": "undefined name 'swap'",
+      "physical_line": "        swap(a, b)\n"
+    }
+  ]
+}

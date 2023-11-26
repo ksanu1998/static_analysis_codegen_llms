@@ -1,0 +1,12 @@
+{
+  "./files/question-311-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./files/question-311-pass-1.py",
+      "line_number": 3,
+      "column_number": 16,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "dp = [[[[0 for l in range(170)]for k in range(2)]\n"
+    }
+  ]
+}

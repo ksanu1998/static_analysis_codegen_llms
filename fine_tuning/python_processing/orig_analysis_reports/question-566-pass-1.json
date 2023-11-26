@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-566-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-566-pass-1.py",
+      "line_number": 9,
+      "column_number": 16,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def findNumber(l, r):\n"
+    },
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-566-pass-1.py",
+      "line_number": 10,
+      "column_number": 5,
+      "text": "local variable 'a' is assigned to but never used",
+      "physical_line": "    a = str(l)\n"
+    }
+  ]
+}

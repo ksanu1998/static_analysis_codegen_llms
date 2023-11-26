@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-323-pass-1.py": [
+    {
+      "code": "E129",
+      "filename": "./orig_files/question-323-pass-1.py",
+      "line_number": 13,
+      "column_number": 17,
+      "text": "visually indented line with same indent as next logical line",
+      "physical_line": "                [j] - sum[i][j - cur_max] + sum[i - cur_max][j - cur_max] <= k):\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-323-pass-1.py",
+      "line_number": 13,
+      "column_number": 80,
+      "text": "line too long (80 > 79 characters)",
+      "physical_line": "                [j] - sum[i][j - cur_max] + sum[i - cur_max][j - cur_max] <= k):\n"
+    }
+  ]
+}

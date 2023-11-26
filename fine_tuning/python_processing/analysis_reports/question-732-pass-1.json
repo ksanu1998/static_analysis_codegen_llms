@@ -1,0 +1,20 @@
+{
+  "./files/question-732-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-732-pass-1.py",
+      "line_number": 6,
+      "column_number": 80,
+      "text": "line too long (123 > 79 characters)",
+      "physical_line": "    distances = [sqrt((midpoints[i][0] - arr[N // 2][0]) ** 2 + (midpoints[i][1] - arr[N // 2][1]) ** 2) for i in range(N)]\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-732-pass-1.py",
+      "line_number": 8,
+      "column_number": 80,
+      "text": "line too long (93 > 79 characters)",
+      "physical_line": "    # Check if the distances between the midpoints and the center of the circle are all equal\n"
+    }
+  ]
+}

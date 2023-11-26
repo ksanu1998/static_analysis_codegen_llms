@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-734-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-734-pass-1.py",
+      "line_number": 4,
+      "column_number": 20,
+      "text": "undefined name 'e'",
+      "physical_line": "    while (x - y > e):\n"
+    }
+  ]
+}

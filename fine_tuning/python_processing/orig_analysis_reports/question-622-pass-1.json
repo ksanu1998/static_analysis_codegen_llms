@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-622-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-622-pass-1.py",
+      "line_number": 9,
+      "column_number": 16,
+      "text": "undefined name 'true'",
+      "physical_line": "        return true\n"
+    }
+  ]
+}

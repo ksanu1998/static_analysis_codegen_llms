@@ -1,0 +1,36 @@
+{
+  "./orig_files/question-338-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-338-pass-1.py",
+      "line_number": 30,
+      "column_number": 80,
+      "text": "line too long (116 > 79 characters)",
+      "physical_line": "                                                                costs) + costs[rem - 1][dest - 1] + mincost(idx + 1,\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-338-pass-1.py",
+      "line_number": 31,
+      "column_number": 80,
+      "text": "line too long (112 > 79 characters)",
+      "physical_line": "                                                                                                            src,\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-338-pass-1.py",
+      "line_number": 32,
+      "column_number": 80,
+      "text": "line too long (113 > 79 characters)",
+      "physical_line": "                                                                                                            dest,\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-338-pass-1.py",
+      "line_number": 33,
+      "column_number": 80,
+      "text": "line too long (115 > 79 characters)",
+      "physical_line": "                                                                                                            costs))\n"
+    }
+  ]
+}

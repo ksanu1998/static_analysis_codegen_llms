@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-398-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-398-pass-1.py",
+      "line_number": 2,
+      "column_number": 5,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "    l = len(st)\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-398-pass-1.py",
+      "line_number": 11,
+      "column_number": 80,
+      "text": "line too long (103 > 79 characters)",
+      "physical_line": "                elif ((arr[i] * 100 + arr[j] * 10 + arr[k]) % 8 == 0 and i != j and j != k and i != k):\n"
+    }
+  ]
+}

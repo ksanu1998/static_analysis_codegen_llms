@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-630-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./orig_files/question-630-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math' imported but unused",
+      "physical_line": "import math\n"
+    }
+  ]
+}

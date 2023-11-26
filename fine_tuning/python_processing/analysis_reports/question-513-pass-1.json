@@ -1,0 +1,36 @@
+{
+  "./files/question-513-pass-1.py": [
+    {
+      "code": "E231",
+      "filename": "./files/question-513-pass-1.py",
+      "line_number": 4,
+      "column_number": 25,
+      "text": "missing whitespace after ':'",
+      "physical_line": "def RemoveHTMLTags(strr):import re\n"
+    },
+    {
+      "code": "F401",
+      "filename": "./files/question-513-pass-1.py",
+      "line_number": 4,
+      "column_number": 26,
+      "text": "'re' imported but unused",
+      "physical_line": "def RemoveHTMLTags(strr):import re\n"
+    },
+    {
+      "code": "F811",
+      "filename": "./files/question-513-pass-1.py",
+      "line_number": 6,
+      "column_number": 1,
+      "text": "redefinition of unused 'RemoveHTMLTags' from line 4",
+      "physical_line": "def RemoveHTMLTags(strr):\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files/question-513-pass-1.py",
+      "line_number": 6,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 1",
+      "physical_line": "def RemoveHTMLTags(strr):\n"
+    }
+  ]
+}

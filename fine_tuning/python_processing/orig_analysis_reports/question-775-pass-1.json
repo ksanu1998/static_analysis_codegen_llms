@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-775-pass-1.py": [
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-775-pass-1.py",
+      "line_number": 5,
+      "column_number": 5,
+      "text": "local variable 'sum' is assigned to but never used",
+      "physical_line": "    sum = 0\n"
+    }
+  ]
+}

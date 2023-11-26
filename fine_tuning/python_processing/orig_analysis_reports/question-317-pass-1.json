@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-317-pass-1.py": [
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-317-pass-1.py",
+      "line_number": 17,
+      "column_number": 5,
+      "text": "local variable 'ht' is assigned to but never used",
+      "physical_line": "    ht = 0\n"
+    }
+  ]
+}

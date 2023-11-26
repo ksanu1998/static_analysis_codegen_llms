@@ -1,0 +1,12 @@
+{
+  "./files/question-760-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-760-pass-1.py",
+      "line_number": 8,
+      "column_number": 80,
+      "text": "line too long (116 > 79 characters)",
+      "physical_line": "    # Calculate the absolute difference between the floor of the sum and the sum of every array element divided by X\n"
+    }
+  ]
+}

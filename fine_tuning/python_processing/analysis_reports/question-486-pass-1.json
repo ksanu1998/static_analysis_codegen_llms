@@ -1,0 +1,12 @@
+{
+  "./files/question-486-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-486-pass-1.py",
+      "line_number": 8,
+      "column_number": 80,
+      "text": "line too long (89 > 79 characters)",
+      "physical_line": "        # If the character 'z' is not found, the string is already in lexicographic order\n"
+    }
+  ]
+}

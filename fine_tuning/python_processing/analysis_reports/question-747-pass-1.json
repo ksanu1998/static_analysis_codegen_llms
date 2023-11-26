@@ -1,0 +1,28 @@
+{
+  "./files/question-747-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./files/question-747-pass-1.py",
+      "line_number": 1,
+      "column_number": 29,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def build_tree(b, seg_tree, l, r, vertex):\n"
+    },
+    {
+      "code": "W293",
+      "filename": "./files/question-747-pass-1.py",
+      "line_number": 5,
+      "column_number": 1,
+      "text": "blank line contains whitespace",
+      "physical_line": "    \n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-747-pass-1.py",
+      "line_number": 7,
+      "column_number": 80,
+      "text": "line too long (116 > 79 characters)",
+      "physical_line": "    seg_tree[vertex] = max(build_tree(b, seg_tree, l, mid, vertex*2), build_tree(b, seg_tree, mid+1, r, vertex*2+1))\n"
+    }
+  ]
+}

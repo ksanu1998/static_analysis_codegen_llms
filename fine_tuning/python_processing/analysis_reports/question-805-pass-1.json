@@ -1,0 +1,12 @@
+{
+  "./files/question-805-pass-1.py": [
+    {
+      "code": "F841",
+      "filename": "./files/question-805-pass-1.py",
+      "line_number": 17,
+      "column_number": 17,
+      "text": "local variable 'min_idx' is assigned to but never used",
+      "physical_line": "                min_idx = j\n"
+    }
+  ]
+}

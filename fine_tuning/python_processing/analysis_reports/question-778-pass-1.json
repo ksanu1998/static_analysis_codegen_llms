@@ -1,0 +1,12 @@
+{
+  "./files/question-778-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-778-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'collections.defaultdict' imported but unused",
+      "physical_line": "from collections import defaultdict\n"
+    }
+  ]
+}

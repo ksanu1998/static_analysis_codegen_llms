@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-650-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-650-pass-1.py",
+      "line_number": 13,
+      "column_number": 80,
+      "text": "line too long (90 > 79 characters)",
+      "physical_line": "                                            (sys .maxsize // 10) and (Str[i] - '0') > 7)):\n"
+    }
+  ]
+}

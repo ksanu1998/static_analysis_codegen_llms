@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-887-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-887-pass-1.py",
+      "line_number": 7,
+      "column_number": 2,
+      "text": "IndentationError: expected an indented block after 'for' statement on line 6",
+      "physical_line": "print(curr_term, end=' ')\n"
+    }
+  ]
+}

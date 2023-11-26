@@ -1,0 +1,12 @@
+{
+  "./files/question-426-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-426-pass-1.py",
+      "line_number": 8,
+      "column_number": 34,
+      "text": "missing whitespace around operator",
+      "physical_line": "    if dp[position][previous_sum]!= -1:\n"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "./files/question-782-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-782-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'copy.deepcopy' imported but unused",
+      "physical_line": "from copy import deepcopy\n"
+    }
+  ]
+}

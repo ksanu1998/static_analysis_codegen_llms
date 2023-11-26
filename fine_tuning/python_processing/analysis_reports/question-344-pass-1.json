@@ -1,0 +1,28 @@
+{
+  "./files/question-344-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-344-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'numpy as np' imported but unused",
+      "physical_line": "import numpy as np\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-344-pass-1.py",
+      "line_number": 8,
+      "column_number": 80,
+      "text": "line too long (80 > 79 characters)",
+      "physical_line": "    # Initialize variables to store the maximum marks and the corresponding time\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-344-pass-1.py",
+      "line_number": 19,
+      "column_number": 80,
+      "text": "line too long (100 > 79 characters)",
+      "physical_line": "            # Update the maximum marks and time if the current topic is better than the previous one\n"
+    }
+  ]
+}

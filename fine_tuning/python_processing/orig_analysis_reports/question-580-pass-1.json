@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-580-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-580-pass-1.py",
+      "line_number": 1,
+      "column_number": 27,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def printLargestString(s, l, r):\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-580-pass-1.py",
+      "line_number": 17,
+      "column_number": 5,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "    l = 3\n"
+    }
+  ]
+}

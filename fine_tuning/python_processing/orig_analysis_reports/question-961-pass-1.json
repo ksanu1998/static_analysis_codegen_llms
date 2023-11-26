@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-961-pass-1.py": [
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-961-pass-1.py",
+      "line_number": 10,
+      "column_number": 13,
+      "text": "local variable 'z' is assigned to but never used",
+      "physical_line": "            z = seq .index(b * i)\n"
+    }
+  ]
+}

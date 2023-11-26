@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-584-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-584-pass-1.py",
+      "line_number": 2,
+      "column_number": 5,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "    l = len(s)\n"
+    }
+  ]
+}

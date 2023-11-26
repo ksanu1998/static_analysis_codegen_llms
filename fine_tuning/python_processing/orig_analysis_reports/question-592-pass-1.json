@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-592-pass-1.py": [
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-592-pass-1.py",
+      "line_number": 41,
+      "column_number": 5,
+      "text": "local variable 'flag' is assigned to but never used",
+      "physical_line": "    flag = 1\n"
+    },
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-592-pass-1.py",
+      "line_number": 43,
+      "column_number": 43,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "        if (search_mod(root, sentence[i]) == False):\n"
+    }
+  ]
+}

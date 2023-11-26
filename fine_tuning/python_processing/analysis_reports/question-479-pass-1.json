@@ -1,0 +1,76 @@
+{
+  "./files/question-479-pass-1.py": [
+    {
+      "code": "E231",
+      "filename": "./files/question-479-pass-1.py",
+      "line_number": 1,
+      "column_number": 24,
+      "text": "missing whitespace after ':'",
+      "physical_line": "def isPossible(S, R, N):import math\n"
+    },
+    {
+      "code": "F401",
+      "filename": "./files/question-479-pass-1.py",
+      "line_number": 1,
+      "column_number": 25,
+      "text": "'math' imported but unused",
+      "physical_line": "def isPossible(S, R, N):import math\n"
+    },
+    {
+      "code": "F811",
+      "filename": "./files/question-479-pass-1.py",
+      "line_number": 3,
+      "column_number": 1,
+      "text": "redefinition of unused 'isPossible' from line 1",
+      "physical_line": "def isPossible(S, R, N):\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files/question-479-pass-1.py",
+      "line_number": 3,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 1",
+      "physical_line": "def isPossible(S, R, N):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-479-pass-1.py",
+      "line_number": 7,
+      "column_number": 30,
+      "text": "undefined name 'math'",
+      "physical_line": "    side_length = diameter / math.sqrt(2)\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-479-pass-1.py",
+      "line_number": 9,
+      "column_number": 12,
+      "text": "undefined name 'math'",
+      "physical_line": "    rows = math.ceil(N / side_length)\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-479-pass-1.py",
+      "line_number": 10,
+      "column_number": 12,
+      "text": "undefined name 'math'",
+      "physical_line": "    cols = math.ceil(N / side_length)\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-479-pass-1.py",
+      "line_number": 20,
+      "column_number": 16,
+      "text": "undefined name 'math'",
+      "physical_line": "            if math.sqrt((points[i][j][0] - S[0]) ** 2 + (points[i][j][1] - S[1]) ** 2) <= R:\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-479-pass-1.py",
+      "line_number": 20,
+      "column_number": 80,
+      "text": "line too long (93 > 79 characters)",
+      "physical_line": "            if math.sqrt((points[i][j][0] - S[0]) ** 2 + (points[i][j][1] - S[1]) ** 2) <= R:\n"
+    }
+  ]
+}

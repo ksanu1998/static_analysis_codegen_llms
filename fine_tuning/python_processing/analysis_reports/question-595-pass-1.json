@@ -1,0 +1,12 @@
+{
+  "./files/question-595-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-595-pass-1.py",
+      "line_number": 15,
+      "column_number": 19,
+      "text": "missing whitespace around operator",
+      "physical_line": "        if perm[i]!= 1:\n"
+    }
+  ]
+}

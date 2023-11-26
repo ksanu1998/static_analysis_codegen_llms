@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-911-pass-1.py": [
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-911-pass-1.py",
+      "line_number": 6,
+      "column_number": 24,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "    while ((n % 2 > 0) == False):\n"
+    }
+  ]
+}

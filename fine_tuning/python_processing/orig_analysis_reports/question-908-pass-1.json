@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-908-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-908-pass-1.py",
+      "line_number": 9,
+      "column_number": 6,
+      "text": "IndentationError: expected an indented block after 'for' statement on line 8",
+      "physical_line": "    for i in range(0, n):\n"
+    }
+  ]
+}

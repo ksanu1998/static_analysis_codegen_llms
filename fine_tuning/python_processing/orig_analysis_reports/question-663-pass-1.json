@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-663-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-663-pass-1.py",
+      "line_number": 15,
+      "column_number": 34,
+      "text": "SyntaxError: invalid syntax. Perhaps you forgot a comma?",
+      "physical_line": "    safe = all_rows_filled & (~(rowmask ldmask rdmask))\n"
+    }
+  ]
+}

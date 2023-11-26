@@ -1,0 +1,36 @@
+{
+  "./orig_files/question-460-pass-1.py": [
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-460-pass-1.py",
+      "line_number": 10,
+      "column_number": 28,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "        if (isVowel(st[i]) == False and isVowel(st[i - 1]) == False):\n"
+    },
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-460-pass-1.py",
+      "line_number": 10,
+      "column_number": 60,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "        if (isVowel(st[i]) == False and isVowel(st[i - 1]) == False):\n"
+    },
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-460-pass-1.py",
+      "line_number": 13,
+      "column_number": 51,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "        if (isVowel(st[i]) and isVowel(st[i - 1]) ==\n"
+    },
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-460-pass-1.py",
+      "line_number": 14,
+      "column_number": 46,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "                False and isVowel(st[i + 1]) == False):\n"
+    }
+  ]
+}

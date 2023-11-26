@@ -1,0 +1,12 @@
+{
+  "./files/question-1009-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-1009-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math.log2' imported but unused",
+      "physical_line": "from math import log2\n"
+    }
+  ]
+}

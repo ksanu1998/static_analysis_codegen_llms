@@ -1,0 +1,36 @@
+{
+  "./files/question-692-pass-1.py": [
+    {
+      "code": "E231",
+      "filename": "./files/question-692-pass-1.py",
+      "line_number": 1,
+      "column_number": 38,
+      "text": "missing whitespace after ':'",
+      "physical_line": "def calculate_change(length, breadth):[PYTHON]\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-692-pass-1.py",
+      "line_number": 1,
+      "column_number": 40,
+      "text": "undefined name 'PYTHON'",
+      "physical_line": "def calculate_change(length, breadth):[PYTHON]\n"
+    },
+    {
+      "code": "F811",
+      "filename": "./files/question-692-pass-1.py",
+      "line_number": 2,
+      "column_number": 1,
+      "text": "redefinition of unused 'calculate_change' from line 1",
+      "physical_line": "def calculate_change(length, breadth):\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files/question-692-pass-1.py",
+      "line_number": 2,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 0",
+      "physical_line": "def calculate_change(length, breadth):\n"
+    }
+  ]
+}

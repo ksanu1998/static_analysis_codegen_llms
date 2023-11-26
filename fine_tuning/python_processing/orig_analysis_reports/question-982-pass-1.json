@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-982-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-982-pass-1.py",
+      "line_number": 7,
+      "column_number": 15,
+      "text": "undefined name 'ans'",
+      "physical_line": "        ans = ans + (1 << i) * (k * (k - 1) // 2)\n"
+    }
+  ]
+}

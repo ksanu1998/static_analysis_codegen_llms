@@ -1,0 +1,28 @@
+{
+  "./files/question-319-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-319-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'sys' imported but unused",
+      "physical_line": "import sys\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-319-pass-1.py",
+      "line_number": 13,
+      "column_number": 80,
+      "text": "line too long (86 > 79 characters)",
+      "physical_line": "        # If the character is not in the dictionary, add it and set its frequency to 1\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-319-pass-1.py",
+      "line_number": 16,
+      "column_number": 80,
+      "text": "line too long (80 > 79 characters)",
+      "physical_line": "        # If the character is already in the dictionary, increment its frequency\n"
+    }
+  ]
+}

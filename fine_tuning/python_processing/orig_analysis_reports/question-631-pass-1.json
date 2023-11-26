@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-631-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-631-pass-1.py",
+      "line_number": 7,
+      "column_number": 37,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def createAltStr(str1, str2, start, l):\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-631-pass-1.py",
+      "line_number": 21,
+      "column_number": 5,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "    l = len(str1)\n"
+    }
+  ]
+}

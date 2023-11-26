@@ -1,0 +1,20 @@
+{
+  "./files/question-899-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./files/question-899-pass-1.py",
+      "line_number": 5,
+      "column_number": 52,
+      "text": "undefined name 'r'",
+      "physical_line": "    return math.factorial(n) / (math.factorial(n - r) * math.factorial(r))\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-899-pass-1.py",
+      "line_number": 5,
+      "column_number": 72,
+      "text": "undefined name 'r'",
+      "physical_line": "    return math.factorial(n) / (math.factorial(n - r) * math.factorial(r))\n"
+    }
+  ]
+}

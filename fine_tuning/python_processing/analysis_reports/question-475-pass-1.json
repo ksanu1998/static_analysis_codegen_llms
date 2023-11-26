@@ -1,0 +1,28 @@
+{
+  "./files/question-475-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-475-pass-1.py",
+      "line_number": 9,
+      "column_number": 30,
+      "text": "missing whitespace around operator",
+      "physical_line": "        if str2.find(str1[i])!= -1:\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-475-pass-1.py",
+      "line_number": 13,
+      "column_number": 80,
+      "text": "line too long (97 > 79 characters)",
+      "physical_line": "            # If the character is not present, check if the length is greater than the max length\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-475-pass-1.py",
+      "line_number": 19,
+      "column_number": 80,
+      "text": "line too long (95 > 79 characters)",
+      "physical_line": "    # If the length of the last substring is greater than the max length, update the max length\n"
+    }
+  ]
+}

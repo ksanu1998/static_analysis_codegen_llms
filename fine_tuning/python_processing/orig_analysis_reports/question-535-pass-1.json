@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-535-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-535-pass-1.py",
+      "line_number": 8,
+      "column_number": 25,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def countVowels(string, l, r):\n"
+    }
+  ]
+}

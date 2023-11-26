@@ -1,0 +1,20 @@
+{
+  "./files/question-321-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-321-pass-1.py",
+      "line_number": 11,
+      "column_number": 32,
+      "text": "missing whitespace around operator",
+      "physical_line": "                if dist[u][j-1]!= inf and ed[u][i]!= inf:\n"
+    },
+    {
+      "code": "E225",
+      "filename": "./files/question-321-pass-1.py",
+      "line_number": 11,
+      "column_number": 51,
+      "text": "missing whitespace around operator",
+      "physical_line": "                if dist[u][j-1]!= inf and ed[u][i]!= inf:\n"
+    }
+  ]
+}

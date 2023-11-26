@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-981-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-981-pass-1.py",
+      "line_number": 4,
+      "column_number": 19,
+      "text": "undefined name 'ans'",
+      "physical_line": "            ans = ans + arr[i] & arr[j]\n"
+    }
+  ]
+}

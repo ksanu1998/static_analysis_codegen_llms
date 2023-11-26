@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-422-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-422-pass-1.py",
+      "line_number": 17,
+      "column_number": 9,
+      "text": "undefined name 'result'",
+      "physical_line": "        result += (sum * (nCr(N - 1, n - 1))) / n\n"
+    }
+  ]
+}

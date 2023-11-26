@@ -1,0 +1,12 @@
+{
+  "./files/question-973-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./files/question-973-pass-1.py",
+      "line_number": 3,
+      "column_number": 5,
+      "text": "undefined name 'findNDigitNumsUtil'",
+      "physical_line": "    findNDigitNumsUtil(n, out, 0, 0, 0)\n"
+    }
+  ]
+}

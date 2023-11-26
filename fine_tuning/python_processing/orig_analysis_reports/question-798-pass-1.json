@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-798-pass-1.py": [
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-798-pass-1.py",
+      "line_number": 40,
+      "column_number": 22,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "while (st .isEmpty() == False):\n"
+    }
+  ]
+}

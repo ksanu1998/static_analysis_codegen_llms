@@ -1,0 +1,20 @@
+{
+  "./files/question-353-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./files/question-353-pass-1.py",
+      "line_number": 1,
+      "column_number": 18,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def countWays(n, l, r):\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-353-pass-1.py",
+      "line_number": 16,
+      "column_number": 80,
+      "text": "line too long (90 > 79 characters)",
+      "physical_line": "    # Return the number of ways to form an array such that the total sum is divisible by 2\n"
+    }
+  ]
+}

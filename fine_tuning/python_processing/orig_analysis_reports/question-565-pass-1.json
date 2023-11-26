@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-565-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./orig_files/question-565-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math as mt' imported but unused",
+      "physical_line": "import math as mt\n"
+    },
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-565-pass-1.py",
+      "line_number": 8,
+      "column_number": 44,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "        if (has[ord(string[i]) - ord('a')] == False):\n"
+    }
+  ]
+}

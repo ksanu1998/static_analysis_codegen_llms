@@ -1,0 +1,52 @@
+{
+  "./files/question-904-pass-1.py": [
+    {
+      "code": "E231",
+      "filename": "./files/question-904-pass-1.py",
+      "line_number": 1,
+      "column_number": 18,
+      "text": "missing whitespace after ':'",
+      "physical_line": "def nthSHN(n, dp):import math\n"
+    },
+    {
+      "code": "F401",
+      "filename": "./files/question-904-pass-1.py",
+      "line_number": 1,
+      "column_number": 19,
+      "text": "'math' imported but unused",
+      "physical_line": "def nthSHN(n, dp):import math\n"
+    },
+    {
+      "code": "F811",
+      "filename": "./files/question-904-pass-1.py",
+      "line_number": 3,
+      "column_number": 1,
+      "text": "redefinition of unused 'nthSHN' from line 1",
+      "physical_line": "def nthSHN(n, dp):\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files/question-904-pass-1.py",
+      "line_number": 3,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 1",
+      "physical_line": "def nthSHN(n, dp):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-904-pass-1.py",
+      "line_number": 7,
+      "column_number": 22,
+      "text": "undefined name 'math'",
+      "physical_line": "        return round(math.sqrt(2) * nthSHN(n-1, dp) / math.sqrt(n+1), dp)\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-904-pass-1.py",
+      "line_number": 7,
+      "column_number": 55,
+      "text": "undefined name 'math'",
+      "physical_line": "        return round(math.sqrt(2) * nthSHN(n-1, dp) / math.sqrt(n+1), dp)\n"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "./files/question-693-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-693-pass-1.py",
+      "line_number": 2,
+      "column_number": 80,
+      "text": "line too long (92 > 79 characters)",
+      "physical_line": "    # Initialize the minimum number of circular obstacles required to obstruct the path as 0\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-693-pass-1.py",
+      "line_number": 11,
+      "column_number": 80,
+      "text": "line too long (89 > 79 characters)",
+      "physical_line": "                # Check if the current cell is within the range of the circular obstacles\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-693-pass-1.py",
+      "line_number": 13,
+      "column_number": 80,
+      "text": "line too long (102 > 79 characters)",
+      "physical_line": "                    # Increment the minimum number of circular obstacles required to obstruct the path\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-693-pass-1.py",
+      "line_number": 16,
+      "column_number": 80,
+      "text": "line too long (83 > 79 characters)",
+      "physical_line": "    # Return the minimum number of circular obstacles required to obstruct the path\n"
+    }
+  ]
+}

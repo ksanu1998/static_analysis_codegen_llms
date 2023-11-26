@@ -1,0 +1,52 @@
+{
+  "./files/question-663-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-663-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math' imported but unused",
+      "physical_line": "import math\n"
+    },
+    {
+      "code": "E231",
+      "filename": "./files/question-663-pass-1.py",
+      "line_number": 5,
+      "column_number": 52,
+      "text": "missing whitespace after ':'",
+      "physical_line": "def solveBoard(board, row, rowmask, ldmask, rdmask):# Base case: if the board is completely filled, return the board\n"
+    },
+    {
+      "code": "E261",
+      "filename": "./files/question-663-pass-1.py",
+      "line_number": 5,
+      "column_number": 53,
+      "text": "at least two spaces before inline comment",
+      "physical_line": "def solveBoard(board, row, rowmask, ldmask, rdmask):# Base case: if the board is completely filled, return the board\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-663-pass-1.py",
+      "line_number": 5,
+      "column_number": 80,
+      "text": "line too long (116 > 79 characters)",
+      "physical_line": "def solveBoard(board, row, rowmask, ldmask, rdmask):# Base case: if the board is completely filled, return the board\n"
+    },
+    {
+      "code": "E305",
+      "filename": "./files/question-663-pass-1.py",
+      "line_number": 32,
+      "column_number": 1,
+      "text": "expected 2 blank lines after class or function definition, found 0",
+      "physical_line": "[PYTHON]\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-663-pass-1.py",
+      "line_number": 32,
+      "column_number": 2,
+      "text": "undefined name 'PYTHON'",
+      "physical_line": "[PYTHON]\n"
+    }
+  ]
+}

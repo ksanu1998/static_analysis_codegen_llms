@@ -1,0 +1,28 @@
+{
+  "./files/question-548-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-548-pass-1.py",
+      "line_number": 2,
+      "column_number": 17,
+      "text": "missing whitespace around operator",
+      "physical_line": "    if len(str1)!= len(str2):\n"
+    },
+    {
+      "code": "E225",
+      "filename": "./files/question-548-pass-1.py",
+      "line_number": 5,
+      "column_number": 19,
+      "text": "missing whitespace around operator",
+      "physical_line": "        if str1[i]!= str2[i] and str2[i]!= \"?\":\n"
+    },
+    {
+      "code": "E225",
+      "filename": "./files/question-548-pass-1.py",
+      "line_number": 5,
+      "column_number": 41,
+      "text": "missing whitespace around operator",
+      "physical_line": "        if str1[i]!= str2[i] and str2[i]!= \"?\":\n"
+    }
+  ]
+}

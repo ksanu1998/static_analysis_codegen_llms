@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-479-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-479-pass-1.py",
+      "line_number": 4,
+      "column_number": 2,
+      "text": "IndentationError: expected an indented block after function definition on line 1",
+      "physical_line": null
+    }
+  ]
+}

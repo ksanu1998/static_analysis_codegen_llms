@@ -1,0 +1,44 @@
+{
+  "./files/question-557-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-557-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'sys' imported but unused",
+      "physical_line": "import sys\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-557-pass-1.py",
+      "line_number": 13,
+      "column_number": 80,
+      "text": "line too long (96 > 79 characters)",
+      "physical_line": "        # Create a new list of ASCII values by removing all occurrences of the current character\n"
+    },
+    {
+      "code": "E225",
+      "filename": "./files/question-557-pass-1.py",
+      "line_number": 14,
+      "column_number": 69,
+      "text": "missing whitespace around operator",
+      "physical_line": "        new_ascii_values = [value for value in ascii_values if value!= char]\n"
+    },
+    {
+      "code": "F823",
+      "filename": "./files/question-557-pass-1.py",
+      "line_number": 17,
+      "column_number": 15,
+      "text": "local variable 'sum' defined as a builtin referenced before assignment",
+      "physical_line": "        sum = sum(new_ascii_values)\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-557-pass-1.py",
+      "line_number": 19,
+      "column_number": 80,
+      "text": "line too long (80 > 79 characters)",
+      "physical_line": "        # Update the minimum sum if the current sum is less than the minimum sum\n"
+    }
+  ]
+}

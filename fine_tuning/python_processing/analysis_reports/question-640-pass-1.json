@@ -1,0 +1,20 @@
+{
+  "./files/question-640-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-640-pass-1.py",
+      "line_number": 6,
+      "column_number": 80,
+      "text": "line too long (81 > 79 characters)",
+      "physical_line": "    # Fill in the first row and column with the lengths of the individual strings\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-640-pass-1.py",
+      "line_number": 21,
+      "column_number": 80,
+      "text": "line too long (127 > 79 characters)",
+      "physical_line": "    return \"\".join(str1[i - 1] for i in range(dp[len(str1)][len(str2)], 0, -1) if dp[i][len(str2)] == dp[len(str1)][len(str2)])\n"
+    }
+  ]
+}

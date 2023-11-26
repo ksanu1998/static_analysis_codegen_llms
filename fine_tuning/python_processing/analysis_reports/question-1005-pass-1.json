@@ -1,0 +1,12 @@
+{
+  "./files/question-1005-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./files/question-1005-pass-1.py",
+      "line_number": 1,
+      "column_number": 26,
+      "text": "SyntaxError: invalid syntax",
+      "physical_line": "def isDefeat(s1, s2, n):def is_defeat(s1, s2, n):\n"
+    }
+  ]
+}

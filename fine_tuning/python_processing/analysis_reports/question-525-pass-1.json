@@ -1,0 +1,44 @@
+{
+  "./files/question-525-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-525-pass-1.py",
+      "line_number": 8,
+      "column_number": 80,
+      "text": "line too long (91 > 79 characters)",
+      "physical_line": "            # If the current character is the same as the previous character, the cost is 0\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-525-pass-1.py",
+      "line_number": 11,
+      "column_number": 80,
+      "text": "line too long (95 > 79 characters)",
+      "physical_line": "            # If the current character is not the same as the previous character, the cost is 1\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-525-pass-1.py",
+      "line_number": 21,
+      "column_number": 80,
+      "text": "line too long (87 > 79 characters)",
+      "physical_line": "        # If the current cost is less than K, try to extend the longest equal substring\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-525-pass-1.py",
+      "line_number": 23,
+      "column_number": 80,
+      "text": "line too long (112 > 79 characters)",
+      "physical_line": "            # If the current character is the same as the previous character, extend the longest equal substring\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-525-pass-1.py",
+      "line_number": 27,
+      "column_number": 80,
+      "text": "line too long (115 > 79 characters)",
+      "physical_line": "            # If the current character is not the same as the previous character, reset the longest equal substring\n"
+    }
+  ]
+}

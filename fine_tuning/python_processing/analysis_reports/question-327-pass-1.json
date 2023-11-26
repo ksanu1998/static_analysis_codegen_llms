@@ -1,0 +1,28 @@
+{
+  "./files/question-327-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-327-pass-1.py",
+      "line_number": 11,
+      "column_number": 80,
+      "text": "line too long (80 > 79 characters)",
+      "physical_line": "    dp = [[[sys.maxsize] * (k + 1) for _ in range(b + 1)] for _ in range(x + 1)]\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-327-pass-1.py",
+      "line_number": 21,
+      "column_number": 80,
+      "text": "line too long (103 > 79 characters)",
+      "physical_line": "                # Calculate the minimum difference between the current element and the previous element\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-327-pass-1.py",
+      "line_number": 25,
+      "column_number": 80,
+      "text": "line too long (125 > 79 characters)",
+      "physical_line": "                dp[i][j][k] = min(dp[i - 1][j][k - 1] + min_diff, dp[i - 1][j - 1][k] + min_diff, dp[i - 1][j][k] + min_diff)\n"
+    }
+  ]
+}

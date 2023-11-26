@@ -1,0 +1,20 @@
+{
+  "./files/question-326-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-326-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'numpy as np' imported but unused",
+      "physical_line": "import numpy as np\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./files/question-326-pass-1.py",
+      "line_number": 4,
+      "column_number": 14,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def sum(arr, l, r):\n"
+    }
+  ]
+}

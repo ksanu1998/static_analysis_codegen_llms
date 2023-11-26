@@ -1,0 +1,12 @@
+{
+  "./files/question-500-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./files/question-500-pass-1.py",
+      "line_number": 1,
+      "column_number": 17,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def permute(st, l, r, n):\n"
+    }
+  ]
+}

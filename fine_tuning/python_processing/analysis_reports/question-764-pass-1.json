@@ -1,0 +1,12 @@
+{
+  "./files/question-764-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./files/question-764-pass-1.py",
+      "line_number": 1,
+      "column_number": 20,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def removeEveryKth(l, k):\n"
+    }
+  ]
+}

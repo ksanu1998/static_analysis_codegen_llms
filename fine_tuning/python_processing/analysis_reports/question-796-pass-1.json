@@ -1,0 +1,36 @@
+{
+  "./files/question-796-pass-1.py": [
+    {
+      "code": "E231",
+      "filename": "./files/question-796-pass-1.py",
+      "line_number": 5,
+      "column_number": 16,
+      "text": "missing whitespace after ':'",
+      "physical_line": "def knows(a, b):[PYTHON]\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-796-pass-1.py",
+      "line_number": 5,
+      "column_number": 18,
+      "text": "undefined name 'PYTHON'",
+      "physical_line": "def knows(a, b):[PYTHON]\n"
+    },
+    {
+      "code": "F811",
+      "filename": "./files/question-796-pass-1.py",
+      "line_number": 6,
+      "column_number": 1,
+      "text": "redefinition of unused 'knows' from line 5",
+      "physical_line": "def knows(a, b):\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files/question-796-pass-1.py",
+      "line_number": 6,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 0",
+      "physical_line": "def knows(a, b):\n"
+    }
+  ]
+}

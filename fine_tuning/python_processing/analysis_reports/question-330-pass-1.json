@@ -1,0 +1,12 @@
+{
+  "./files/question-330-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-330-pass-1.py",
+      "line_number": 12,
+      "column_number": 80,
+      "text": "line too long (89 > 79 characters)",
+      "physical_line": "        return (number_of_ways(arr, n-1, k) + number_of_ways(arr, n-1, k-arr[n-1])) % MOD\n"
+    }
+  ]
+}

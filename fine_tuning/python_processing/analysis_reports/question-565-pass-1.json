@@ -1,0 +1,12 @@
+{
+  "./files/question-565-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-565-pass-1.py",
+      "line_number": 6,
+      "column_number": 80,
+      "text": "line too long (100 > 79 characters)",
+      "physical_line": "    num_permutations = mt.factorial(len(string)) / (mt.factorial(len(string) - k) * mt.factorial(k))\n"
+    }
+  ]
+}
