@@ -106,6 +106,11 @@ def generate_feedback_json_report(source_directory, report_directory):
 
 
 if __name__ == "__main__":
-    generate_one_xml_report_for_all_file("cpp_results/cpp_source", "results/cpp/one_report")
-    generate_feedback_json_report("cpp_results/cpp_source", "results/cpp")
-    ...
+    # Runs before and after feedback
+    # generate_one_xml_report_for_all_file("cpp_results/cpp_source", "results/cpp/one_report")
+    generate_feedback_json_report(
+        "cpp_results/instruct_generations/cpp/files_before_feedback", "results/cpp/before_feedback"
+    )
+    generate_feedback_json_report(
+        "cpp_results/instruct_generations/cpp/files_after_feedback", "results/cpp/after_feedback"
+    )
