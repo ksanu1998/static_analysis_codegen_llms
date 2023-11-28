@@ -25,9 +25,13 @@ def generate_one_xml_report_for_all_file(source_directory, report_directory):
         "--enable=all",
         "--suppress=missingIncludeSystem",
         "--check-level=exhaustive",
+        "--quiet",
         "--xml",
         source_directory,
     ]
+
+    if os.name == "nt":
+        cppcheck_cmd.append("--platform=win64")
 
     error_file = os.path.join(report_directory, "error_file.xml")
     with open(error_file, "w") as error_output:
@@ -40,7 +44,7 @@ def generate_one_xml_report_for_all_file(source_directory, report_directory):
     # Generate HTML report
     htmlreport_cmd = [
         "python",
-        "cppcheck_utils/cppcheck-htmlreport.py",
+        os.path.join("scripts", "cppcheck_utils", "cppcheck-htmlreport.py"),
         "--file=" + error_file,
         "--report-dir=" + report_directory,
     ]
@@ -63,6 +67,7 @@ def generate_err_xml(file_path, xml_report_directory):
         "--enable=all",
         "--suppress=missingIncludeSystem",
         "--check-level=exhaustive",
+        "--quiet",
         "--xml",
         file_path,
         error_file_path,
@@ -101,6 +106,6 @@ def generate_feedback_json_report(source_directory, report_directory):
 
 
 if __name__ == "__main__":
-    # generate_one_xml_report_for_all_file("cpp_results/cpp_source", "results/cpp/one_report")
-    # generate_feedback_json_report("cpp_results/cpp_source", "results/cpp")
+    generate_one_xml_report_for_all_file("cpp_results/cpp_source", "results/cpp/one_report")
+    generate_feedback_json_report("cpp_results/cpp_source", "results/cpp")
     ...
