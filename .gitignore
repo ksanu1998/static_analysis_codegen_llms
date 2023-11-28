@@ -1,6 +1,6 @@
 models
 generations
-reports
+# reports
 .DS_Store
 
 __pycache__/
