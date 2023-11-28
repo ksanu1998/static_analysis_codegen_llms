@@ -1,0 +1,28 @@
+{
+  "./orig_files/question-863-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-863-pass-1.py",
+      "line_number": 19,
+      "column_number": 5,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "    l = 1\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-863-pass-1.py",
+      "line_number": 26,
+      "column_number": 13,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "            l = m + 1\n"
+    },
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-863-pass-1.py",
+      "line_number": 27,
+      "column_number": 21,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "    if (check(l, n) == False):\n"
+    }
+  ]
+}

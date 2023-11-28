@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-465-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-465-pass-1.py",
+      "line_number": 7,
+      "column_number": 13,
+      "text": "undefined name 'cnt'",
+      "physical_line": "            cnt += (((len - 1) * len) // 2)\n"
+    }
+  ]
+}

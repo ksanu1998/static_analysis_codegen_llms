@@ -1,0 +1,36 @@
+{
+  "./files/question-953-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-953-pass-1.py",
+      "line_number": 10,
+      "column_number": 29,
+      "text": "missing whitespace around operator",
+      "physical_line": "        if arr[i] == 0 and i!= first_zero_index:\n"
+    },
+    {
+      "code": "E225",
+      "filename": "./files/question-953-pass-1.py",
+      "line_number": 13,
+      "column_number": 31,
+      "text": "missing whitespace around operator",
+      "physical_line": "        elif arr[i] == 1 and i!= last_one_index:\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-953-pass-1.py",
+      "line_number": 15,
+      "column_number": 80,
+      "text": "line too long (93 > 79 characters)",
+      "physical_line": "        # If the current element is 0 and it is the first 0, then update the first_zero_index\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-953-pass-1.py",
+      "line_number": 18,
+      "column_number": 80,
+      "text": "line too long (90 > 79 characters)",
+      "physical_line": "        # If the current element is 1 and it is the last 1, then update the last_one_index\n"
+    }
+  ]
+}

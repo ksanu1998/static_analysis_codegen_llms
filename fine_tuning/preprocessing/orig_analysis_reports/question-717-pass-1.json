@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-717-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-717-pass-1.py",
+      "line_number": 51,
+      "column_number": 6,
+      "text": "SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?",
+      "physical_line": "    print \"Triangles are similar by\",\n"
+    }
+  ]
+}

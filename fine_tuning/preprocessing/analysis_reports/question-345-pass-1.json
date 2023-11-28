@@ -1,0 +1,12 @@
+{
+  "./files/question-345-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-345-pass-1.py",
+      "line_number": 15,
+      "column_number": 80,
+      "text": "line too long (84 > 79 characters)",
+      "physical_line": "            min_steps = min(min_steps, minSteps(arr, i + 1, mask | (1 << j), n) + 1)\n"
+    }
+  ]
+}

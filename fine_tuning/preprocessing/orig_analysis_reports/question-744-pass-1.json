@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-744-pass-1.py": [
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-744-pass-1.py",
+      "line_number": 14,
+      "column_number": 5,
+      "text": "local variable 'min_sum' is assigned to but never used",
+      "physical_line": "    min_sum = 1000000\n"
+    },
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-744-pass-1.py",
+      "line_number": 25,
+      "column_number": 9,
+      "text": "local variable 'c' is assigned to but never used",
+      "physical_line": "        c = arr[i]\n"
+    }
+  ]
+}

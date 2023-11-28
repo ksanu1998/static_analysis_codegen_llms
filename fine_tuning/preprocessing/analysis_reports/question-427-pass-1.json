@@ -1,0 +1,12 @@
+{
+  "./files/question-427-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-427-pass-1.py",
+      "line_number": 12,
+      "column_number": 80,
+      "text": "line too long (80 > 79 characters)",
+      "physical_line": "                table[i][j] = max(table[i-1][j-wt[i-1]] + val[i-1], table[i][j])\n"
+    }
+  ]
+}

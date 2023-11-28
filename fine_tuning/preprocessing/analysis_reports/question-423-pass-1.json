@@ -1,0 +1,12 @@
+{
+  "./files/question-423-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-423-pass-1.py",
+      "line_number": 18,
+      "column_number": 24,
+      "text": "missing whitespace around operator",
+      "physical_line": "            if sum[i-1]!= -1:\n"
+    }
+  ]
+}

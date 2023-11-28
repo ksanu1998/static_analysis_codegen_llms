@@ -1,0 +1,12 @@
+{
+  "./files/question-462-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-462-pass-1.py",
+      "line_number": 2,
+      "column_number": 80,
+      "text": "line too long (200 > 79 characters)",
+      "physical_line": "'NEW_LINEdefno_of_characters(M):NEW_LINEINDENTk=1NEW_LINEwhile(True):NEW_LINEINDENTif(pow(2,k+1)-2<M):NEW_LINEINDENTk+=1NEW_LINEDEDENTelse:NEW_LINEINDENTbreakNEW_LINEDEDENTDEDENTreturnkNEW_LINEDEDENT'\n"
+    }
+  ]
+}

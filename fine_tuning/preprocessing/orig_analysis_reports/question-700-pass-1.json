@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-700-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-700-pass-1.py",
+      "line_number": 6,
+      "column_number": 2,
+      "text": "SyntaxError: invalid syntax",
+      "physical_line": "/*Driver code * /\n"
+    }
+  ]
+}

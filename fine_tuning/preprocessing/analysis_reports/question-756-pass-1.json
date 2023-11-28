@@ -1,0 +1,12 @@
+{
+  "./files/question-756-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-756-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'bisect.bisect_left' imported but unused",
+      "physical_line": "from bisect import bisect_left\n"
+    }
+  ]
+}

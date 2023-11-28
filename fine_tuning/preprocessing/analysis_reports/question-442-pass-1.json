@@ -1,0 +1,36 @@
+{
+  "./files/question-442-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./files/question-442-pass-1.py",
+      "line_number": 2,
+      "column_number": 17,
+      "text": "undefined name 's1'",
+      "physical_line": "    if i == len(s1) or j == len(s2):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-442-pass-1.py",
+      "line_number": 2,
+      "column_number": 33,
+      "text": "undefined name 's2'",
+      "physical_line": "    if i == len(s1) or j == len(s2):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-442-pass-1.py",
+      "line_number": 4,
+      "column_number": 8,
+      "text": "undefined name 's1'",
+      "physical_line": "    if s1[i] == s2[j]:\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-442-pass-1.py",
+      "line_number": 4,
+      "column_number": 17,
+      "text": "undefined name 's2'",
+      "physical_line": "    if s1[i] == s2[j]:\n"
+    }
+  ]
+}

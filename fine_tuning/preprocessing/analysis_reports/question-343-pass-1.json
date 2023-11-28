@@ -1,0 +1,12 @@
+{
+  "./files/question-343-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./files/question-343-pass-1.py",
+      "line_number": 11,
+      "column_number": 21,
+      "text": "SyntaxError: invalid syntax",
+      "physical_line": "def max_two(a, b):[/INST]\n"
+    }
+  ]
+}

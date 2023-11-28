@@ -1,0 +1,12 @@
+{
+  "./files/question-863-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./files/question-863-pass-1.py",
+      "line_number": 7,
+      "column_number": 15,
+      "text": "IndentationError: expected an indented block after function definition on line 7",
+      "physical_line": "def solve(N):\n"
+    }
+  ]
+}

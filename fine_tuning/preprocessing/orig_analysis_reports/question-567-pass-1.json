@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-567-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-567-pass-1.py",
+      "line_number": 23,
+      "column_number": 62,
+      "text": "SyntaxError: unexpected character after line continuation character",
+      "physical_line": "                return longestSubsequence(string, subList +\\[string[index]], index + 1)\n"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "./orig_files/question-668-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-668-pass-1.py",
+      "line_number": 5,
+      "column_number": 20,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def Partition(arr, l, r):\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-668-pass-1.py",
+      "line_number": 18,
+      "column_number": 26,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def randomPartition(arr, l, r):\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-668-pass-1.py",
+      "line_number": 25,
+      "column_number": 21,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def MedianUtil(arr, l, r, k, a1, b1):\n"
+    }
+  ]
+}

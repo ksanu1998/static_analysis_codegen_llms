@@ -1,0 +1,12 @@
+{
+  "./files/question-653-pass-1.py": [
+    {
+      "code": "E231",
+      "filename": "./files/question-653-pass-1.py",
+      "line_number": 1,
+      "column_number": 14,
+      "text": "missing whitespace after ':'",
+      "physical_line": "def unique(s):return \"\".join(set(s))\n"
+    }
+  ]
+}

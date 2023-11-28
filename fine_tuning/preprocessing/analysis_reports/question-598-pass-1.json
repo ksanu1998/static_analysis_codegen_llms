@@ -1,0 +1,12 @@
+{
+  "./files/question-598-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-598-pass-1.py",
+      "line_number": 16,
+      "column_number": 80,
+      "text": "line too long (100 > 79 characters)",
+      "physical_line": "        # Return the substring of the input string starting from position j to the end of the string\n"
+    }
+  ]
+}

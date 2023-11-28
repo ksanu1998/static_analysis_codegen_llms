@@ -1,0 +1,20 @@
+{
+  "./files/question-487-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-487-pass-1.py",
+      "line_number": 2,
+      "column_number": 80,
+      "text": "line too long (89 > 79 characters)",
+      "physical_line": "    # Initialize variables to store the maximum number of palindromic strings of length 3\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-487-pass-1.py",
+      "line_number": 16,
+      "column_number": 80,
+      "text": "line too long (102 > 79 characters)",
+      "physical_line": "    # Return the maximum number of palindromic strings of length 3 and the list of palindromic strings\n"
+    }
+  ]
+}

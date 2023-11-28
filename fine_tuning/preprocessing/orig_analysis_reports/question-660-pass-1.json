@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-660-pass-1.py": [
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-660-pass-1.py",
+      "line_number": 10,
+      "column_number": 18,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "        if (v[i] == False and graph[currPos][i]):\n"
+    }
+  ]
+}

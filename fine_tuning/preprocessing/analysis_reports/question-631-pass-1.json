@@ -1,0 +1,12 @@
+{
+  "./files/question-631-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./files/question-631-pass-1.py",
+      "line_number": 3,
+      "column_number": 23,
+      "text": "SyntaxError: invalid syntax",
+      "physical_line": "def isConsonant(ch):[/INST]\n"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "./orig_files/question-736-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 12,
+      "column_number": 8,
+      "text": "undefined name 'd2'",
+      "physical_line": "    if d2 == 0 or d3 == 0 or d4 == 0:\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 12,
+      "column_number": 19,
+      "text": "undefined name 'd3'",
+      "physical_line": "    if d2 == 0 or d3 == 0 or d4 == 0:\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 12,
+      "column_number": 30,
+      "text": "undefined name 'd4'",
+      "physical_line": "    if d2 == 0 or d3 == 0 or d4 == 0:\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 14,
+      "column_number": 8,
+      "text": "undefined name 'd2'",
+      "physical_line": "    if d2 == d3 and 2 * d2 == d4 and 2 * distSq(p2, p4) == distSq(p2, p3):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 14,
+      "column_number": 14,
+      "text": "undefined name 'd3'",
+      "physical_line": "    if d2 == d3 and 2 * d2 == d4 and 2 * distSq(p2, p4) == distSq(p2, p3):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 14,
+      "column_number": 25,
+      "text": "undefined name 'd2'",
+      "physical_line": "    if d2 == d3 and 2 * d2 == d4 and 2 * distSq(p2, p4) == distSq(p2, p3):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 14,
+      "column_number": 31,
+      "text": "undefined name 'd4'",
+      "physical_line": "    if d2 == d3 and 2 * d2 == d4 and 2 * distSq(p2, p4) == distSq(p2, p3):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 16,
+      "column_number": 8,
+      "text": "undefined name 'd3'",
+      "physical_line": "    if d3 == d4 and 2 * d3 == d2 and 2 * distSq(p3, p2) == distSq(p3, p4):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 16,
+      "column_number": 14,
+      "text": "undefined name 'd4'",
+      "physical_line": "    if d3 == d4 and 2 * d3 == d2 and 2 * distSq(p3, p2) == distSq(p3, p4):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 16,
+      "column_number": 25,
+      "text": "undefined name 'd3'",
+      "physical_line": "    if d3 == d4 and 2 * d3 == d2 and 2 * distSq(p3, p2) == distSq(p3, p4):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 16,
+      "column_number": 31,
+      "text": "undefined name 'd2'",
+      "physical_line": "    if d3 == d4 and 2 * d3 == d2 and 2 * distSq(p3, p2) == distSq(p3, p4):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 18,
+      "column_number": 8,
+      "text": "undefined name 'd2'",
+      "physical_line": "    if d2 == d4 and 2 * d2 == d3 and 2 * distSq(p2, p3) == distSq(p2, p4):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 18,
+      "column_number": 14,
+      "text": "undefined name 'd4'",
+      "physical_line": "    if d2 == d4 and 2 * d2 == d3 and 2 * distSq(p2, p3) == distSq(p2, p4):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 18,
+      "column_number": 25,
+      "text": "undefined name 'd2'",
+      "physical_line": "    if d2 == d4 and 2 * d2 == d3 and 2 * distSq(p2, p3) == distSq(p2, p4):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-736-pass-1.py",
+      "line_number": 18,
+      "column_number": 31,
+      "text": "undefined name 'd3'",
+      "physical_line": "    if d2 == d4 and 2 * d2 == d3 and 2 * distSq(p2, p3) == distSq(p2, p4):\n"
+    }
+  ]
+}

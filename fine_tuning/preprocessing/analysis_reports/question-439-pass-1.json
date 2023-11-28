@@ -1,0 +1,20 @@
+{
+  "./files/question-439-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-439-pass-1.py",
+      "line_number": 4,
+      "column_number": 17,
+      "text": "missing whitespace around operator",
+      "physical_line": "    if lookup[i]!= -1:\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-439-pass-1.py",
+      "line_number": 6,
+      "column_number": 80,
+      "text": "line too long (105 > 79 characters)",
+      "physical_line": "    lookup[i] = max(string[i] + getMaxRec(string, i + 2, n, lookup), getMaxRec(string, i + 1, n, lookup))\n"
+    }
+  ]
+}

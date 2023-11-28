@@ -1,0 +1,12 @@
+{
+  "./files/question-597-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-597-pass-1.py",
+      "line_number": 10,
+      "column_number": 80,
+      "text": "line too long (90 > 79 characters)",
+      "physical_line": "        # If the current character is not in the dictionary, add it and set the value to 1\n"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "./files/question-836-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-836-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'heapq' imported but unused",
+      "physical_line": "import heapq\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-836-pass-1.py",
+      "line_number": 10,
+      "column_number": 80,
+      "text": "line too long (82 > 79 characters)",
+      "physical_line": "        return min(arr[0] + minCost(arr[1:], n-1), arr[1] + minCost(arr[2:], n-2))\n"
+    }
+  ]
+}

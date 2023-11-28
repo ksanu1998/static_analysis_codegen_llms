@@ -1,0 +1,12 @@
+{
+  "./files/question-542-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./files/question-542-pass-1.py",
+      "line_number": 1,
+      "column_number": 29,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def reverse(string, length, l, r):\n"
+    }
+  ]
+}

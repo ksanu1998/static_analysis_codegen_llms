@@ -1,0 +1,36 @@
+{
+  "./files/question-681-pass-1.py": [
+    {
+      "code": "E231",
+      "filename": "./files/question-681-pass-1.py",
+      "line_number": 6,
+      "column_number": 25,
+      "text": "missing whitespace after ':'",
+      "physical_line": "def generatePoints(L, W):import random\n"
+    },
+    {
+      "code": "F401",
+      "filename": "./files/question-681-pass-1.py",
+      "line_number": 6,
+      "column_number": 26,
+      "text": "'random' imported but unused",
+      "physical_line": "def generatePoints(L, W):import random\n"
+    },
+    {
+      "code": "F811",
+      "filename": "./files/question-681-pass-1.py",
+      "line_number": 8,
+      "column_number": 1,
+      "text": "redefinition of unused 'generatePoints' from line 6",
+      "physical_line": "def generatePoints(L, W):\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files/question-681-pass-1.py",
+      "line_number": 8,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 1",
+      "physical_line": "def generatePoints(L, W):\n"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-869-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-869-pass-1.py",
+      "line_number": 6,
+      "column_number": 59,
+      "text": "SyntaxError: invalid syntax",
+      "physical_line": "    print(\"The Number of digits of\".format(n, base, dig))n = 1446\n"
+    }
+  ]
+}

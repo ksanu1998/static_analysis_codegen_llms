@@ -1,0 +1,12 @@
+{
+  "./files/question-512-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-512-pass-1.py",
+      "line_number": 13,
+      "column_number": 80,
+      "text": "line too long (112 > 79 characters)",
+      "physical_line": "                # Update the minimum length if the current substring is shorter than the previous minimum length\n"
+    }
+  ]
+}

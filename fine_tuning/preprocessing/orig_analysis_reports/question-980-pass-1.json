@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-980-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-980-pass-1.py",
+      "line_number": 5,
+      "column_number": 21,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "                for l in range(k, n):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-980-pass-1.py",
+      "line_number": 7,
+      "column_number": 25,
+      "text": "undefined name 'counter'",
+      "physical_line": "                        counter += 1\n"
+    }
+  ]
+}

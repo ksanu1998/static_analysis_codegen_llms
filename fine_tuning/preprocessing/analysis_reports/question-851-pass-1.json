@@ -1,0 +1,12 @@
+{
+  "./files/question-851-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-851-pass-1.py",
+      "line_number": 9,
+      "column_number": 80,
+      "text": "line too long (92 > 79 characters)",
+      "physical_line": "        return n - sum(computeTotient(i) for i in range(2, int(n ** 0.5) + 1) if n % i == 0)\n"
+    }
+  ]
+}

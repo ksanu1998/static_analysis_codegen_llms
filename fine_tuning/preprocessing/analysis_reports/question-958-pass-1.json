@@ -1,0 +1,20 @@
+{
+  "./files/question-958-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-958-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'sys' imported but unused",
+      "physical_line": "import sys\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-958-pass-1.py",
+      "line_number": 12,
+      "column_number": 80,
+      "text": "line too long (98 > 79 characters)",
+      "physical_line": "            # Update the maximum value if the current element is greater than the previous maximum\n"
+    }
+  ]
+}

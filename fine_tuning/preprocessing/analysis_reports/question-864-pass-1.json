@@ -1,0 +1,12 @@
+{
+  "./files/question-864-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-864-pass-1.py",
+      "line_number": 2,
+      "column_number": 13,
+      "text": "missing whitespace around operator",
+      "physical_line": "    while x1!= x2:\n"
+    }
+  ]
+}

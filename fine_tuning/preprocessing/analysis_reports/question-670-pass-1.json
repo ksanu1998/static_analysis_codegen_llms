@@ -1,0 +1,12 @@
+{
+  "./files/question-670-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-670-pass-1.py",
+      "line_number": 11,
+      "column_number": 80,
+      "text": "line too long (147 > 79 characters)",
+      "physical_line": "        return checkReachability(N-1, X+1, Y) or checkReachability(N-1, X, Y+1) or checkReachability(N-1, X-1, Y) or checkReachability(N-1, X, Y-1)\n"
+    }
+  ]
+}

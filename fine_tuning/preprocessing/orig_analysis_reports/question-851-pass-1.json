@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-851-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-851-pass-1.py",
+      "line_number": 18,
+      "column_number": 20,
+      "text": "undefined name 'res'",
+      "physical_line": "            res = (res * x) % p\n"
+    }
+  ]
+}

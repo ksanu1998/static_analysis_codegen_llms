@@ -1,0 +1,44 @@
+{
+  "./files/question-445-pass-1.py": [
+    {
+      "code": "E231",
+      "filename": "./files/question-445-pass-1.py",
+      "line_number": 1,
+      "column_number": 34,
+      "text": "missing whitespace after ':'",
+      "physical_line": "def printSubsInDelimeters(string):import re\n"
+    },
+    {
+      "code": "F401",
+      "filename": "./files/question-445-pass-1.py",
+      "line_number": 1,
+      "column_number": 35,
+      "text": "'re' imported but unused",
+      "physical_line": "def printSubsInDelimeters(string):import re\n"
+    },
+    {
+      "code": "F811",
+      "filename": "./files/question-445-pass-1.py",
+      "line_number": 3,
+      "column_number": 1,
+      "text": "redefinition of unused 'printSubsInDelimeters' from line 1",
+      "physical_line": "def printSubsInDelimeters(string):\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files/question-445-pass-1.py",
+      "line_number": 3,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 1",
+      "physical_line": "def printSubsInDelimeters(string):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-445-pass-1.py",
+      "line_number": 4,
+      "column_number": 12,
+      "text": "undefined name 're'",
+      "physical_line": "    return re.findall(r\"<[^>]+>\", string)\n"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "./files/question-351-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./files/question-351-pass-1.py",
+      "line_number": 8,
+      "column_number": 20,
+      "text": "undefined name 'i'",
+      "physical_line": "    return max(arr[i] + maxSum(arr[i+1:], k-1, n-i-1), maxSum(arr, k, n-1))\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-351-pass-1.py",
+      "line_number": 8,
+      "column_number": 36,
+      "text": "undefined name 'i'",
+      "physical_line": "    return max(arr[i] + maxSum(arr[i+1:], k-1, n-i-1), maxSum(arr, k, n-1))\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-351-pass-1.py",
+      "line_number": 8,
+      "column_number": 50,
+      "text": "undefined name 'i'",
+      "physical_line": "    return max(arr[i] + maxSum(arr[i+1:], k-1, n-i-1), maxSum(arr, k, n-1))\n"
+    }
+  ]
+}

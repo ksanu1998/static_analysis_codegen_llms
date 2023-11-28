@@ -1,0 +1,28 @@
+{
+  "./files/question-1006-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-1006-pass-1.py",
+      "line_number": 15,
+      "column_number": 80,
+      "text": "line too long (88 > 79 characters)",
+      "physical_line": "            # Check if the parity of the corner elements is the same in both submatrices\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-1006-pass-1.py",
+      "line_number": 16,
+      "column_number": 80,
+      "text": "line too long (89 > 79 characters)",
+      "physical_line": "            if submatrix[0, 0] == submatrix[1, 1] and submatrix[0, 1] == submatrix[1, 0]:\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-1006-pass-1.py",
+      "line_number": 20,
+      "column_number": 80,
+      "text": "line too long (86 > 79 characters)",
+      "physical_line": "                # If the parity is different, set the flag to False and break the loop\n"
+    }
+  ]
+}

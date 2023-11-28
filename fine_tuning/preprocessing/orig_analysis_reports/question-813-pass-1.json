@@ -1,0 +1,28 @@
+{
+  "./orig_files/question-813-pass-1.py": [
+    {
+      "code": "E251",
+      "filename": "./orig_files/question-813-pass-1.py",
+      "line_number": 36,
+      "column_number": 50,
+      "text": "unexpected spaces around keyword / parameter equals",
+      "physical_line": "    print(\"Inordertraversalafterconversion\",  end  = \"\")\n"
+    },
+    {
+      "code": "E221",
+      "filename": "./orig_files/question-813-pass-1.py",
+      "line_number": 36,
+      "column_number": 50,
+      "text": "multiple spaces before operator",
+      "physical_line": "    print(\"Inordertraversalafterconversion\",  end  = \"\")\n"
+    },
+    {
+      "code": "E251",
+      "filename": "./orig_files/question-813-pass-1.py",
+      "line_number": 36,
+      "column_number": 53,
+      "text": "unexpected spaces around keyword / parameter equals",
+      "physical_line": "    print(\"Inordertraversalafterconversion\",  end  = \"\")\n"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-353-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-353-pass-1.py",
+      "line_number": 1,
+      "column_number": 18,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def countWays(n, l, r):\n"
+    }
+  ]
+}

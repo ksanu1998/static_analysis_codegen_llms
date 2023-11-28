@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-806-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-806-pass-1.py",
+      "line_number": 11,
+      "column_number": 14,
+      "text": "IndentationError: expected an indented block after 'if' statement on line 10",
+      "physical_line": "            stk .pop()\n"
+    }
+  ]
+}

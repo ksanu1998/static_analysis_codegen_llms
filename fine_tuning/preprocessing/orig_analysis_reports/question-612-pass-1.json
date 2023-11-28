@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-612-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-612-pass-1.py",
+      "line_number": 6,
+      "column_number": 21,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "                for l in range(10):\n"
+    }
+  ]
+}

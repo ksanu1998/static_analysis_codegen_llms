@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-536-pass-1.py": [
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-536-pass-1.py",
+      "line_number": 3,
+      "column_number": 9,
+      "text": "local variable 'data' is assigned to but never used",
+      "physical_line": "        data = None\n"
+    },
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-536-pass-1.py",
+      "line_number": 4,
+      "column_number": 9,
+      "text": "local variable 'next' is assigned to but never used",
+      "physical_line": "        next = None\n"
+    }
+  ]
+}

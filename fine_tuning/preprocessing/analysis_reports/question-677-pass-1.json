@@ -1,0 +1,12 @@
+{
+  "./files/question-677-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./files/question-677-pass-1.py",
+      "line_number": 9,
+      "column_number": 59,
+      "text": "SyntaxError: invalid syntax",
+      "physical_line": "def pyramidSlantHeight(pyramid_h, pyramid_b, pyramid_a):[/INST]\n"
+    }
+  ]
+}

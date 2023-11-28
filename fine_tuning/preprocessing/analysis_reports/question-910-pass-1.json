@@ -1,0 +1,12 @@
+{
+  "./files/question-910-pass-1.py": [
+    {
+      "code": "E712",
+      "filename": "./files/question-910-pass-1.py",
+      "line_number": 11,
+      "column_number": 22,
+      "text": "comparison to True should be 'if cond is True:' or 'if cond:'",
+      "physical_line": "        if (prime[p] == True):\n"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "./files/question-668-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./files/question-668-pass-1.py",
+      "line_number": 5,
+      "column_number": 20,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def partition(arr, l, r):\n"
+    }
+  ]
+}

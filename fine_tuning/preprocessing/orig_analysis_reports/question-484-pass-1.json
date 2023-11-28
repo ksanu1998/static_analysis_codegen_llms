@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-484-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-484-pass-1.py",
+      "line_number": 5,
+      "column_number": 6,
+      "text": "IndentationError: expected an indented block after 'for' statement on line 4",
+      "physical_line": "    if (Str[i] == '1'):\n"
+    }
+  ]
+}

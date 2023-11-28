@@ -1,0 +1,36 @@
+{
+  "./files/question-521-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-521-pass-1.py",
+      "line_number": 9,
+      "column_number": 80,
+      "text": "line too long (96 > 79 characters)",
+      "physical_line": "        # If the character is not in the frequency dictionary, add it and set its frequency to 1\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-521-pass-1.py",
+      "line_number": 12,
+      "column_number": 80,
+      "text": "line too long (90 > 79 characters)",
+      "physical_line": "        # If the character is already in the frequency dictionary, increment its frequency\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-521-pass-1.py",
+      "line_number": 16,
+      "column_number": 80,
+      "text": "line too long (105 > 79 characters)",
+      "physical_line": "        # If the frequency of the character is greater than or equal to the length of the current prefix,\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-521-pass-1.py",
+      "line_number": 17,
+      "column_number": 80,
+      "text": "line too long (94 > 79 characters)",
+      "physical_line": "        # update the current prefix to the maximum length prefix that ends with this character\n"
+    }
+  ]
+}

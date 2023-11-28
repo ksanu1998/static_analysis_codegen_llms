@@ -1,0 +1,12 @@
+{
+  "./files/question-526-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-526-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math.floor' imported but unused",
+      "physical_line": "from math import floor\n"
+    }
+  ]
+}

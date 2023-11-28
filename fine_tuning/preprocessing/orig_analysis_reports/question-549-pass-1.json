@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-549-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-549-pass-1.py",
+      "line_number": 6,
+      "column_number": 10,
+      "text": "IndentationError: expected an indented block after 'if' statement on line 5",
+      "physical_line": "        stc .append(temp)\n"
+    }
+  ]
+}

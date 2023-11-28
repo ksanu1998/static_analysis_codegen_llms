@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-564-pass-1.py": [
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-564-pass-1.py",
+      "line_number": 8,
+      "column_number": 37,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "        if (Str1[i] == '2' and used == False):\n"
+    },
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-564-pass-1.py",
+      "line_number": 14,
+      "column_number": 14,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "    if (used == False):\n"
+    }
+  ]
+}

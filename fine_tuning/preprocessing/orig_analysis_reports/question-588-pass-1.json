@@ -1,0 +1,28 @@
+{
+  "./orig_files/question-588-pass-1.py": [
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-588-pass-1.py",
+      "line_number": 7,
+      "column_number": 78,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "                                        and ord(Str[i]) < (ord('0') + base)) == False):\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-588-pass-1.py",
+      "line_number": 7,
+      "column_number": 80,
+      "text": "line too long (87 > 79 characters)",
+      "physical_line": "                                        and ord(Str[i]) < (ord('0') + base)) == False):\n"
+    },
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-588-pass-1.py",
+      "line_number": 24,
+      "column_number": 35,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "                            10))) == False):\n"
+    }
+  ]
+}

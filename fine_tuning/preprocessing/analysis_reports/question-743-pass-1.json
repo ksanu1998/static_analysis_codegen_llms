@@ -1,0 +1,36 @@
+{
+  "./files/question-743-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-743-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'sys' imported but unused",
+      "physical_line": "import sys\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-743-pass-1.py",
+      "line_number": 13,
+      "column_number": 80,
+      "text": "line too long (111 > 79 characters)",
+      "physical_line": "        # Check if the current element can be reduced to the minimum element by replacing it with the remainder\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-743-pass-1.py",
+      "line_number": 18,
+      "column_number": 80,
+      "text": "line too long (125 > 79 characters)",
+      "physical_line": "            # Return False if the current element cannot be reduced to the minimum element by replacing it with the remainder\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-743-pass-1.py",
+      "line_number": 20,
+      "column_number": 80,
+      "text": "line too long (106 > 79 characters)",
+      "physical_line": "    # Return True if all elements can be reduced to the minimum element by replacing it with the remainder\n"
+    }
+  ]
+}

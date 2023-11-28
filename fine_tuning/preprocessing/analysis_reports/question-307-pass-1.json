@@ -1,0 +1,20 @@
+{
+  "./files/question-307-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-307-pass-1.py",
+      "line_number": 2,
+      "column_number": 80,
+      "text": "line too long (121 > 79 characters)",
+      "physical_line": "    return sum([x * (x + y) + x ** 2 * (x ** 2 + y ** 2) + x ** 3 * (x ** 3 + y ** 3) +... + x ** n * (x ** n + y ** n)])\n"
+    },
+    {
+      "code": "E225",
+      "filename": "./files/question-307-pass-1.py",
+      "line_number": 2,
+      "column_number": 88,
+      "text": "missing whitespace around operator",
+      "physical_line": "    return sum([x * (x + y) + x ** 2 * (x ** 2 + y ** 2) + x ** 3 * (x ** 3 + y ** 3) +... + x ** n * (x ** n + y ** n)])\n"
+    }
+  ]
+}

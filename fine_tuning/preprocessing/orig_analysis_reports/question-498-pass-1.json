@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-498-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-498-pass-1.py",
+      "line_number": 24,
+      "column_number": 5,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "    l = 0\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-498-pass-1.py",
+      "line_number": 26,
+      "column_number": 9,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "        l = l if l > len(i)else len(i)\n"
+    }
+  ]
+}

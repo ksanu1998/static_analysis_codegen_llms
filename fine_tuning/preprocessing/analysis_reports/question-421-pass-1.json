@@ -1,0 +1,12 @@
+{
+  "./files/question-421-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-421-pass-1.py",
+      "line_number": 9,
+      "column_number": 19,
+      "text": "missing whitespace around operator",
+      "physical_line": "        if max_val!= -1:\n"
+    }
+  ]
+}

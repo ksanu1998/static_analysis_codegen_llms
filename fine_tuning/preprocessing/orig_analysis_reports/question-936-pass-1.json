@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-936-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./orig_files/question-936-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'sys' imported but unused",
+      "physical_line": "import sys\n"
+    }
+  ]
+}

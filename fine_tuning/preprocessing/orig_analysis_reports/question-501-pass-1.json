@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-501-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-501-pass-1.py",
+      "line_number": 26,
+      "column_number": 254,
+      "text": "SyntaxError: unterminated string literal (detected at line 26)",
+      "physical_line": "'NEW_LINEINDENTforiinrange(len(str)):NEW_LINEINDENTif(str[i]=='0 '):NEW_LINEINDENTcnt+=1NEW_LINEbreakNEW_LINEDEDENTDEDENTif(cnt==N+1):NEW_LINEINDENTreturn\"True\"NEW_LINEDEDENTelse:NEW_LINEINDENTreturn\"False\"NEW_LINEDEDENTDEDENTif__name__=='_ _ main _ _ ':\n"
+    }
+  ]
+}

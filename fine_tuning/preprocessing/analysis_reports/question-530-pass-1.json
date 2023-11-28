@@ -1,0 +1,20 @@
+{
+  "./files/question-530-pass-1.py": [
+    {
+      "code": "W293",
+      "filename": "./files/question-530-pass-1.py",
+      "line_number": 12,
+      "column_number": 1,
+      "text": "blank line contains whitespace",
+      "physical_line": "    \n"
+    },
+    {
+      "code": "W293",
+      "filename": "./files/question-530-pass-1.py",
+      "line_number": 15,
+      "column_number": 1,
+      "text": "blank line contains whitespace",
+      "physical_line": "    \n"
+    }
+  ]
+}

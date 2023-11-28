@@ -1,0 +1,28 @@
+{
+  "./files/question-349-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-349-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'sys' imported but unused",
+      "physical_line": "import sys\n"
+    },
+    {
+      "code": "E231",
+      "filename": "./files/question-349-pass-1.py",
+      "line_number": 4,
+      "column_number": 20,
+      "text": "missing whitespace after ':'",
+      "physical_line": "def MinOfCubedDP(k):# Create a 2D array to store the results of subproblems\n"
+    },
+    {
+      "code": "E261",
+      "filename": "./files/question-349-pass-1.py",
+      "line_number": 4,
+      "column_number": 21,
+      "text": "at least two spaces before inline comment",
+      "physical_line": "def MinOfCubedDP(k):# Create a 2D array to store the results of subproblems\n"
+    }
+  ]
+}

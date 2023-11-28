@@ -1,0 +1,28 @@
+{
+  "./orig_files/question-655-pass-1.py": [
+    {
+      "code": "E251",
+      "filename": "./orig_files/question-655-pass-1.py",
+      "line_number": 16,
+      "column_number": 27,
+      "text": "unexpected spaces around keyword / parameter equals",
+      "physical_line": "            print(\"\",  end  = \"\")\n"
+    },
+    {
+      "code": "E221",
+      "filename": "./orig_files/question-655-pass-1.py",
+      "line_number": 16,
+      "column_number": 27,
+      "text": "multiple spaces before operator",
+      "physical_line": "            print(\"\",  end  = \"\")\n"
+    },
+    {
+      "code": "E251",
+      "filename": "./orig_files/question-655-pass-1.py",
+      "line_number": 16,
+      "column_number": 30,
+      "text": "unexpected spaces around keyword / parameter equals",
+      "physical_line": "            print(\"\",  end  = \"\")\n"
+    }
+  ]
+}

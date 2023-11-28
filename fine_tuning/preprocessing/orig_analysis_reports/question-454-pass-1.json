@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-454-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-454-pass-1.py",
+      "line_number": 17,
+      "column_number": 5,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "    l = count_ht(C, n)\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-454-pass-1.py",
+      "line_number": 17,
+      "column_number": 21,
+      "text": "undefined name 'n'",
+      "physical_line": "    l = count_ht(C, n)\n"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "./orig_files/question-745-pass-1.py": [
+    {
+      "code": "F403",
+      "filename": "./orig_files/question-745-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'from array import *' used; unable to detect undefined names",
+      "physical_line": "from array import *\n"
+    },
+    {
+      "code": "F403",
+      "filename": "./orig_files/question-745-pass-1.py",
+      "line_number": 2,
+      "column_number": 1,
+      "text": "'from math import *' used; unable to detect undefined names",
+      "physical_line": "from math import *\n"
+    },
+    {
+      "code": "F405",
+      "filename": "./orig_files/question-745-pass-1.py",
+      "line_number": 31,
+      "column_number": 12,
+      "text": "'ceil' may be undefined, or defined from star imports: array, math",
+      "physical_line": "    return ceil(ans)\n"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "./orig_files/question-316-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-316-pass-1.py",
+      "line_number": 33,
+      "column_number": 26,
+      "text": "undefined name 'cols'",
+      "physical_line": "dp = [[-1 for i in range(cols)]for j in range(rows)]\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-316-pass-1.py",
+      "line_number": 33,
+      "column_number": 47,
+      "text": "undefined name 'rows'",
+      "physical_line": "dp = [[-1 for i in range(cols)]for j in range(rows)]\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-316-pass-1.py",
+      "line_number": 34,
+      "column_number": 25,
+      "text": "undefined name 'A'",
+      "physical_line": "print(numberOfSubarrays(A, N))\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-316-pass-1.py",
+      "line_number": 34,
+      "column_number": 28,
+      "text": "undefined name 'N'",
+      "physical_line": "print(numberOfSubarrays(A, N))\n"
+    }
+  ]
+}

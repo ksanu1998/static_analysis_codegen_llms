@@ -1,0 +1,28 @@
+{
+  "./files/question-386-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-386-pass-1.py",
+      "line_number": 11,
+      "column_number": 80,
+      "text": "line too long (82 > 79 characters)",
+      "physical_line": "    # Loop through the string and calculate the minimum number of steps to form it\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-386-pass-1.py",
+      "line_number": 13,
+      "column_number": 80,
+      "text": "line too long (109 > 79 characters)",
+      "physical_line": "        # If the current character is not a letter, the number of steps is the same as the previous character\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-386-pass-1.py",
+      "line_number": 16,
+      "column_number": 80,
+      "text": "line too long (142 > 79 characters)",
+      "physical_line": "        # If the current character is a letter, the number of steps is the minimum of the previous character and the previous character plus 1\n"
+    }
+  ]
+}

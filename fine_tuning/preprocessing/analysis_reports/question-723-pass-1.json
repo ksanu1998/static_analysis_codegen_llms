@@ -1,0 +1,36 @@
+{
+  "./files/question-723-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-723-pass-1.py",
+      "line_number": 5,
+      "column_number": 80,
+      "text": "line too long (90 > 79 characters)",
+      "physical_line": "    # Calculate the distance between the center of the inner circle and the point (x1, y1)\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-723-pass-1.py",
+      "line_number": 7,
+      "column_number": 80,
+      "text": "line too long (103 > 79 characters)",
+      "physical_line": "    # If the distance is less than the radius of the inner circle, the point is inside the inner circle\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-723-pass-1.py",
+      "line_number": 10,
+      "column_number": 80,
+      "text": "line too long (90 > 79 characters)",
+      "physical_line": "    # Calculate the distance between the center of the outer circle and the point (x1, y1)\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-723-pass-1.py",
+      "line_number": 12,
+      "column_number": 80,
+      "text": "line too long (103 > 79 characters)",
+      "physical_line": "    # If the distance is less than the radius of the outer circle, the point is inside the outer circle\n"
+    }
+  ]
+}

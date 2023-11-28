@@ -1,0 +1,44 @@
+{
+  "./files/question-572-pass-1.py": [
+    {
+      "code": "E231",
+      "filename": "./files/question-572-pass-1.py",
+      "line_number": 1,
+      "column_number": 15,
+      "text": "missing whitespace after ':'",
+      "physical_line": "def MaxFreq(s):import collections\n"
+    },
+    {
+      "code": "F401",
+      "filename": "./files/question-572-pass-1.py",
+      "line_number": 1,
+      "column_number": 16,
+      "text": "'collections' imported but unused",
+      "physical_line": "def MaxFreq(s):import collections\n"
+    },
+    {
+      "code": "F811",
+      "filename": "./files/question-572-pass-1.py",
+      "line_number": 3,
+      "column_number": 1,
+      "text": "redefinition of unused 'MaxFreq' from line 1",
+      "physical_line": "def MaxFreq(s):\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files/question-572-pass-1.py",
+      "line_number": 3,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 1",
+      "physical_line": "def MaxFreq(s):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-572-pass-1.py",
+      "line_number": 4,
+      "column_number": 15,
+      "text": "undefined name 'collections'",
+      "physical_line": "    counter = collections.Counter(s)\n"
+    }
+  ]
+}

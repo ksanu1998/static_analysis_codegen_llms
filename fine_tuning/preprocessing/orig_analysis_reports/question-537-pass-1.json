@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-537-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-537-pass-1.py",
+      "line_number": 1,
+      "column_number": 23,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def minLength(string, l):\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-537-pass-1.py",
+      "line_number": 17,
+      "column_number": 5,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "    l = len(string)\n"
+    }
+  ]
+}

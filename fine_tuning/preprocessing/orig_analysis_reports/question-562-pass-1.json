@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-562-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-562-pass-1.py",
+      "line_number": 11,
+      "column_number": 80,
+      "text": "line too long (80 > 79 characters)",
+      "physical_line": "                or (not (isVowel(string[i])) and not (isVowel(string[i + 1])))):\n"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "./files/question-634-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-634-pass-1.py",
+      "line_number": 4,
+      "column_number": 13,
+      "text": "missing whitespace around operator",
+      "physical_line": "    if st[s]!= st[e]:\n"
+    }
+  ]
+}

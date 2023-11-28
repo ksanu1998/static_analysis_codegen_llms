@@ -1,0 +1,36 @@
+{
+  "./orig_files/question-764-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-764-pass-1.py",
+      "line_number": 1,
+      "column_number": 20,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def removeEveryKth(l, k):\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-764-pass-1.py",
+      "line_number": 12,
+      "column_number": 16,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def printArray(l):\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-764-pass-1.py",
+      "line_number": 19,
+      "column_number": 5,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "    l = [int(i)for i in range(0, n + 1)]\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-764-pass-1.py",
+      "line_number": 23,
+      "column_number": 9,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "        l = removeEveryKth(l, p)\n"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "./files/question-730-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-730-pass-1.py",
+      "line_number": 5,
+      "column_number": 80,
+      "text": "line too long (82 > 79 characters)",
+      "physical_line": "    # Calculate the distance between the center of the circle and the point (x, y)\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-730-pass-1.py",
+      "line_number": 8,
+      "column_number": 80,
+      "text": "line too long (85 > 79 characters)",
+      "physical_line": "    # Check if the distance is less than or equal to the radius of the smaller circle\n"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "./files/question-473-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-473-pass-1.py",
+      "line_number": 14,
+      "column_number": 80,
+      "text": "line too long (85 > 79 characters)",
+      "physical_line": "            # Check if the subsequence is longer than the current longest subsequence\n"
+    }
+  ]
+}

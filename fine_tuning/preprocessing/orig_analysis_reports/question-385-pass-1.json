@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-385-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-385-pass-1.py",
+      "line_number": 12,
+      "column_number": 18,
+      "text": "SyntaxError: invalid syntax. Perhaps you forgot a comma?",
+      "physical_line": "            if (i == 0 j == 0):\n"
+    }
+  ]
+}

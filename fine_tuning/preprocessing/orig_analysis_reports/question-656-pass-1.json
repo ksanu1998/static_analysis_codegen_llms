@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-656-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-656-pass-1.py",
+      "line_number": 28,
+      "column_number": 21,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def primeCliques(i, l, prime):\n"
+    }
+  ]
+}

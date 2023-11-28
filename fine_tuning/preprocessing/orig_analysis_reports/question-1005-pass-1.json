@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-1005-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-1005-pass-1.py",
+      "line_number": 6,
+      "column_number": 80,
+      "text": "line too long (82 > 79 characters)",
+      "physical_line": "        elif ((s1[i] == '0' and s2[i] == 'Z') or (s1[i] == 'Z' and s2[i] == '0')):\n"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-985-pass-1.py": [
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-985-pass-1.py",
+      "line_number": 13,
+      "column_number": 13,
+      "text": "local variable 'power' is assigned to but never used",
+      "physical_line": "            power = math .pow(i, c - 1)\n"
+    }
+  ]
+}

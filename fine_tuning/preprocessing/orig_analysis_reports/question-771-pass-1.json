@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-771-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./orig_files/question-771-pass-1.py",
+      "line_number": 14,
+      "column_number": 6,
+      "text": "IndentationError: expected an indented block after 'if' statement on line 13",
+      "physical_line": "    print(\"Yes\")\n"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "./files/question-678-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./files/question-678-pass-1.py",
+      "line_number": 8,
+      "column_number": 34,
+      "text": "SyntaxError: invalid syntax",
+      "physical_line": "def find_latus_rectum(a, b, c):[/INST]\n"
+    }
+  ]
+}

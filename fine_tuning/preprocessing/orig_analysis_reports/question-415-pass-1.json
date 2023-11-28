@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-415-pass-1.py": [
+    {
+      "code": "F823",
+      "filename": "./orig_files/question-415-pass-1.py",
+      "line_number": 15,
+      "column_number": 9,
+      "text": "local variable 'sum' defined as a builtin referenced before assignment",
+      "physical_line": "        sum += max(right, left) + 1\n"
+    }
+  ]
+}

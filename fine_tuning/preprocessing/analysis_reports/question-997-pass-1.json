@@ -1,0 +1,12 @@
+{
+  "./files/question-997-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./files/question-997-pass-1.py",
+      "line_number": 3,
+      "column_number": 9,
+      "text": "IndentationError: unexpected indent",
+      "physical_line": "        self.left = None\n"
+    }
+  ]
+}

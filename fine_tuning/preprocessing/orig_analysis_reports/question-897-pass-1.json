@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-897-pass-1.py": [
+    {
+      "code": "F841",
+      "filename": "./orig_files/question-897-pass-1.py",
+      "line_number": 8,
+      "column_number": 9,
+      "text": "local variable 'temp' is assigned to but never used",
+      "physical_line": "        temp = y\n"
+    }
+  ]
+}

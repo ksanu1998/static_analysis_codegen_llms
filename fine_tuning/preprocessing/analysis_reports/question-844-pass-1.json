@@ -1,0 +1,12 @@
+{
+  "./files/question-844-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-844-pass-1.py",
+      "line_number": 2,
+      "column_number": 14,
+      "text": "missing whitespace around operator",
+      "physical_line": "    return (n!= 0) and (n & (n - 1) == 0)\n"
+    }
+  ]
+}

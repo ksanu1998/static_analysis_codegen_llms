@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-326-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-326-pass-1.py",
+      "line_number": 4,
+      "column_number": 14,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def Sum(arr, l, r):\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-326-pass-1.py",
+      "line_number": 14,
+      "column_number": 16,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def solve(arr, l, r, k):\n"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "./files/question-783-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files/question-783-pass-1.py",
+      "line_number": 11,
+      "column_number": 80,
+      "text": "line too long (94 > 79 characters)",
+      "physical_line": "            # If the current cell is not blocked, check the cost of placing a tile of size 2x1\n"
+    }
+  ]
+}

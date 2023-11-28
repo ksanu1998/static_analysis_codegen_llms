@@ -1,0 +1,12 @@
+{
+  "./files/question-389-pass-1.py": [
+    {
+      "code": "F821",
+      "filename": "./files/question-389-pass-1.py",
+      "line_number": 11,
+      "column_number": 8,
+      "text": "undefined name 'arr'",
+      "physical_line": "    if arr[pos] == '(':\n"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "./files/question-369-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./files/question-369-pass-1.py",
+      "line_number": 1,
+      "column_number": 19,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def maxCost(a, n, l, r):\n"
+    },
+    {
+      "code": "W293",
+      "filename": "./files/question-369-pass-1.py",
+      "line_number": 4,
+      "column_number": 1,
+      "text": "blank line contains whitespace",
+      "physical_line": "    \n"
+    },
+    {
+      "code": "W293",
+      "filename": "./files/question-369-pass-1.py",
+      "line_number": 11,
+      "column_number": 1,
+      "text": "blank line contains whitespace",
+      "physical_line": "    \n"
+    }
+  ]
+}

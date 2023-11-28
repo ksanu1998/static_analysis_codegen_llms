@@ -1,0 +1,44 @@
+{
+  "./orig_files/question-462-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-462-pass-1.py",
+      "line_number": 2,
+      "column_number": 80,
+      "text": "line too long (200 > 79 characters)",
+      "physical_line": "'NEW_LINEdefno_of_characters(M):NEW_LINEINDENTk=1NEW_LINEwhile(True):NEW_LINEINDENTif(pow(2,k+1)-2<M):NEW_LINEINDENTk+=1NEW_LINEDEDENTelse:NEW_LINEINDENTbreakNEW_LINEDEDENTDEDENTreturnkNEW_LINEDEDENT'\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./orig_files/question-462-pass-1.py",
+      "line_number": 6,
+      "column_number": 9,
+      "text": "undefined name 'no_of_characters'",
+      "physical_line": "    k = no_of_characters(M)\n"
+    },
+    {
+      "code": "E251",
+      "filename": "./orig_files/question-462-pass-1.py",
+      "line_number": 16,
+      "column_number": 19,
+      "text": "unexpected spaces around keyword / parameter equals",
+      "physical_line": "    print(\"\",  end  = \"\")\n"
+    },
+    {
+      "code": "E221",
+      "filename": "./orig_files/question-462-pass-1.py",
+      "line_number": 16,
+      "column_number": 19,
+      "text": "multiple spaces before operator",
+      "physical_line": "    print(\"\",  end  = \"\")\n"
+    },
+    {
+      "code": "E251",
+      "filename": "./orig_files/question-462-pass-1.py",
+      "line_number": 16,
+      "column_number": 22,
+      "text": "unexpected spaces around keyword / parameter equals",
+      "physical_line": "    print(\"\",  end  = \"\")\n"
+    }
+  ]
+}

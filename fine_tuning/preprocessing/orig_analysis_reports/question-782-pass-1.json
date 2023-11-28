@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-782-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-782-pass-1.py",
+      "line_number": 19,
+      "column_number": 5,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "    l = []\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-782-pass-1.py",
+      "line_number": 40,
+      "column_number": 9,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "        l = deepcopy(temp3)\n"
+    }
+  ]
+}

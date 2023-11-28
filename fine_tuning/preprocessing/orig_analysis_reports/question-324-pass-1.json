@@ -1,0 +1,28 @@
+{
+  "./orig_files/question-324-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-324-pass-1.py",
+      "line_number": 16,
+      "column_number": 80,
+      "text": "line too long (81 > 79 characters)",
+      "physical_line": "                                          * 10 + 4 * exactnum[i - 1][j][k]) % mod\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-324-pass-1.py",
+      "line_number": 20,
+      "column_number": 80,
+      "text": "line too long (81 > 79 characters)",
+      "physical_line": "                                          * 10 + 5 * exactnum[i][j - 1][k]) % mod\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./orig_files/question-324-pass-1.py",
+      "line_number": 24,
+      "column_number": 80,
+      "text": "line too long (81 > 79 characters)",
+      "physical_line": "                                          * 10 + 6 * exactnum[i][j][k - 1]) % mod\n"
+    }
+  ]
+}

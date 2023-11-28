@@ -1,0 +1,12 @@
+{
+  "./orig_files/question-886-pass-1.py": [
+    {
+      "code": "E712",
+      "filename": "./orig_files/question-886-pass-1.py",
+      "line_number": 14,
+      "column_number": 25,
+      "text": "comparison to False should be 'if cond is False:' or 'if not cond:'",
+      "physical_line": "        if (check(a[i]) == False):\n"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "./orig_files/question-654-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./orig_files/question-654-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math' imported but unused",
+      "physical_line": "import math\n"
+    },
+    {
+      "code": "E741",
+      "filename": "./orig_files/question-654-pass-1.py",
+      "line_number": 15,
+      "column_number": 20,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "def subsetSum(arr, l, r, sum):\n"
+    }
+  ]
+}
