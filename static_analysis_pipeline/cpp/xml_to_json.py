@@ -24,7 +24,6 @@ def xml_to_dict(element):
     return result
 
 
-@staticmethod
 def process_xml_file(file_path):
     tree = ET.parse(file_path)
     root = tree.getroot()
