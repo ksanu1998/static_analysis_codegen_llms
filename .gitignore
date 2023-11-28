@@ -1,7 +1,6 @@
 models
 generations
-reports
+# reports
 .DS_Store
-fine_tuning/analysis_reports_cpp
-fine_tuning/analysis_reports_python
-fine_tuning/code_files
+
+__pycache__/

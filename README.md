@@ -1,6 +1,9 @@
-# NLP_Group37
-### Target 1.2.1
-Pipeline is split into 3 stages:<br>
-* Input processing - Process `XLCost` C++ code to the desired format (function signature, docstring, and first function call)
-* LM - Make a forward pass through the LM (`code llama 7b`) to generate / complete code, evaluate the LM using the generated / completed code agains the original (unmasked) input
-* Static Analysis - Check for static errors in the generated code using `cppcheck`, and generate report
+# Leveraging static analysis for evaluating code-generation models
+
+This repository contains code-base for CSCI 544 course project titled "Leveraging static analysis for evaluating code-generation models", by Group 37.<br>
+Here are some relevant links:<br>
+[Paper presentation](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Paper_Presentation.pdf)<br>
+[Project proposal](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Proposal.pdf) <br>
+[Project status report](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Status_Report.pdf) <br>
+[Project presentation](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Presentation.pdf) <br>
+Project final report <br>

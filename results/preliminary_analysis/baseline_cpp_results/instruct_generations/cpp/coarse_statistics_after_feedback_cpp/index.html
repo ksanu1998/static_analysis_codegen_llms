@@ -1,0 +1,692 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cppcheck - HTML report - [project name]</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+    <script>
+      function getStyle(el, styleProp) {
+        var y;
+
+        if (el.currentStyle) {
+          y = el.currentStyle[styleProp];
+        } else if (window.getComputedStyle) {
+          y = document.defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+        }
+
+        return y;
+      }
+
+      function toggle() {
+        var el = this.expandable_content;
+        var mark = this.expandable_marker;
+
+        if (el.style.display === "block") {
+          el.style.display = "none";
+          mark.textContent = "[+]";
+        } else {
+          el.style.display = "block";
+          mark.textContent = "[-]";
+        }
+      }
+
+      function initExpandables() {
+        var elements = document.querySelectorAll(".expandable");
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          var el = elements[i];
+          var clickable = el.querySelector("span");
+          var marker = clickable.querySelector(".marker");
+          var content = el.querySelector(".content");
+          var width = clickable.clientWidth - parseInt(getStyle(content, "padding-left")) - parseInt(getStyle(content, "padding-right"));
+          content.style.width = width + "px";
+          clickable.expandable_content = content;
+          clickable.expandable_marker = marker;
+          clickable.addEventListener("click", toggle);
+        }
+      }
+
+      function toggleDisplay(cb) {
+        var elements = document.querySelectorAll("." + cb.id);
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          elements[i].classList.toggle("id-filtered", !cb.checked);
+        }
+
+        updateFileRows();
+      }
+
+      function toggleSeverity(cb) {
+        cb.parentElement.classList.toggle("unchecked", !cb.checked);
+        var elements = document.querySelectorAll(".sev_" + cb.id);
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          elements[i].classList.toggle("severity-filtered", !cb.checked);
+        }
+
+        updateFileRows();
+      }
+
+      function toggleTool(cb) {
+        cb.parentElement.classList.toggle("unchecked", !cb.checked);
+
+        var elements;
+        if (cb.id == "clang-tidy")
+            elements = document.querySelectorAll("[class^=clang-tidy-]");
+        else
+            elements = document.querySelectorAll(".issue:not([class^=clang-tidy-])");
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          elements[i].classList.toggle("tool-filtered", !cb.checked);
+        }
+
+        updateFileRows();
+      }
+
+      function toggleAll() {
+        var elements = document.querySelectorAll(".idToggle");
+
+        // starting from 1 since 0 is the "toggle all" input
+        for (var i = 1, len = elements.length; i < len; i++) {
+          var changed = elements[i].checked != elements[0].checked;
+          if (changed) {
+            elements[i].checked = elements[0].checked;
+            toggleDisplay(elements[i]);
+          }
+        }
+      }
+
+      function filterFile(filter) {
+        var elements = document.querySelectorAll(".fileEntry");
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          var visible = elements[i].querySelector("tr").querySelector("td").textContent.toLowerCase().includes(filter.toLowerCase());
+          elements[i].classList.toggle("text-filtered", !visible);
+        }
+      }
+
+      function filterText(text) {
+        filter = text.toLowerCase();
+        var elements = document.querySelectorAll(".issue");
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          var visible = false;
+          var fields = elements[i].querySelectorAll("td");
+          for (var n = 0, num = fields.length; n < num; n++) {
+            if (fields[n].textContent.toLowerCase().includes(filter)) {
+              visible = true;
+              break;
+            }
+          }
+          elements[i].classList.toggle("text-filtered", !visible);
+        }
+
+        updateFileRows();
+      }
+
+      function updateFileRows(element) {
+        var elements = document.querySelectorAll(".fileEntry");
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          var visible = elements[i].querySelector(".issue:not(.id-filtered):not(.severity-filtered):not(.tool-filtered):not(.text-filtered)");
+          elements[i].classList.toggle("file-filtered", !visible);
+        }
+      }
+
+      window.addEventListener("load", initExpandables);
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+    <div id="header" class="header">
+      <h1>Cppcheck report - [project name]</h1>
+      <div id="filters">
+
+        <label class="checkBtn"><input type="checkbox" onclick="toggleSeverity(this)" id="error"checked/>error</label>
+        <label class="checkBtn"><input type="checkbox" onclick="toggleSeverity(this)" id="warning"checked/>warning</label>
+        <label class="checkBtn disabled"><input type="checkbox" onclick="toggleSeverity(this)" id="portability"disabled/>portability</label>
+        <label class="checkBtn"><input type="checkbox" onclick="toggleSeverity(this)" id="performance"checked/>performance</label>
+        <label class="checkBtn"><input type="checkbox" onclick="toggleSeverity(this)" id="style"checked/>style</label>
+        <label class="checkBtn disabled"><input type="checkbox" onclick="toggleSeverity(this)" id="information"disabled/>information</label>
+        | 
+        <label class="checkBtn"><input type="checkbox" onclick="toggleTool(this)" id="cppcheck"checked/>cppcheck</label>
+        <label class="checkBtn disabled"><input type="checkbox" onclick="toggleTool(this)" id="clang-tidy"disabled/>clang-tidy</label>
+        | 
+        <label class="severityHeader">File: <input type="text" oninput="filterFile(this.value)"/></label>
+        <label class="severityHeader">Filter: <input type="text" oninput="filterText(this.value)"/></label>
+      </div>
+
+    </div>
+
+    <div id="menu_index">
+     <p><a href="index.html">Defect summary</a> </p>
+
+       <label><input type="checkbox" class="idToggle" onclick="toggleAll()" checked> Toggle all</label>
+       <table>
+           <tr><th>Show</th><th>#</th><th>Defect ID</th></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="unusedFunction" name="unusedFunction" checked></td><td>114</td><td>unusedFunction</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="syntaxError" name="syntaxError" checked></td><td>16</td><td>syntaxError</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="constParameter" name="constParameter" checked></td><td>14</td><td>constParameter</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="unreadVariable" name="unreadVariable" checked></td><td>13</td><td>unreadVariable</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="passedByValue" name="passedByValue" checked></td><td>7</td><td>passedByValue</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="shadowVariable" name="shadowVariable" checked></td><td>6</td><td>shadowVariable</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="variableScope" name="variableScope" checked></td><td>4</td><td>variableScope</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="negativeIndex" name="negativeIndex" checked></td><td>3</td><td>negativeIndex</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="arrayIndexOutOfBounds" name="arrayIndexOutOfBounds" checked></td><td>1</td><td>arrayIndexOutOfBounds</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="arrayIndexOutOfBoundsCond" name="arrayIndexOutOfBoundsCond" checked></td><td>1</td><td>arrayIndexOutOfBoundsCond</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="constParameterReference" name="constParameterReference" checked></td><td>1</td><td>constParameterReference</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="legacyUninitvar" name="legacyUninitvar" checked></td><td>1</td><td>legacyUninitvar</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="multiCondition" name="multiCondition" checked></td><td>1</td><td>multiCondition</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="shadowFunction" name="shadowFunction" checked></td><td>1</td><td>shadowFunction</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="unusedVariable" name="unusedVariable" checked></td><td>1</td><td>unusedVariable</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="zerodiv" name="zerodiv" checked></td><td>1</td><td>zerodiv</td></tr>
+           <tr><td></td><td>185</td><td>total</td></tr>
+       </table>
+       <p><a href="stats.html">Statistics</a></p>
+    </div>
+    <div id="content_index">
+
+       <table class="summaryTable">
+       <tr><th>Line</th><th>Id</th><th>CWE</th><th>Severity</th><th>Message</th></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="52.html">files_with_feedback/question-0-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="52.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;maxPresum&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="53.html">files_with_feedback/question-1-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="53.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;sumOfTwoCubes&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="54.html">files_with_feedback/question-10-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="54.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;minSwaps&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="55.html">files_with_feedback/question-100-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="55.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findAns&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="56.html">files_with_feedback/question-102-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="56.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;movesRequired&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="0.html">files_with_feedback/question-103-pass-1.cpp</a></td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="0.html#line-5">5</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;a&apos; is assigned a value that is never used.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="0.html#line-5">5</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;b&apos; is assigned a value that is never used.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="0.html#line-5">5</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;c&apos; is assigned a value that is never used.</td></tr>
+         <tr class="shadowVariable sev_style issue"><td><a href="0.html#line-7">7</a></td><td>shadowVariable</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Local variable &apos;a&apos; shadows outer variable</td></tr>
+         <tr class="shadowVariable sev_style issue"><td><a href="0.html#line-9">9</a></td><td>shadowVariable</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Local variable &apos;b&apos; shadows outer variable</td></tr>
+         <tr class="shadowVariable sev_style issue"><td><a href="0.html#line-11">11</a></td><td>shadowVariable</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Local variable &apos;c&apos; shadows outer variable</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="1.html">files_with_feedback/question-104-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="1.html#line-3">3</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="2.html">files_with_feedback/question-107-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="2.html#line-3">3</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="57.html">files_with_feedback/question-109-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="57.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;largestNumberLessThanOrEqualToZThatLeavesRemainderXWhenDividedByY&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="58.html">files_with_feedback/question-11-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="58.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;count_setbit&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="3.html">files_with_feedback/question-110-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="3.html#line-4">4</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="59.html">files_with_feedback/question-112-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="59.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;minOperations&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="4.html">files_with_feedback/question-113-pass-1.cpp</a></td></tr>
+         <tr class="passedByValue sev_performance issue"><td><a href="4.html#line-4">4</a></td><td>passedByValue</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Function parameter &apos;s&apos; should be passed by const reference.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="60.html">files_with_feedback/question-118-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="60.html#line-1">1</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findDistinctOddSum&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="5.html">files_with_feedback/question-119-pass-1.cpp</a></td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="5.html#line-3">3</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;a&apos; can be declared as const array</td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="5.html#line-3">3</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;b&apos; can be declared as const array</td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="5.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;checkArray&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="61.html">files_with_feedback/question-12-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="61.html#line-4">4</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;evaluateExpression&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="62.html">files_with_feedback/question-120-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="62.html#line-28">28</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;perfectCube&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="63.html">files_with_feedback/question-126-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="63.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;countNumber&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="64.html">files_with_feedback/question-129-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="64.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findNumberOfEvenCells&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="6.html">files_with_feedback/question-13-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="6.html#line-2">2</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="65.html">files_with_feedback/question-132-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="65.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findNums&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="66.html">files_with_feedback/question-134-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="66.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findLargest&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="67.html">files_with_feedback/question-140-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="67.html#line-4">4</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findNum&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="7.html">files_with_feedback/question-147-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="7.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;find_numbers&apos; is never used.</td></tr>
+         <tr class="legacyUninitvar sev_error issue"><td><a href="7.html#line-11">11</a></td><td>legacyUninitvar</td><td><a href="https://cwe.mitre.org/data/definitions/457.html">457</a></td><td>error</td><td class="error">Uninitialized variable: numbers[0]</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="68.html">files_with_feedback/question-148-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="68.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;countPairs&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="69.html">files_with_feedback/question-149-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="69.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;minInt&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="70.html">files_with_feedback/question-152-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="70.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;areAnagrams&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="71.html">files_with_feedback/question-158-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="71.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;minCost&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="72.html">files_with_feedback/question-16-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="72.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;alternatingSumOfFirst_N&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="8.html">files_with_feedback/question-164-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="8.html#line-3">3</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="9.html">files_with_feedback/question-165-pass-1.cpp</a></td></tr>
+         <tr class="negativeIndex sev_error issue"><td><a href="9.html#line-8">8</a></td><td>negativeIndex</td><td><a href="https://cwe.mitre.org/data/definitions/786.html">786</a></td><td>error</td><td class="error">Array &apos;dp[2147483648]&apos; accessed at index -1, which is out of bounds.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="73.html">files_with_feedback/question-169-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="73.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;proizvolov&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="10.html">files_with_feedback/question-171-pass-1.cpp</a></td></tr>
+         <tr class="shadowFunction sev_style issue"><td><a href="10.html#line-21">21</a></td><td>shadowFunction</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Local variable &apos;sum&apos; shadows outer function</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="74.html">files_with_feedback/question-174-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="74.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;SumofInverseDivisors&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="75.html">files_with_feedback/question-175-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="75.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;NoofTriplets&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="76.html">files_with_feedback/question-183-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="76.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;closetAND&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="77.html">files_with_feedback/question-186-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="77.html#line-4">4</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;CreateArray&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="78.html">files_with_feedback/question-187-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="78.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;changeTheArray&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="79.html">files_with_feedback/question-195-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="79.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;decideWinner&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="80.html">files_with_feedback/question-196-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="80.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;CntDivbyX&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="81.html">files_with_feedback/question-198-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="81.html#line-6">6</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;precomputation&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="11.html">files_with_feedback/question-203-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="11.html#line-4">4</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="82.html">files_with_feedback/question-207-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="82.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;countNumbers&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="83.html">files_with_feedback/question-208-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="83.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;NumberofWays&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="12.html">files_with_feedback/question-211-pass-1.cpp</a></td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="12.html#line-3">3</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;even&apos; can be declared as const array</td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="12.html#line-3">3</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;odd&apos; can be declared as const array</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="13.html">files_with_feedback/question-215-pass-1.cpp</a></td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="13.html#line-3">3</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;arr&apos; can be declared as const array</td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="13.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findMinSum&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="84.html">files_with_feedback/question-216-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="84.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;maxLenSubArr&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="85.html">files_with_feedback/question-218-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="85.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;maxAND&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="14.html">files_with_feedback/question-22-pass-1.cpp</a></td></tr>
+         <tr class="shadowVariable sev_style issue"><td><a href="14.html#line-18">18</a></td><td>shadowVariable</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Local variable &apos;i&apos; shadows outer variable</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="86.html">files_with_feedback/question-220-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="86.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;minMoves&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="87.html">files_with_feedback/question-222-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="87.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;getPairs&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="88.html">files_with_feedback/question-223-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="88.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;countSquares&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="89.html">files_with_feedback/question-224-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="89.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;canTakeDown&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="90.html">files_with_feedback/question-225-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="90.html#line-5">5</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findPrimeFactors&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="15.html">files_with_feedback/question-228-pass-1.cpp</a></td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="15.html#line-9">9</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;key&apos; is assigned a value that is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="91.html">files_with_feedback/question-230-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="91.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;EqualNumbers&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="16.html">files_with_feedback/question-235-pass-1.cpp</a></td></tr>
+         <tr class="zerodiv sev_error issue"><td><a href="16.html#line-6">6</a></td><td>zerodiv</td><td><a href="https://cwe.mitre.org/data/definitions/369.html">369</a></td><td>error</td><td class="error">Division by zero.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="92.html">files_with_feedback/question-238-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="92.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;powerfulIntegers&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="93.html">files_with_feedback/question-241-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="93.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;smallestMultiple&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="94.html">files_with_feedback/question-246-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="94.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;minAbsDiff&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="17.html">files_with_feedback/question-25-pass-1.cpp</a></td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="17.html#line-3">3</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;x&apos; can be declared as const array</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="18.html">files_with_feedback/question-254-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="18.html#line-3">3</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="95.html">files_with_feedback/question-259-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="95.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;isTriPerfect&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="96.html">files_with_feedback/question-261-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="96.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findTwoThreePrime&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="97.html">files_with_feedback/question-264-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="97.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;addNDigits&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="98.html">files_with_feedback/question-265-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="98.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;countTriplets&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="99.html">files_with_feedback/question-28-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="99.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;maxLCMWithGivenSum&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="100.html">files_with_feedback/question-280-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="100.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;countOrderedPairs&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="19.html">files_with_feedback/question-283-pass-1.cpp</a></td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="19.html#line-3">3</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;answerKey&apos; can be declared as const array</td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="19.html#line-3">3</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;studentAnswer&apos; can be declared as const array</td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="19.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;markingScheme&apos; is never used.</td></tr>
+         <tr class="multiCondition sev_style issue"><td><a href="19.html#line-8">8</a></td><td>multiCondition</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Expression is always true because &apos;else if&apos; condition is opposite to previous condition at line 6.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="101.html">files_with_feedback/question-286-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="101.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;Check_is_possible&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="20.html">files_with_feedback/question-290-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="20.html#line-2">2</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="21.html">files_with_feedback/question-295-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="21.html#line-5">5</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;ulam&apos; is never used.</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="21.html#line-6">6</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: k</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="102.html">files_with_feedback/question-296-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="102.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;NumberOfRectangles&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="103.html">files_with_feedback/question-300-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="103.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;sumProductDifference&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="104.html">files_with_feedback/question-301-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="104.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;numberOfSolutions&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="22.html">files_with_feedback/question-306-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="22.html#line-2">2</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="23.html">files_with_feedback/question-310-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="23.html#line-5">5</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="105.html">files_with_feedback/question-314-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="105.html#line-4">4</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;max_value&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="24.html">files_with_feedback/question-316-pass-1.cpp</a></td></tr>
+         <tr class="negativeIndex sev_error issue"><td><a href="24.html#line-7">7</a></td><td>negativeIndex</td><td><a href="https://cwe.mitre.org/data/definitions/786.html">786</a></td><td>error</td><td class="error">Array &apos;dp[2147483648]&apos; accessed at index -1, which is out of bounds.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="106.html">files_with_feedback/question-318-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="106.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;numberOfArithmeticSequences&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="107.html">files_with_feedback/question-319-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="107.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;CountOfTriplets&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="108.html">files_with_feedback/question-32-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="108.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;count_pairs&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="109.html">files_with_feedback/question-323-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="109.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;maximumOccurrence&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="25.html">files_with_feedback/question-325-pass-1.cpp</a></td></tr>
+         <tr class="passedByValue sev_performance issue"><td><a href="25.html#line-4">4</a></td><td>passedByValue</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Function parameter &apos;ed&apos; should be passed by const reference.</td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="25.html#line-4">4</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;smPath&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="26.html">files_with_feedback/question-326-pass-1.cpp</a></td></tr>
+         <tr class="passedByValue sev_performance issue"><td><a href="26.html#line-3">3</a></td><td>passedByValue</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Function parameter &apos;ed&apos; should be passed by const reference.</td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="26.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;bellman&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="110.html">files_with_feedback/question-327-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="110.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;maxLengthSquare&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="27.html">files_with_feedback/question-329-pass-1.cpp</a></td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="27.html#line-5">5</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;a&apos; can be declared as const array</td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="27.html#line-5">5</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findMax&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="111.html">files_with_feedback/question-33-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="111.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;numberOfPairs&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="28.html">files_with_feedback/question-331-pass-1.cpp</a></td></tr>
+         <tr class="passedByValue sev_performance issue"><td><a href="28.html#line-6">6</a></td><td>passedByValue</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Function parameter &apos;b&apos; should be passed by const reference.</td></tr>
+         <tr class="passedByValue sev_performance issue"><td><a href="28.html#line-6">6</a></td><td>passedByValue</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Function parameter &apos;c&apos; should be passed by const reference.</td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="28.html#line-6">6</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;minDifference&apos; is never used.</td></tr>
+         <tr class="shadowVariable sev_style issue"><td><a href="28.html#line-28">28</a></td><td>shadowVariable</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Local variable &apos;m&apos; shadows outer variable</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="112.html">files_with_feedback/question-332-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="112.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;longest_subseq&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="113.html">files_with_feedback/question-334-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="113.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;max_sum&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="114.html">files_with_feedback/question-335-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="114.html#line-4">4</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;number_of_ways&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="115.html">files_with_feedback/question-336-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="115.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findCount&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="116.html">files_with_feedback/question-337-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="116.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findSetBits&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="117.html">files_with_feedback/question-34-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="117.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;print_h_index&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="118.html">files_with_feedback/question-340-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="118.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;NumberOfShortestPaths&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="29.html">files_with_feedback/question-347-pass-1.cpp</a></td></tr>
+         <tr class="arrayIndexOutOfBounds sev_error issue"><td><a href="29.html#line-9">9</a></td><td>arrayIndexOutOfBounds</td><td><a href="https://cwe.mitre.org/data/definitions/788.html">788</a></td><td>error</td><td class="error">Array &apos;dp[3][3]&apos; accessed at index dp[*][3], which is out of bounds.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="30.html">files_with_feedback/question-349-pass-1.cpp</a></td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="30.html#line-3">3</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;marksarr&apos; can be declared as const array</td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="30.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;MaximumMarks&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="119.html">files_with_feedback/question-353-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="119.html#line-2">2</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;MinOfCubed&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="120.html">files_with_feedback/question-354-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="120.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;MinOfCubedDP&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="31.html">files_with_feedback/question-355-pass-1.cpp</a></td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="31.html#line-12">12</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;max_sum_of_first_two&apos; is assigned a value that is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="121.html">files_with_feedback/question-357-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="121.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;MinimumCost&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="32.html">files_with_feedback/question-359-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="32.html#line-6">6</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="122.html">files_with_feedback/question-361-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="122.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;subsetXOR&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="123.html">files_with_feedback/question-362-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="123.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;get_max_splits&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="124.html">files_with_feedback/question-365-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="124.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;findMinimumCost&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="33.html">files_with_feedback/question-371-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="33.html#line-4">4</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;minFallingPathSum&apos; is never used.</td></tr>
+         <tr class="negativeIndex sev_error issue"><td><a href="33.html#line-11">11</a></td><td>negativeIndex</td><td><a href="https://cwe.mitre.org/data/definitions/786.html">786</a></td><td>error</td><td class="error">Array &apos;dp[3][3]&apos; accessed at index dp[-1][*], which is out of bounds.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="125.html">files_with_feedback/question-372-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="125.html#line-5">5</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;maxPlus&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="126.html">files_with_feedback/question-373-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="126.html#line-2">2</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;countStaircases&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="127.html">files_with_feedback/question-375-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="127.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;countPaths&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="128.html">files_with_feedback/question-380-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="128.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;totalWays&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="34.html">files_with_feedback/question-382-pass-1.cpp</a></td></tr>
+         <tr class="arrayIndexOutOfBoundsCond sev_warning issue"><td><a href="34.html#line-8">8</a></td><td>arrayIndexOutOfBoundsCond</td><td><a href="https://cwe.mitre.org/data/definitions/788.html">788</a></td><td>warning</td><td class="warning">Either the condition &apos;n&lt;=1&apos; is redundant or the array &apos;term[1000]&apos; is accessed at index 1000, which is out of bounds.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="35.html">files_with_feedback/question-387-pass-1.cpp</a></td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="35.html#line-3">3</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;c&apos; can be reduced.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="36.html">files_with_feedback/question-388-pass-1.cpp</a></td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="36.html#line-4">4</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;a&apos; can be declared as const array</td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="36.html#line-4">4</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;pre_compute&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="129.html">files_with_feedback/question-391-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="129.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;minimalSteps&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="37.html">files_with_feedback/question-392-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="37.html#line-3">3</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="38.html">files_with_feedback/question-394-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="38.html#line-4">4</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="130.html">files_with_feedback/question-396-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="130.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;getNumStrictMonotone&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="39.html">files_with_feedback/question-398-pass-1.cpp</a></td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="39.html#line-5">5</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;arr&apos; can be declared as const array</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="131.html">files_with_feedback/question-401-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="131.html#line-4">4</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;numberofways&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="132.html">files_with_feedback/question-406-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="132.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;longestBalancedSubsequence&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="133.html">files_with_feedback/question-407-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="133.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;maxSumBitonicSubArr&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="134.html">files_with_feedback/question-408-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="134.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;smallestSumSubarr&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="135.html">files_with_feedback/question-410-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="135.html#line-5">5</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;minimumSquares&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="136.html">files_with_feedback/question-413-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="136.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;sumOfSubstrings&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="40.html">files_with_feedback/question-414-pass-1.cpp</a></td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="40.html#line-7">7</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;j&apos; can be reduced.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="40.html#line-7">7</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;j&apos; is assigned a value that is never used.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="40.html#line-12">12</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;j&apos; is assigned a value that is never used.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="40.html#line-15">15</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;j&apos; is assigned a value that is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="41.html">files_with_feedback/question-422-pass-1.cpp</a></td></tr>
+         <tr class="shadowVariable sev_style issue"><td><a href="41.html#line-16">16</a></td><td>shadowVariable</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Local variable &apos;templeHeight&apos; shadows outer variable</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="42.html">files_with_feedback/question-423-pass-1.cpp</a></td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="42.html#line-3">3</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;arr&apos; can be declared as const array</td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="42.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;modularSum&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="137.html">files_with_feedback/question-425-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="137.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;maximumDifferenceSum&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="138.html">files_with_feedback/question-428-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="138.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;countSubarrays&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="139.html">files_with_feedback/question-430-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="139.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;maxSumWO3Consec&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="140.html">files_with_feedback/question-431-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="140.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;maxSumPair&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="141.html">files_with_feedback/question-434-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="141.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;KnapSack&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="43.html">files_with_feedback/question-442-pass-1.cpp</a></td></tr>
+         <tr class="constParameter sev_style issue"><td><a href="43.html#line-3">3</a></td><td>constParameter</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;arr&apos; can be declared as const array</td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="43.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;partition&apos; is never used.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="43.html#line-4">4</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;diff&apos; can be reduced.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="142.html">files_with_feedback/question-445-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="142.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;countSol&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="143.html">files_with_feedback/question-448-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="143.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;LCSubStr&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="44.html">files_with_feedback/question-449-pass-1.cpp</a></td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="44.html#line-24">24</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;dp[i][j]&apos; is assigned a value that is never used.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="44.html#line-26">26</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;dp[i][j]&apos; is assigned a value that is never used.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="44.html#line-28">28</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;dp[i][j]&apos; is assigned a value that is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="144.html">files_with_feedback/question-450-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="144.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;possibleEqualArray&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="145.html">files_with_feedback/question-451-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="145.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;countPalindromes&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="45.html">files_with_feedback/question-453-pass-1.cpp</a></td></tr>
+         <tr class="constParameterReference sev_style issue"><td><a href="45.html#line-4">4</a></td><td>constParameterReference</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;nums&apos; can be declared as reference to const</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="46.html">files_with_feedback/question-454-pass-1.cpp</a></td></tr>
+         <tr class="passedByValue sev_performance issue"><td><a href="46.html#line-14">14</a></td><td>passedByValue</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Function parameter &apos;result&apos; should be passed by const reference.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="47.html">files_with_feedback/question-455-pass-1.cpp</a></td></tr>
+         <tr class="passedByValue sev_performance issue"><td><a href="47.html#line-16">16</a></td><td>passedByValue</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>performance</td><td>Function parameter &apos;result&apos; should be passed by const reference.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="48.html">files_with_feedback/question-457-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="48.html#line-2">2</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="49.html">files_with_feedback/question-458-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="49.html#line-3">3</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="146.html">files_with_feedback/question-461-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="146.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;count_ht&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="147.html">files_with_feedback/question-48-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="147.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;CountPairs&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="50.html">files_with_feedback/question-59-pass-1.cpp</a></td></tr>
+         <tr class="syntaxError sev_error issue"><td><a href="50.html#line-3">3</a></td><td>syntaxError</td><td></td><td>error</td><td class="error">Unmatched &apos;{&apos;. Configuration: &apos;&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="148.html">files_with_feedback/question-60-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="148.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;divisorsSame&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="149.html">files_with_feedback/question-7-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="149.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;isCycleExists&apos; is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="51.html">files_with_feedback/question-8-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="51.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;getMax&apos; is never used.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="51.html#line-4">4</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;max_idx&apos; can be reduced.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="51.html#line-4">4</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;max_idx&apos; is assigned a value that is never used.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="51.html#line-8">8</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;max_idx&apos; is assigned a value that is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="150.html">files_with_feedback/question-94-pass-1.cpp</a></td></tr>
+         <tr class="unusedFunction sev_style issue"><td><a href="150.html#line-3">3</a></td><td>unusedFunction</td><td><a href="https://cwe.mitre.org/data/definitions/561.html">561</a></td><td>style</td><td>The function &apos;CountWays&apos; is never used.</td></tr>
+      </tbody>
+       </table>
+    </div>
+    <div id="footer" class="footer">
+      <p>
+        Created by Cppcheck 2.13 dev (<a href="https://cppcheck.sourceforge.io">Sourceforge</a>, <a href="irc://irc.freenode.net/cppcheck">IRC</a>)
+      </p>
+    </div>
+    </div>
+  </body>
+</html>
