@@ -1,6 +1,7 @@
 import json
 import argparse
 from collections import Counter
+import os
 
 
 def get_error_ids(json_data, file_key):
@@ -107,7 +108,7 @@ def load_json_file(file_path):
         return json.load(file)
 
 
-def analyze_error_data(file1_path, file2_path):
+def analyze_error_data(file1_path, file2_path, output_file_path):
     """
     Analyzes error data between two JSON files.
 
@@ -134,6 +135,8 @@ def analyze_error_data(file1_path, file2_path):
     common_errors = compare_error_ids(file1_data, file2_data)
     sorted_frequencies = None
 
+    op = []
+
     if common_errors:
         # Print the list of common error IDs on a per-key basis
         print("File Key\tCommon Error IDs")
@@ -147,9 +150,15 @@ def analyze_error_data(file1_path, file2_path):
         sorted_frequencies = sorted(error_frequencies.items(), key=lambda x: x[1], reverse=True)
 
         # Print the frequency table
-        print("\nError ID\tFrequency")
+        op.append("Error ID\tFrequency")
         for error_id, frequency in sorted_frequencies:
-            print(f"{error_id}\t{frequency}")
+            op.append(f"{error_id}\t{frequency}")
+
+        os.makedirs(output_file_path, exist_ok=True)
+        stats_file_path = os.path.join(output_file_path, "fine-grained-stats.txt")
+
+        with open(stats_file_path, "w") as file:
+            file.write("\n".join(op))
 
     else:
         print("No common error IDs found.")
@@ -169,4 +178,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    analyze_error_data(
+        "results/cpp/before_feedback/feedback.json",
+        "results/cpp/after_feedback/feedback.json",
+        "results/cpp/fine-grained-stats",
+    )
+    # main()

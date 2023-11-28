@@ -106,6 +106,27 @@ def generate_feedback_json_report(source_directory, report_directory):
 
 
 if __name__ == "__main__":
-    generate_one_xml_report_for_all_file("cpp_results/cpp_source", "results/cpp/one_report")
-    generate_feedback_json_report("cpp_results/cpp_source", "results/cpp")
-    ...
+    BASELINE_CPP_RESULTS_DIR = os.path.join(
+        "results", "preliminary_analysis", "baseline_cpp_results"
+    )
+    POST_FEEDBACK_RESULTS_DIR = os.path.join("results", "post_feedback", "cpp")
+
+    # Runs before and after feedback
+    generate_one_xml_report_for_all_file(
+        os.path.join(BASELINE_CPP_RESULTS_DIR, "cpp_source"),
+        os.path.join(POST_FEEDBACK_RESULTS_DIR, "coarse_grained_stats"),
+    )
+
+    # Fine grained stats generation
+    generate_feedback_json_report(
+        os.path.join(
+            BASELINE_CPP_RESULTS_DIR, "instruct_generations", "cpp", "files_before_feedback"
+        ),
+        os.path.join(POST_FEEDBACK_RESULTS_DIR, "before_feedback"),
+    )
+    generate_feedback_json_report(
+        os.path.join(
+            BASELINE_CPP_RESULTS_DIR, "instruct_generations", "cpp", "files_after_feedback"
+        ),
+        os.path.join(POST_FEEDBACK_RESULTS_DIR, "after_feedback"),
+    )

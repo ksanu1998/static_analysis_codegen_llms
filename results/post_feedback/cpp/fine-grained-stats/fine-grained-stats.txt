@@ -1,0 +1,14 @@
+
+Error ID	Frequency
+syntaxError	300
+unusedFunction	111
+unreadVariable	5
+variableScope	4
+negativeIndex	3
+shadowVariable	2
+uninitvar	2
+legacyUninitvar	1
+zerodiv	1
+unusedVariable	1
+constParameter	1
+arrayIndexOutOfBounds	1
