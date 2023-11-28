@@ -35,5 +35,7 @@ def generate_flake8_report(source_directory, report_directory):
 
 
 if __name__ == "__main__":
-    generate_flake8_report(os.path.join("py_results", "py_source"), os.path.join("results", "py"))
-    ...
+    generate_flake8_report(
+        os.path.join("results", "preliminary_analysis", "baseline_py_results", "py_source"),
+        os.path.join("results", "post_feedback", "py"),
+    )
