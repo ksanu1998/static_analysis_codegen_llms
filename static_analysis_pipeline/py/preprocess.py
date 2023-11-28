@@ -1,3 +1,11 @@
+import os
+import sys
+
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+MODULE_DIR = os.path.dirname(CURRENT_DIR)
+
+sys.path.append(MODULE_DIR)
+
 from utils.preprocess import clean_code, end_overlap, remove_prefix
 from utils.settings import CodeBlockMarkers as cm
 
