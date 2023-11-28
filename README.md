@@ -1,30 +1,9 @@
-# NLP_Group37
+# Leveraging static analysis for evaluating code-generation models
 
-## Install `cppcheck`
-Assuming that you have enabled SSH key based login to GitHub
-* $ `git clone https://github.com/ksanu1998/NLP_Group37.git`
-* $ `git checkout anuroop`
-* $ `cd cppcheck_utils`
-* $ `chmod +x install_cppcheck.sh`
-* $ `./install_cppcheck.sh`
-
-## Run `cppcheck` and generate an HTML report
-Assuming there is a directory named `source_directory` containing `.cpp` files to be checked and another one named `report_directory` to store the generated reports
-* $ `chmod +x run_cppcheck.sh`
-* $ `./run_cppcheck.sh <source_directory> <report_directory>`
-* Go to `<report_directory>` and open `index.html`
-
-
-## Install `flake8`
-Assuming that you have enabled SSH key based login to GitHub
-* $ `git clone https://github.com/ksanu1998/NLP_Group37.git`
-* $ `git checkout anuroop`
-* $ `cd flake8_utils`
-* $ `chmod +x install_flake8.sh`
-* $ `./install_flake8.sh`
-
-## Run `flake8` and generate an TXT report
-Assuming there is a directory named `source_directory` containing `.py` files to be checked and another one named `report_directory` to store the generated reports
-* $ `chmod +x run_flake8.sh`
-* $ `./run_flake8.sh <source_directory> <report_directory>`
-* Go to `<report_directory>` and open `flake8_report.txt`
+This repository contains code-base for CSCI 544 course project titled "Leveraging static analysis for evaluating code-generation models", by Group 37.<br>
+Here are some relevant links:<br>
+[Paper presentation](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Paper_Presentation.pdf)<br>
+[Project proposal](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Proposal.pdf) <br>
+[Project status report](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Status_Report.pdf) <br>
+[Project presentation](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Presentation.pdf) <br>
+Project final report <br>
