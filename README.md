@@ -1,6 +1,6 @@
 # Leveraging static analysis for evaluating code-generation models
 
-In recent times, the utilization of Large Language Models (LLMs) for code generation has gained substantial traction. Tools such as [ChatGPT](), [GitHub CoPilot](https://github.com/features/copilot), [Code Llama](), [Bard](https://blog.google/technology/ai/bard-google-ai-search-updates/), and the pioneering work of Rozière et al. with [Code Llama]() aim to streamline developer workflows and expedite development cycles. Despite their promising prospects, code produced by these tools often suffers from bugs, hampering their overall utility. While existing methodologies primarily focus on resource-intensive runtime analysis to address these issues, research exploring static analysis, especially across a limited range of programming languages, remains scarce.
+In recent times, the utilization of Large Language Models (LLMs) for code generation has gained substantial traction. Tools such as [ChatGPT](https://proceedings.neurips.cc/paper_files/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf), [GitHub CoPilot](https://github.com/features/copilot), [Code Llama](https://arxiv.org/abs/2308.12950), [Bard](https://blog.google/technology/ai/bard-google-ai-search-updates/), and the pioneering work of Rozière et al. with [Code Llama](https://arxiv.org/abs/2308.12950) aim to streamline developer workflows and expedite development cycles. Despite their promising prospects, code produced by these tools often suffers from bugs, hampering their overall utility. While existing methodologies primarily focus on resource-intensive runtime analysis to address these issues, research exploring static analysis, especially across a limited range of programming languages, remains scarce.
 
 Our study aims to enrich the baseline code generation model by incorporating insights from static error analysis, potentially refining code generation quality. To achieve this objective, we introduce a pipeline that assimilates feedback gleaned from static analysis into the baseline model. Furthermore, we enhance the baseline model by fine-tuning it using samples previously rejected due to static errors. Our empirical observations underscore the efficacy of both strategies in mitigating the occurrence of observed static errors.
 
@@ -39,11 +39,13 @@ In this phase, we're utilizing quantized models for streamlined loading into the
 > [!IMPORTANT]  
 > We have used GPU-P100 on Kaggle and T4 on Google Colaboratory for our experiments.
 
+We utilized the [XLCoST](http://arxiv.org/abs/2206.08474) dataset for the code completion task. This parallel dataset comprises solutions for data structures and algorithms problems in six programming languages: C++, Java, Python, PHP, C, and C#. Our experiment primarily focuses on program-level samples in C++ and Python. Our baseline model, `CodeLlama-7b-Instruct-hf`, was trained and evaluated using this dataset.
+
 ## Directory Structure
 
 | Directory               | Description                                                                                  |
 |-------------------------|---------------------------------------------------------------------------------------------|
-| [data](./data)          | Contains sampled raw and processed XLCoST data for training, evaluation of CodeLlama model  |
+| [data](./data)          | Contains sampled raw and processed [XLCoST](http://arxiv.org/abs/2206.08474) data for training, evaluation of CodeLlama model  |
 | [feedback_pipeline](./feedback_pipeline) | Notebooks for running static analysis on code generated after multiple feedback loops |
 | [fine_tuning](./fine_tuning) | Notebooks for fine-tuning CodeLlama models to enhance code generation using enriched prompts |
 | [linter_setup_scripts](./linter_setup_scripts) | Bash Scripts for installing, setting up, and supporting linters |
