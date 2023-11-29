@@ -4,12 +4,55 @@ In recent times, the utilization of Large Language Models (LLMs) for code genera
 
 Our study aims to enrich the baseline code generation model by incorporating insights from static error analysis, potentially refining code generation quality. To achieve this objective, we introduce a pipeline that assimilates feedback gleaned from static analysis into the baseline model. Furthermore, we enhance the baseline model by fine-tuning it using samples previously rejected due to static errors. Our empirical observations underscore the efficacy of both strategies in mitigating the occurrence of observed static errors.
 
+### Relevant links:
+- [Paper presentation](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Paper_Presentation.pdf)
+- [Project proposal](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Proposal.pdf) 
+- [Project status report](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Status_Report.pdf) 
+- [Project presentation](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Presentation.pdf) 
+- [Project final report](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Final_Report.pdf) 
+
+### About
+This repository contains code base for project titled __`Leveraging static analysis for evaluating code-generation models`__ developed during the `CSCI 544 Applied Natural Language Processing` course, Fall 2023, at the `University of Southern California` (USC).
+
 ## Pipeline
 ![Code Generation and Static Evaluation Pipeline with feedback](reports/Model_Pipeline.png)
 
+The pipeline employs automated feedback via linters (static code analyzers) to enhance error detection and improve the underlying code generation models. The multi-stage feedback pipeline is designed for effective code generation refinement.
 
-# Getting Started
-## Setup Guide for Project Dependencies
+**Pipeline Overview:**
+
+1. **Context Generation:** The pre-processing stage generates the context as part of a prompt, incorporating text from the dataset.
+2. **Code Generation:** The model utilizes the provided context along with text from the dataset to generate code.
+3. **Linters Integration:** Linters are executed on the generated code to identify errors.
+4. **Automated Feedback Loop:** Detected errors are then fed back in natural language as feedback into prompts for the model, enhancing subsequent code generation.
+
+This systematic approach allows for the identification and minimization of errors within the code generation process, enabling precise insights into areas where the model might exhibit shortcomings. Importantly, it facilitates targeted corrections by providing precise information about error types and their respective locations.
+
+> [!NOTE]  
+> Highlights information that users should take into account, even when skimming.
+
+**Fine-tuning:**
+
+Fine-Tuning in this context seeks to elevate the baseline model's initial accuracy without necessitating subsequent feedback adjustments. This process involves refining the baseline model for code generation, specifically leveraging the DPO method. We utilize prompt construction following the same procedure as the initial stage of our feedback pipeline.
+
+In this phase, we're utilizing quantized models for streamlined loading into the system and to facilitate running on TPUs.
+
+
+## Directory Structure
+
+| Directory               | Description                                                                                  |
+|-------------------------|---------------------------------------------------------------------------------------------|
+| [data](./data)          | Contains sampled raw and processed XLCoST data for training, evaluation of CodeLlama model  |
+| [feedback_pipeline](./feedback_pipeline) | Notebooks for running static analysis on code generated after multiple feedback loops |
+| [fine_tuning](./fine_tuning) | Notebooks for fine-tuning CodeLlama models to enhance code generation using enriched prompts |
+| [linter_setup_scripts](./linter_setup_scripts) | Bash Scripts for installing, setting up, and supporting linters |
+| [preprocessing](./preprocessing) | Code snippets for pre-processing and parsing in notebooks |
+| [reports](./reports) | Project-related documentation and reports |
+| [results](./results) | Directory storing results produced at different stages of pipelines |
+| [static_analysis_pipeline](./static_analysis_pipeline) | Scripts encompassing components of static analysis pipeline for evaluating source scripts before and after feedback loops |
+
+
+## Setup and Usage
 ### Creating a Python Virtual Environment
 
 1. **Navigate to the Project Directory:**
@@ -53,21 +96,11 @@ In case linters are not installed follow the below instructions.
     bash install_cppcheck.sh
     ```
 
-# About
-This repository contains code base for project titled __`Leveraging static analysis for evaluating code-generation models`__ developed during the `CSCI 544 Applied Natural Language Processing` course, Fall 2023, at the `University of Southern California` (USC).
-
-## Relevant links:
-- [Paper presentation](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Paper_Presentation.pdf)
-- [Project proposal](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Proposal.pdf) 
-- [Project status report](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Status_Report.pdf) 
-- [Project presentation](https://github.com/ksanu1998/NLP_Group37/blob/main/reports/NLP_Group_37_Project_Presentation.pdf) 
-- [Project final report]() 
-
 ## Authors
 1. [Sai Anuroop Kesanapalli](https://github.com/ksanu1998) | `MS in Computer Science` | `USC`
 2. [Abhishek Anand](https://github.com/abhishekanand1710) | `MS in Computer Science` | `USC`
 3. [Kayvan Shah](https://github.com/KayvanShah1) | `MS in Applied Data Science` | `USC`
-4. [Indrani Panchangam](https://github.com/author4) | `MS in Computer Science` | `USC`
+4. [Indrani Panchangam](https://github.com/IndraniPanchangam) | `MS in Computer Science` | `USC`
 5. [Vishesh Mittal](https://github.com/Vishesh-Mittal) | `MS in Computer Science` | `USC`
 
 
