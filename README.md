@@ -4,6 +4,10 @@ In recent times, the utilization of Large Language Models (LLMs) for code genera
 
 Our study aims to enrich the baseline code generation model by incorporating insights from static error analysis, potentially refining code generation quality. To achieve this objective, we introduce a pipeline that assimilates feedback gleaned from static analysis into the baseline model. Furthermore, we enhance the baseline model by fine-tuning it using samples previously rejected due to static errors. Our empirical observations underscore the efficacy of both strategies in mitigating the occurrence of observed static errors.
 
+## Pipeline
+![Code Generation and Static Evaluation Pipeline with feedback](reports/Model_Pipeline.png)
+
+
 # Getting Started
 ## Setup Guide for Project Dependencies
 ### Creating a Python Virtual Environment
