@@ -61,10 +61,10 @@ This repository contains code base for project titled __`Leveraging static analy
 
 ## Authors
 1. [Sai Anuroop Kesanapalli](https://github.com/ksanu1998) | `MS in Computer Science` | `USC`
-2. [Abishek Anand](https://github.com/abhishekanand1710) | `MS in Computer Science` | `USC`
+2. [Abhishek Anand](https://github.com/abhishekanand1710) | `MS in Computer Science` | `USC`
 3. [Kayvan Shah](https://github.com/KayvanShah1) | `MS in Applied Data Science` | `USC`
 4. [Indrani Panchangam](https://github.com/author4) | `MS in Computer Science` | `USC`
-5. [Vishesh Mittal](https://github.com/author5) | `MS in Computer Science` | `USC`
+5. [Vishesh Mittal](https://github.com/Vishesh-Mittal) | `MS in Computer Science` | `USC`
 
 
 #### Disclaimer
