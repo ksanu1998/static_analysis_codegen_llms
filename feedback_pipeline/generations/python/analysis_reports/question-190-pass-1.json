@@ -1,0 +1,20 @@
+{
+  "./files/question-190-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-190-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math' imported but unused",
+      "physical_line": "import math\n"
+    },
+    {
+      "code": "W292",
+      "filename": "./files/question-190-pass-1.py",
+      "line_number": 14,
+      "column_number": 16,
+      "text": "no newline at end of file",
+      "physical_line": "    return freq"
+    }
+  ]
+}

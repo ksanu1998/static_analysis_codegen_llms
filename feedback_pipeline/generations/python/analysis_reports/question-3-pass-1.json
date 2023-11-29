@@ -1,0 +1,12 @@
+{
+  "./files/question-3-pass-1.py": [
+    {
+      "code": "W292",
+      "filename": "./files/question-3-pass-1.py",
+      "line_number": 7,
+      "column_number": 22,
+      "text": "no newline at end of file",
+      "physical_line": "    return nth_number"
+    }
+  ]
+}

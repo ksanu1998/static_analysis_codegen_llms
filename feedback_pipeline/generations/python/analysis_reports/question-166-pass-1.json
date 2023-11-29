@@ -1,0 +1,60 @@
+{
+  "./files/question-166-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-166-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math.pow' imported but unused",
+      "physical_line": "from math import pow\n"
+    },
+    {
+      "code": "E231",
+      "filename": "./files/question-166-pass-1.py",
+      "line_number": 4,
+      "column_number": 20,
+      "text": "missing whitespace after ':'",
+      "physical_line": "def calculateLnx(n):import math\n"
+    },
+    {
+      "code": "F401",
+      "filename": "./files/question-166-pass-1.py",
+      "line_number": 4,
+      "column_number": 21,
+      "text": "'math' imported but unused",
+      "physical_line": "def calculateLnx(n):import math\n"
+    },
+    {
+      "code": "F811",
+      "filename": "./files/question-166-pass-1.py",
+      "line_number": 6,
+      "column_number": 1,
+      "text": "redefinition of unused 'calculateLnx' from line 4",
+      "physical_line": "def calculateLnx(n):\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files/question-166-pass-1.py",
+      "line_number": 6,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 1",
+      "physical_line": "def calculateLnx(n):\n"
+    },
+    {
+      "code": "F821",
+      "filename": "./files/question-166-pass-1.py",
+      "line_number": 7,
+      "column_number": 12,
+      "text": "undefined name 'math'",
+      "physical_line": "    return math.log(n)"
+    },
+    {
+      "code": "W292",
+      "filename": "./files/question-166-pass-1.py",
+      "line_number": 7,
+      "column_number": 23,
+      "text": "no newline at end of file",
+      "physical_line": "    return math.log(n)"
+    }
+  ]
+}

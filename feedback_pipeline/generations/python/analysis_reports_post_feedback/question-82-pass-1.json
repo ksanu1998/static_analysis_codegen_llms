@@ -1,0 +1,20 @@
+{
+  "./files_with_feedback/question-82-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files_with_feedback/question-82-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math' imported but unused",
+      "physical_line": "import math\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files_with_feedback/question-82-pass-1.py",
+      "line_number": 3,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 1",
+      "physical_line": "def isPowerOfTwo(n):\n"
+    }
+  ]
+}

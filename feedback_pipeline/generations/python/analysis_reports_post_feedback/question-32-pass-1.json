@@ -1,0 +1,20 @@
+{
+  "./files_with_feedback/question-32-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files_with_feedback/question-32-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'bisect.bisect_left' imported but unused",
+      "physical_line": "from bisect import bisect_left\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files_with_feedback/question-32-pass-1.py",
+      "line_number": 3,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 1",
+      "physical_line": "def numberOfPairs(a, b, n):\n"
+    }
+  ]
+}

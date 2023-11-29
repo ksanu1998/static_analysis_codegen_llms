@@ -1,0 +1,12 @@
+{
+  "./files/question-120-pass-1.py": [
+    {
+      "code": "W292",
+      "filename": "./files/question-120-pass-1.py",
+      "line_number": 6,
+      "column_number": 35,
+      "text": "no newline at end of file",
+      "physical_line": "        m[i] = i * m.get(i - 1, 1)"
+    }
+  ]
+}

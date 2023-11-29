@@ -1,6 +1,6 @@
 models
-generations
 # reports
+ .idea
 .DS_Store
 
 __pycache__/

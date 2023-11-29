@@ -1,0 +1,28 @@
+{
+  "./files/question-180-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-180-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'sys' imported but unused",
+      "physical_line": "import sys\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files/question-180-pass-1.py",
+      "line_number": 10,
+      "column_number": 80,
+      "text": "line too long (82 > 79 characters)",
+      "physical_line": "        # Calculate the bitwise AND of the current element and the previous result\n"
+    },
+    {
+      "code": "W292",
+      "filename": "./files/question-180-pass-1.py",
+      "line_number": 14,
+      "column_number": 18,
+      "text": "no newline at end of file",
+      "physical_line": "    return result"
+    }
+  ]
+}
