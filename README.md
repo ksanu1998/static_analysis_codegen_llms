@@ -24,12 +24,11 @@ The pipeline employs automated feedback via linters (static code analyzers) to e
 1. **Context Generation:** The pre-processing stage generates the context as part of a prompt, incorporating text from the dataset.
 2. **Code Generation:** The model utilizes the provided context along with text from the dataset to generate code.
 3. **Linters Integration:** Linters are executed on the generated code to identify errors.
-4. **Automated Feedback Loop:** Detected errors are then fed back in natural language as feedback into prompts for the model, enhancing subsequent code generation.
+4. **Feedback Loop:** Detected errors are then fed back to the model, enhancing subsequent code generation.
 
 This systematic approach allows for the identification and minimization of errors within the code generation process, enabling precise insights into areas where the model might exhibit shortcomings. Importantly, it facilitates targeted corrections by providing precise information about error types and their respective locations.
 
-> [!NOTE]  
-> Highlights information that users should take into account, even when skimming.
+> The pipeline is partly automated for evaluation and report generation for proof-of-concept purposes.
 
 **Fine-tuning:**
 
@@ -37,6 +36,8 @@ Fine-Tuning in this context seeks to elevate the baseline model's initial accura
 
 In this phase, we're utilizing quantized models for streamlined loading into the system and to facilitate running on TPUs.
 
+> [!IMPORTANT]  
+> We have used GPU-P100 on Kaggle and T4 on Google Colaboratory for our experiments.
 
 ## Directory Structure
 
@@ -57,7 +58,7 @@ In this phase, we're utilizing quantized models for streamlined loading into the
 
 1. **Navigate to the Project Directory:**
     ```bash
-    cd /path/to/your/project
+    cd static_analysis_codegen_llms
     ```
 
 2. **Create a Virtual Environment:**
@@ -104,19 +105,11 @@ In case linters are not installed follow the below instructions.
 5. [Vishesh Mittal](https://github.com/Vishesh-Mittal) | `MS in Computer Science` | `USC`
 
 
+#### LICENSE
+This project is licensed under the `BSD 3-Clause` License. See the [LICENSE](LICENSE) file for details.
+
 #### Disclaimer
 
 <sub>
 The content and code provided in this repository are for educational and demonstrative purposes only. The project may contain experimental features, and the code might not be optimized for production environments. The authors and contributors are not liable for any misuse, damages, or risks associated with the use of this code. Users are advised to review, test, and modify the code to suit their specific use cases and requirements. By using any part of this project, you agree to these terms.
 </sub>
-
-
-
-<!-- TODO:<br>
-* Format the README nicely
-* Explain setup guidlines for linters and LLMs (if needed)
-* Explain all folders with link. Make sure to mention that the post_feedback is a proof of concept of automation. 
-* Results in results/post_feedback are to demonstrate the automation and not the results of actual feedback analysis.
-* Write something about LLMs that Abhishek is going to merge.
-* Add author names and github handles
-* Add link to final report -->
