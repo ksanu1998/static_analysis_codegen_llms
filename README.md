@@ -98,7 +98,7 @@ In case linters are not installed follow the below instructions.
     chmod +x install_cppcheck.sh
     bash install_cppcheck.sh
     ```
-
+    
 ## Authors
 1. [Sai Anuroop Kesanapalli](https://github.com/ksanu1998) | `MS in Computer Science` | `USC`
 2. [Abhishek Anand](https://github.com/abhishekanand1710) | `MS in Computer Science` | `USC`
