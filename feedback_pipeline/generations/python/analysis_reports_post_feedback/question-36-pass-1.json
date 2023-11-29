@@ -1,0 +1,12 @@
+{
+  "./files_with_feedback/question-36-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files_with_feedback/question-36-pass-1.py",
+      "line_number": 10,
+      "column_number": 80,
+      "text": "line too long (116 > 79 characters)",
+      "physical_line": "            # If the current item can be distributed to the current person, add the previous ways to the current way\n"
+    }
+  ]
+}

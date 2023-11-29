@@ -1,0 +1,20 @@
+{
+  "./files/question-10-pass-1.py": [
+    {
+      "code": "E225",
+      "filename": "./files/question-10-pass-1.py",
+      "line_number": 11,
+      "column_number": 23,
+      "text": "missing whitespace around operator",
+      "physical_line": "            if b[i][j]!= b[i][j-1]:\n"
+    },
+    {
+      "code": "W292",
+      "filename": "./files/question-10-pass-1.py",
+      "line_number": 16,
+      "column_number": 17,
+      "text": "no newline at end of file",
+      "physical_line": "    return swaps"
+    }
+  ]
+}

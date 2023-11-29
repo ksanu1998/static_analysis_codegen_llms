@@ -1,0 +1,12 @@
+{
+  "./files_with_feedback/question-28-pass-1.py": [
+    {
+      "code": "E501",
+      "filename": "./files_with_feedback/question-28-pass-1.py",
+      "line_number": 14,
+      "column_number": 80,
+      "text": "line too long (96 > 79 characters)",
+      "physical_line": "                # Update the maximum LCM if the current LCM is greater than the previous maximum\n"
+    }
+  ]
+}

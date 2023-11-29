@@ -1,0 +1,20 @@
+{
+  "./files/question-152-pass-1.py": [
+    {
+      "code": "E741",
+      "filename": "./files/question-152-pass-1.py",
+      "line_number": 5,
+      "column_number": 17,
+      "text": "ambiguous variable name 'l'",
+      "physical_line": "            for l in range(m):\n"
+    },
+    {
+      "code": "W292",
+      "filename": "./files/question-152-pass-1.py",
+      "line_number": 8,
+      "column_number": 18,
+      "text": "no newline at end of file",
+      "physical_line": "    return result"
+    }
+  ]
+}
