@@ -1,0 +1,44 @@
+{
+  "./files_with_feedback/question-184-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files_with_feedback/question-184-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math' imported but unused",
+      "physical_line": "import math\n"
+    },
+    {
+      "code": "F401",
+      "filename": "./files_with_feedback/question-184-pass-1.py",
+      "line_number": 2,
+      "column_number": 1,
+      "text": "'sys' imported but unused",
+      "physical_line": "import sys\n"
+    },
+    {
+      "code": "E303",
+      "filename": "./files_with_feedback/question-184-pass-1.py",
+      "line_number": 6,
+      "column_number": 1,
+      "text": "too many blank lines (3)",
+      "physical_line": "def changeTheArray(arr, n):\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files_with_feedback/question-184-pass-1.py",
+      "line_number": 12,
+      "column_number": 80,
+      "text": "line too long (94 > 79 characters)",
+      "physical_line": "        # Calculate the absolute difference between the current element and the target element\n"
+    },
+    {
+      "code": "E501",
+      "filename": "./files_with_feedback/question-184-pass-1.py",
+      "line_number": 15,
+      "column_number": 80,
+      "text": "line too long (88 > 79 characters)",
+      "physical_line": "        # Check if the absolute difference is less than the minimum number of operations\n"
+    }
+  ]
+}

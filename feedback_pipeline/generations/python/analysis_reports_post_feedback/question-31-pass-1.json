@@ -1,0 +1,20 @@
+{
+  "./files_with_feedback/question-31-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files_with_feedback/question-31-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'collections.defaultdict' imported but unused",
+      "physical_line": "from collections import defaultdict\n"
+    },
+    {
+      "code": "E302",
+      "filename": "./files_with_feedback/question-31-pass-1.py",
+      "line_number": 3,
+      "column_number": 1,
+      "text": "expected 2 blank lines, found 1",
+      "physical_line": "def countQuadruplets(N):\n"
+    }
+  ]
+}

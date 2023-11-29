@@ -1,0 +1,12 @@
+{
+  "./files/question-113-pass-1.py": [
+    {
+      "code": "W292",
+      "filename": "./files/question-113-pass-1.py",
+      "line_number": 19,
+      "column_number": 18,
+      "text": "no newline at end of file",
+      "physical_line": "    return result"
+    }
+  ]
+}

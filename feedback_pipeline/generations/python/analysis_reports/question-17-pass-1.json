@@ -1,0 +1,12 @@
+{
+  "./files/question-17-pass-1.py": [
+    {
+      "code": "W292",
+      "filename": "./files/question-17-pass-1.py",
+      "line_number": 5,
+      "column_number": 29,
+      "text": "no newline at end of file",
+      "physical_line": "        return gcd(b, a % b)"
+    }
+  ]
+}

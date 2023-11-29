@@ -1,0 +1,12 @@
+{
+  "./files/question-55-pass-1.py": [
+    {
+      "code": "E999",
+      "filename": "./files/question-55-pass-1.py",
+      "line_number": 9,
+      "column_number": 27,
+      "text": "SyntaxError: '(' was never closed",
+      "physical_line": null
+    }
+  ]
+}

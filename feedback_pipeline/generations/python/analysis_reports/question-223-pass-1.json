@@ -1,0 +1,36 @@
+{
+  "./files/question-223-pass-1.py": [
+    {
+      "code": "F401",
+      "filename": "./files/question-223-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math.pow' imported but unused",
+      "physical_line": "from math import floor, pow\n"
+    },
+    {
+      "code": "F401",
+      "filename": "./files/question-223-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math.floor' imported but unused",
+      "physical_line": "from math import floor, pow\n"
+    },
+    {
+      "code": "F401",
+      "filename": "./files/question-223-pass-1.py",
+      "line_number": 2,
+      "column_number": 1,
+      "text": "'sys' imported but unused",
+      "physical_line": "import sys\n"
+    },
+    {
+      "code": "W292",
+      "filename": "./files/question-223-pass-1.py",
+      "line_number": 10,
+      "column_number": 15,
+      "text": "no newline at end of file",
+      "physical_line": "    return sum"
+    }
+  ]
+}
