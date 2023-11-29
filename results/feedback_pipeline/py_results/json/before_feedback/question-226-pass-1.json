@@ -1,0 +1,28 @@
+{
+  "./files/question-226-pass-1.py": [
+    {
+      "code": "F403",
+      "filename": "./files/question-226-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'from math import *' used; unable to detect undefined names",
+      "physical_line": "from math import *\n"
+    },
+    {
+      "code": "F401",
+      "filename": "./files/question-226-pass-1.py",
+      "line_number": 1,
+      "column_number": 1,
+      "text": "'math.*' imported but unused",
+      "physical_line": "from math import *\n"
+    },
+    {
+      "code": "W292",
+      "filename": "./files/question-226-pass-1.py",
+      "line_number": 13,
+      "column_number": 13,
+      "text": "no newline at end of file",
+      "physical_line": "    return z"
+    }
+  ]
+}
